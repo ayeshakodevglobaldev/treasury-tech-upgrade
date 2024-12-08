@@ -70,7 +70,10 @@ export class NavService implements OnDestroy {
         //Title
         { headTitle: 'MAIN' },
         {
-            path: '/dashboard', title: 'Dashboard',    badgeClass: 'badge bg-success text-light bg-side-text', badgeValue: '1', type: 'link', icon: '<svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"/></svg>',  active: true
+            path: '/dashboard', title: 'Dashboard',    badgeClass: 'badge bg-success text-light bg-side-text', badgeValue: '1', type: 'link', icon: '<svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"/></svg>',  active: false
+        },
+        {
+            path:'/dashboards', title:'New Dashboard',badgeClass:'badge bg-sucess text-light bg-side-text',type:'link',icon:'<svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"/></svg>',active:true
         },
           // Title
     
@@ -86,12 +89,43 @@ export class NavService implements OnDestroy {
                     children: [
                         { path: '/apps/contact/contact-list-1', title: 'Contact List ', type: 'link' },
                     ]
-                },
-                
-               
+                },    
             ]
         },
-        
+        {headTitle:'Foreign Exchange (FX)'},
+        {
+            title:"Front Office (InterBank)", icon:'<svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>', type: 'sub', active: false,
+            children:[
+                {
+                    title:'Fx Rates',type:'sub',active:false,Menusub:true,
+                    children:[
+                        // {path:'/apps/fx/front-office/fx-rates',title:'Fx Rates',type:'link'}
+                    ]
+                },
+                {
+                    title:'Deals for outright',type:'sub',active:true,Menusub:true,
+                    children:[
+                        {path:'/apps/fx/front-office/input',title:'Input',type:'link'},
+                        {path:'/apps/fx/front-office/authorize',title:'Authorize',type:'link'},
+                        {path:'/apps/fx/front-office/editing',title:'Editing',type:'link'},
+                        {path:'/apps/fx/front-office/amendment',title:'Amendment',type:'link'},
+                        {path:'/apps/fx/front-office/cancellation',title:'Cancellation',type:'link'},
+                    ]
+                },
+                {
+                    title:'Swap Deals',type:'sub',active:false,Menusub:true,
+                    // children:[
+                    //     {path:'/apps/fx/front-office/fx-rates',title:'Fx Rates',type:'link'}
+                    // ]
+                },
+                {
+                    title:'Nostro transfer',type:'sub',active:false,Menusub:true,
+                    // children:[
+                    //     {path:'/apps/fx/front-office/fx-rates',title:'Fx Rates',type:'link'}
+                    // ]
+                },
+            ]
+        }
       
     ];
 
