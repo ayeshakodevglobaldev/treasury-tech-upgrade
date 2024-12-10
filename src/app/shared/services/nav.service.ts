@@ -127,7 +127,7 @@ export class NavService implements OnDestroy {
               title: 'Deals for outright',
               type: 'sub',
               active: false,
-              // Menusub: true,
+              Menusub: true,
               children: [
                 {
                   path: '/features/fx/fx-frontoffice/outright-deal/outright-input',
@@ -170,9 +170,13 @@ export class NavService implements OnDestroy {
               type: 'sub',
               active: false,
               Menusub: true,
-              // children:[
-              //     {path:'/apps/fx/front-office/fx-rates',title:'Fx Rates',type:'link'}
-              // ]
+              children: [
+                {
+                  path: '/features/fx/fx-frontoffice/swap-deal/swap-input',
+                  title: 'Input',
+                  type: 'link',
+                },  
+              ],
             },
             {
               title: 'Nostro transfer',
@@ -187,6 +191,8 @@ export class NavService implements OnDestroy {
         },
       ],
     },
+
+    
   ];
 
   //array

@@ -17,8 +17,9 @@ export const content: Routes = [
     {
         path:'features/fx/fx-frontoffice/outright-deal',
         loadChildren:()=>import('../../features/fx/fx-frontoffice/outright-deal/outright-deal.module').then(m=>m.OutrightDealModule)
-    }
-
-    
-
+    },
+    {
+        path:'features/fx/fx-frontoffice/swap-deal',
+        loadChildren:()=>import('../../features/fx/fx-frontoffice/swap-deal/swap-deal.module').then(m=>m.SwapDealModule)
+    },
 ]
