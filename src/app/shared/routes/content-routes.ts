@@ -22,4 +22,12 @@ export const content: Routes = [
         path:'features/fx/fx-frontoffice/swap-deal',
         loadChildren:()=>import('../../features/fx/fx-frontoffice/swap-deal/swap-deal.module').then(m=>m.SwapDealModule)
     },
+    {
+        path:'features/fx/fx-frontoffice/placement-deal',
+        loadChildren:()=>import('../../features/fx/fx-frontoffice/placement-deal/placement-deal.module').then(m=>m.PlacementDealModule)
+    },
+    {
+        path:'features/fx/fx-frontoffice/transfer-deal',
+        loadChildren:()=>import('../../features/fx/fx-frontoffice/transfer-deal/transfer-deal.module').then(m=>m.TransferDealModule)
+    }
 ]

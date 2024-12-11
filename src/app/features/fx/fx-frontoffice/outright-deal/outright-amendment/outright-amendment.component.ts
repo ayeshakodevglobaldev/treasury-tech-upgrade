@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./outright-amendment.component.scss']
 })
 export class OutrightAmendmentComponent {
+  constructor() { 
+  console.log("This is outright amendment");
+}
 
 }

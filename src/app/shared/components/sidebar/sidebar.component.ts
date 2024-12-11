@@ -184,7 +184,6 @@ export class SidebarComponent implements OnInit {
             return false;
           }
           b.children.forEach((c: any) => {
-            console.log(c);
             if (b.children.includes(item)) {
               c.active = false;
             }
@@ -312,5 +311,4 @@ export class SidebarComponent implements OnInit {
   onWindowScroll() {
     this.scrolled = window.scrollY > 74;
   }
-
 }

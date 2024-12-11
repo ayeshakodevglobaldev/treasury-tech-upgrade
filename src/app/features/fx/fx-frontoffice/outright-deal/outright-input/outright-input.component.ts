@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./outright-input.component.scss']
 })
 export class OutrightInputComponent {
-
+  constructor() {
+    console.log("This is outright input");
+  }
 }

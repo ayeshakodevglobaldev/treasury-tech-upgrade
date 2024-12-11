@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./outright-editing.component.scss']
 })
 export class OutrightEditingComponent {
-
+constructor() { 
+console.log("This is outright editing");
+}
 }

@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./outright-cancellation.component.scss']
 })
 export class OutrightCancellationComponent {
-
+constructor() {
+console.log("This is outright cancellation");
+}
 }

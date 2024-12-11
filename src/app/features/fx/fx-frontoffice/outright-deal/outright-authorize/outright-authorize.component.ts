@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./outright-authorize.component.scss']
 })
 export class OutrightAuthorizeComponent {
-
+constructor() {
+console.log("This is outright authorize");
+}
 }

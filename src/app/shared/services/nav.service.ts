@@ -127,7 +127,7 @@ export class NavService implements OnDestroy {
               title: 'Deals for outright',
               type: 'sub',
               active: false,
-              Menusub: true,
+              // Menusub: true,
               children: [
                 {
                   path: '/features/fx/fx-frontoffice/outright-deal/outright-input',
@@ -160,7 +160,7 @@ export class NavService implements OnDestroy {
               title: 'Fx Rates',
               type: 'sub',
               active: false,
-              Menusub: true,
+              // Menusub: true,
               children: [
                 // {path:'/apps/fx/front-office/fx-rates',title:'Fx Rates',type:'link'}
               ],
@@ -169,23 +169,62 @@ export class NavService implements OnDestroy {
               title: 'Swap Deals',
               type: 'sub',
               active: false,
-              Menusub: true,
+              // Menusub: true,
               children: [
                 {
                   path: '/features/fx/fx-frontoffice/swap-deal/swap-input',
                   title: 'Input',
                   type: 'link',
-                },  
+                },
+                {
+                  path: '/features/fx/fx-frontoffice/swap-deal/swap-editing',
+                  title: 'Editing',
+                  type: 'link',
+                },
+                {
+                  path: '/features/fx/fx-frontoffice/swap-deal/swap-cancellation',
+                  title: 'Cancellation',
+                  type: 'link',
+                },
+                {
+                  path: '/features/fx/fx-frontoffice/swap-deal/swap-authorize',
+                  title: 'Authorize',
+                  type: 'link',
+                },
+                {
+                  path: '/features/fx/fx-frontoffice/swap-deal/swap-amendment',
+                  title: 'Amendment',
+                  type: 'link',
+                }, 
               ],
             },
             {
               title: 'Nostro transfer',
               type: 'sub',
               active: false,
-              Menusub: true,
-              // children:[
-              //     {path:'/apps/fx/front-office/fx-rates',title:'Fx Rates',type:'link'}
-              // ]
+              // Menusub: true,
+              children:[
+                  {
+                    path:'/features/fx/fx-frontoffice/transfer-deal/transfer-input',title:'Input',type:'link'
+                  },
+                  {
+                    path:'/features/fx/fx-frontoffice/transfer-deal/transfer-editing',title:'Editing',type:'link'
+                  },
+                  {
+                    path:'/features/fx/fx-frontoffice/transfer-deal/transfer-cancellation',title:'Cancellation',type:'link'
+                  }
+              ]
+            },
+            {
+              title: 'FC Placement Borrow',
+              type: 'sub',
+              active: false,
+              // Menusub: true,
+              children:[
+                  {
+                    path:'/features/fx/fx-frontoffice/placement-deal/placement-input',title:'Input',type:'link'
+                  }
+              ]
             },
           ],
         },
