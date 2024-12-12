@@ -7,6 +7,7 @@ import { OutrightAuthorizeComponent } from './outright-authorize/outright-author
 import { OutrightEditingComponent } from './outright-editing/outright-editing.component';
 import { OutrightAmendmentComponent } from './outright-amendment/outright-amendment.component';
 import { OutrightCancellationComponent } from './outright-cancellation/outright-cancellation.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { OutrightCancellationComponent } from './outright-cancellation/outright-
   ],
   imports: [
     CommonModule,
-    OutrightDealRoutingModule
+    OutrightDealRoutingModule,
+    SharedModule
   ]
 })
 export class OutrightDealModule { }
