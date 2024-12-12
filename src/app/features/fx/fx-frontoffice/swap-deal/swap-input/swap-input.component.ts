@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./swap-input.component.scss']
 })
 export class SwapInputComponent {
-
+  constructor(){
+    console.log("Swap  input")
+  }
 }

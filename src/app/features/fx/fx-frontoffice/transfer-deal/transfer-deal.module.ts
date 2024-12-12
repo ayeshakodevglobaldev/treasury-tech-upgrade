@@ -5,6 +5,7 @@ import { TransferDealRoutingModule } from './transfer-deal-routing.module';
 import { TransferInputComponent } from './transfer-input/transfer-input.component';
 import { TransferCancellationComponent } from './transfer-cancellation/transfer-cancellation.component';
 import { TransferEditingComponent } from './transfer-editing/transfer-editing.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { TransferEditingComponent } from './transfer-editing/transfer-editing.co
   ],
   imports: [
     CommonModule,
-    TransferDealRoutingModule
+    TransferDealRoutingModule,
+    SharedModule
   ]
 })
 export class TransferDealModule { }

@@ -5,7 +5,10 @@ export const content: Routes = [
         path: 'dashboard',
         loadChildren: () => import('../../components/dashboard/dashboard.module').then(m => m.DashboardModule)
     },
-    
+    {
+        path: 'dashboard-view',
+        loadChildren: () => import('../../dashboard/dashboard.module').then(m => m.DashboardModule)
+    },
     {
         path: 'apps/contact',
         loadChildren: () => import('../../components/apps/contact/contact.module').then(m => m.ContactModule)

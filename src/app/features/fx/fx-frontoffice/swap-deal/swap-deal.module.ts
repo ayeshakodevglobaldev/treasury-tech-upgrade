@@ -7,6 +7,7 @@ import { SwapAuthorizeComponent } from './swap-authorize/swap-authorize.componen
 import { SwapEditingComponent } from './swap-editing/swap-editing.component';
 import { SwapAmendmentComponent } from './swap-amendment/swap-amendment.component';
 import { SwapCancellationComponent } from './swap-cancellation/swap-cancellation.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SwapCancellationComponent } from './swap-cancellation/swap-cancellation
   ],
   imports: [
     CommonModule,
-    SwapDealRoutingModule
+    SwapDealRoutingModule,
+    SharedModule
   ]
 })
 export class SwapDealModule { }
