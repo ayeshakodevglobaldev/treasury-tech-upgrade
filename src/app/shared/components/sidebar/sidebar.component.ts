@@ -70,7 +70,18 @@ export class SidebarComponent implements OnInit {
 
       this.router.events.subscribe((event) => {
         if (event instanceof NavigationStart) {
-          this.closeNavActive();
+          this.menuItems.forEach((menuItem: any) => {
+            if (!menuItem.active) {
+              menuItem.active = false;
+            }
+            if (menuItem.children) {
+              menuItem.children.forEach((subMenuItem: any) => {
+                if (!subMenuItem.active) {
+                  subMenuItem.active = false;
+                }
+              });
+            }
+          });
           setTimeout(() => {
             const sidemenu = document.querySelectorAll('.side-menu__item.active');
             const subSidemenu = document.querySelectorAll(
@@ -188,6 +199,7 @@ export class SidebarComponent implements OnInit {
               c.active = false;
             }
           });
+
           return true;
         });
         return true;
@@ -310,5 +322,4 @@ export class SidebarComponent implements OnInit {
   onWindowScroll() {
     this.scrolled = window.scrollY > 74;
   }
-
 }
