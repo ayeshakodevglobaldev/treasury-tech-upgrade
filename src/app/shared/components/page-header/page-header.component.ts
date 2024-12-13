@@ -18,4 +18,6 @@ export class PageHeaderComponent {
   @Input() item1!: string;
   @Input() item2!: string;
   @Input() activetitle!: string;
+
+  @Input() isBtnList!: boolean;
 }
