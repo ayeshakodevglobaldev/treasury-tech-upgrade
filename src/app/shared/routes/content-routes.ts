@@ -6,8 +6,8 @@ export const content: Routes = [
         loadChildren: () => import('../../components/dashboard/dashboard.module').then(m => m.DashboardModule)
     },
     {
-        path: 'dashboard-view',
-        loadChildren: () => import('../../dashboard/dashboard.module').then(m => m.DashboardModule)
+      path:'dashboard-view',
+      loadChildren:()=> import('../../dashboard/dashboard.module').then(m=>m.DashboardModule)
     },
     {
         path: 'apps/contact',
