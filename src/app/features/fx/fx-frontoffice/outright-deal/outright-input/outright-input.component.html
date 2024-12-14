@@ -1,4 +1,294 @@
 <!--Page header-->
-<app-page-header [title]="'Input Outright'"  [icon]="'grid'"  [title1]="'Foregn Exchange Fx'" [activeitem]="'Swap Input'"></app-page-header>
+<app-page-header [title]="'Input Outright'" [icon]="'grid'" [title1]="'Foregn Exchange Fx'"
+  [activeitem]="'Swap Input'"></app-page-header>
 <!--End Page header-->
+<div class="main-deals-form">
+  <!-- heading sectoin -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="fs-4 d-flex">Outright Deals (Input)</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <form>
+      <div class="row">
+        <!-- left Section start from here -->
+        <div class="col-12 col-sm-12 left-section col-md-6 bdr">
+          <!-- countery party section -->
+          <div class="d-flex align-items-center gap-5 justify-content-between">
+            <label>Countery Party</label>
 
+            <div class="dropdown">
+              <button class="text-dark drop-down-menu button form-control" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                {{ selectedbank || 'Country Party' }}
+              </button>
+              <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                <li *ngFor="let option of bank">
+                  <a class="dropdown-item text-dark" (click)="selectbank(option)">{{ option }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- buy sell section -->
+          <div class="d-flex align-items-center justify-content-between mt-3">
+            <div class="we">
+              <label class="bg success">We</label>
+            </div>
+            <div class="radio-btn d-flex">
+              <div class="buy d-flex align-items-center">
+                <input class="radio-button form-check-input" type="radio" name="a" id="flexRadioDefault1">
+                <label>Buy</label>
+              </div>
+              <div class="sell d-flex align-items-center">
+                <input class="radio-button form-check-input" type="radio" name="a" id="flexRadioDefault1">
+                <label>Sell</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- currency buy section  -->
+          <div class="d-flex align-items-center gap-5 justify-content-between mt-3">
+            <label>Currency Buy</label>
+            <div class="dropdown">
+              <button class="text-dark drop-down-menu button form-control" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                {{ selectedcurrency || 'CURRENCY BUY' }}
+              </button>
+              <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                <li *ngFor="let option of currency">
+                  <a class="dropdown-item text-dark" (click)="selectcurrency(option)">{{ option }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- buy amount -->
+          <div class="buy-amount d-flex align-items-center justify-content-between mt-3">
+            <label>Buy Amount</label>
+            <input type="text" class="form-control start-text-right" placeholder="0.00">
+          </div>
+
+          <!-- maturity date -->
+          <div class="d-flex align-items-center justify-content-between mt-3">
+            <label>Maturity Date</label>
+            <input class="form-control" type="datetime-local" id="counterParty">
+          </div>
+
+          <!-- ready date -->
+          <div class="d-flex align-items-center justify-content-between mt-3">
+            <label>Ready Rate</label>
+            <input class="start-text-right form-control" type="text" id="counterParty" placeholder="0.0000000">
+          </div>
+
+          <!-- deal date -->
+          <div class="d-flex align-items-center justify-content-between mt-3">
+            <label>Deal Rate</label>
+            <input class=" input-bg start-text-right form-control" type="text" id="counterParty"
+              placeholder="0.0000000">
+          </div>
+
+          <!-- invs calc rate -->
+          <div class="d-flex align-items-center justify-content-between mt-3">
+            <label>Invc.Calc Rate</label>
+            <input class="start-text-right form-control" type="text" id="counterParty" placeholder="0.0000000">
+          </div>
+
+          <!-- pkr equiv -->
+          <div class="d-flex align-items-center justify-content-between mt-3">
+            <label>Pkr. Equiv</label>
+            <input class="input-bg start-text-right form-control" type="text" id="counterParty" placeholder="0.00">
+          </div>
+
+          <!-- mode of deal -->
+          <div class="d-flex align-items-center justify-content-between mt-3">
+            <label>Mode Of Deal</label>
+            <div class="dropdown">
+              <button class="text-dark drop-down-menu button form-control" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                {{ selecteddealmode || 'DEAL MODE' }}
+              </button>
+              <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                <li *ngFor="let option of dealmode">
+                  <a class="dropdown-item text-dark" (click)="selectdealmode(option)">{{ option }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Brokerage  -->
+          <div class="d-flex align-items-center justify-content-between mt-3">
+            <div class="we">
+              <label class="bg success">Brokerage</label>
+            </div>
+            <div class="radio-btn d-flex">
+              <div class="buy d-flex align-items-center">
+                <input class="radio-button form-check-input" type="radio" name="b" id="flexRadioDefault">
+                <label>Yes</label>
+              </div>
+              <div class="sell d-flex align-items-center">
+                <input class="radio-button form-check-input" type="radio" name="b" id="flexRadioDefault">
+                <label>No</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- broker -->
+          <div class="d-flex align-items-center justify-content-between mt-3">
+            <label>Broker</label>
+            <div class="dropdown">
+              <button class="text-dark drop-down-menu button form-control" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                {{ selectedbroker || 'BROKER' }}
+              </button>
+              <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                <li *ngFor="let option of broker">
+                  <a class="dropdown-item text-dark" (click)="selectbroker(option)">{{ option }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- brokerage amount -->
+          <div class="d-flex align-items-center justify-content-between mt-3">
+            <label>Brokerage Amount</label>
+            <input class="input-bg start-text-right form-control" type="text" id="counterParty" placeholder="0.00">
+          </div>
+        </div> <!--  -->
+
+
+
+
+        <!-- right Section start from here -->
+        <div class="col-12 col-sm-12 right-section col-md-6 bdr right-section">
+
+          <!-- currency sell sectoin -->
+          <div class="d-flex align-items-center justify-content-between gap-5">
+            <label>Currency Sell</label>
+            <div class="dropdown">
+              <button class="text-dark drop-down-menu button form-control" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                {{ selectedcurrencysell || 'CURRENCY SELL' }}
+              </button>
+              <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                <li *ngFor="let option of currencysell">
+                  <a class="dropdown-item text-dark" (click)="selectcurrencysell(option)">{{ option }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- sell amount -->
+          <div class="sell-amount d-flex align-items-center justify-content-between  mt-3">
+            <label>Sell Amount</label>
+            <input class="input-bg start-text-right form-control" type="text" id="counterParty" placeholder="0.000">
+          </div>
+
+          <!-- maturity  days -->
+          <div class="maturity-days d-flex align-items-center justify-content-between mt-3">
+            <label>Maturity Days</label>
+            <input class="start-text-right form-control" type="text" id="counterParty" placeholder="0">
+          </div>
+
+          <!-- forward premium -->
+          <div class="d-flex align-items-center justify-content-between gap-5 mt-3">
+            <label>Forward Premium</label>
+            <input class="start-text-right form-control" type="text" id="counterParty" placeholder="0.0000000">
+          </div>
+
+          <!-- stystem calc rate -->
+          <div class="d-flex align-items-center justify-content-between gap-5 mt-3">
+            <label>System Calc Rate</label>
+            <input class="input-bg start-text-right form-control" type="text" id="counterParty" placeholder="0.0000000">
+          </div>
+
+          <!-- dealtype  -->
+          <div class="d-flex align-items-center justify-content-between mt-4">
+            <div class="row">
+              <div class="col-md-5">
+                <label>Deal Type</label>
+              </div>
+              <div class="col-md-2">
+                <input class="radio-button form-check-input" type="radio" name="d" id="flexRadioDefault1">
+                <label>Ready</label>
+              </div>
+              <div class="col-md-2">
+                <input class="radio-button form-check-input" type="radio" name="d" id="flexRadioDefault2">
+                <label>Spot</label>
+              </div>
+              <div class="col-md-3 d-inline">
+                <input class="radio-button form-check-input" type="radio" name="d" id="flexRadioDefault3">
+                <label>Forward</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- direct sell -->
+          <div class="direct-sell d-flex align-items-center justify-content-between gap-5">
+            <label>Direct Sell</label>
+            <div class="dropdown">
+              <button class="text-dark drop-down-menu button form-control" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                {{ selecteddirectsell || 'DIRECT SELL' }}
+              </button>
+              <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                <li *ngFor="let option of directsell">
+                  <a class="dropdown-item text-dark" (click)="selectdirectsell(option)">{{ option }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- SBP/Settlement AC  -->
+          <div class="d-flex align-items-center justify-content-between mt-3">
+            <div class="row">
+              <div class="col-md-5">
+                <label>SBP/Settlement Ac</label>
+              </div>
+              <div class="col-md-2">
+                <input class="radio-button form-check-input" type="radio" name="d" id="flexRadioDefault1">
+                <label>SBP</label>
+              </div>
+              <div class="col-md-3">
+                <input class="radio-button form-check-input" type="radio" name="d" id="flexRadioDefault2">
+                <label>Settlement</label>
+              </div>
+              <div class="col-md-2 d-inline">
+                <input class="radio-button form-check-input" type="radio" name="d" id="flexRadioDefault3">
+                <label>none</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- main row -->
+
+      <!-- Remark section -->
+      <div class="row d-flex align-items-start mt-3">
+        <div class="col-md-2">
+          <label>Remark</label>
+        </div>
+        <div class="col-md-10 d-flex justify-content-end">
+          <textarea class="text-area"></textarea>
+        </div>
+      </div>
+
+      <!-- buttons save,exit,resat -->
+      <div class="row mt-4">
+        <div class="submit col-md-5 d-flex justify-content-end gap-2">
+          <button>
+            save
+          </button>
+          <button>
+            exit
+          </button>
+          <button>
+            resat
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
