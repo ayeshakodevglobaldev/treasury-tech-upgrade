@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class SwapInputComponent {
   constructor(){
-    console.log("Swap  input")
+    console.log("Swap  input");
   }
 }
