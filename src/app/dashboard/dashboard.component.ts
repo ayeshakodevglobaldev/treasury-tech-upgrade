@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { recentActivitiesData, recentCustomersData } from '../shared/data/dashboard/dashboard';
 import * as chartData from '../shared/data/charts/dashboard';
+import { ApexRandomData } from '../shared/data/charts/apex';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -24,5 +25,5 @@ export class DashboardComponent {
       public ApexData3:Partial<any> | any = chartData.ApexData3;
       public ApexData4:Partial<any> | any = chartData.ApexData4;
       public echartLineBarOption:Partial<any> = chartData.echartLineBarOption;
-    
+      public RandomData = ApexRandomData;
 }

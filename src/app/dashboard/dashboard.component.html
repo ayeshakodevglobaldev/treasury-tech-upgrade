@@ -470,7 +470,7 @@
       </div>
     </div>
     <!-- Row-3 -->
-    <div class="col-xl-4 col-lg-12 col-md-12">
+    <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-12">
         <div class="card">
           <div class="card-header">
             <h5 class="card-title">Recent Customers</h5>
@@ -646,6 +646,96 @@
       
     </div>
     <!-- End Row-3 -->
+    <div class="col-xxl-4 col-xl-6  col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Revenue in Countries</h5>
+                <div class="card-options" ngbDropdown>
+                    <a href="javascript:void(0);" class="option-dots" data-bs-toggle="dropdown"  ngbDropdownToggle aria-haspopup="true" aria-expanded="false"><i class="fe fe-more-horizontal"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+                        <a class="dropdown-item" href="javascript:void(0);" ngbDropdownItem>Today</a>
+                        <a class="dropdown-item" href="javascript:void(0);" ngbDropdownItem>Last Week</a>
+                        <a class="dropdown-item" href="javascript:void(0);" ngbDropdownItem>Last Month</a>
+                        <a class="dropdown-item" href="javascript:void(0);" ngbDropdownItem>Last Year</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="">
+                    <div class="mb-4">
+                        <div class="d-flex">
+                            <span class=""><img src="./assets/images/flags/us.svg" class="wd-28 ht-28 me-2" alt="">United States</span>
+                            <div class="ms-auto"><span class="text-success me-1"><i class="fe fe-trending-up"></i></span><span class="number-font">$45,870</span></div>
+                        </div>
+                        <div class="progress  mt-1" role="progressbar" aria-label="Example 6px high" style="height: 6px">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex">
+                            <span class=""><img src="./assets/images/flags/ru.svg" class="wd-28 ht-28 me-2" alt="">Russia</span>
+                            <div class="ms-auto"><span class="text-success me-1"><i class="fe fe-trending-up"></i></span><span class="number-font">$22,710</span></div>
+                        </div>
+                        <div class="progress  mt-1" role="progressbar" aria-label="Example 6px high" style="height: 6px">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex">
+                            <span class=""><img src="./assets/images/flags/ca.svg" class="wd-28 ht-28 me-2" alt="">Canada</span>
+                            <div class="ms-auto"><span class="text-danger me-1"><i class="fe fe-trending-down"></i></span><span class="number-font">$56,291</span></div>
+                        </div>
+                        <div class="progress  mt-1" role="progressbar" aria-label="Example 6px high" style="height: 6px">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex">
+                            <span class=""><img src="./assets/images/flags/ge.svg" class="wd-28 ht-28 me-2" alt="">Germany</span>
+                            <div class="ms-auto"><span class="text-success me-1"><i class="fe fe-trending-up"></i></span><span class="number-font">$67,357</span></div>
+                        </div>
+                        <div class="progress  mt-1" role="progressbar" aria-label="Example 6px high" style="height: 6px">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex">
+                            <span class=""><img src="./assets/images/flags/br.svg" class="wd-28 ht-28 me-2" alt="">Brazil</span>
+                            <div class="ms-auto"><span class="text-success me-1"><i class="fe fe-trending-up"></i></span><span class="number-font">$34,209</span></div>
+                        </div>
+                        <div class="progress  mt-1" role="progressbar" aria-label="Example 6px high" style="height: 6px">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-indigo" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-0">
+                        <div class="d-flex">
+                            <span class=""><img src="./assets/images/flags/au.svg" class="wd-28 ht-28 me-2" alt="">Australia</span>
+                            <div class="ms-auto"><span class="text-success me-1"><i class="fe fe-trending-up"></i></span><span class="number-font">$12,876</span></div>
+                        </div>
+                        <div class="progress  mt-1" role="progressbar" aria-label="Example 6px high" style="height: 6px">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-8 col-xl-12 col-lg-8 col-md-12">
+        <div class="card custom-card overflow-auto area-chart">
+            <div class="card-body">
+                <div>
+                    <h6 class="main-content-label mb-1">Area Chart With Random data</h6>
+                    <p class="text-muted  card-sub-title">Below is the area chart with random data example.</p>
+                </div>
+                <div class="chartjs-wrapper-demo">
+                    <apx-chart [series]="RandomData.series" [chart]="RandomData.chart"
+                        [annotations]="RandomData.annotations" [colors]="RandomData.colors"
+                        [dataLabels]="RandomData.dataLabels" [markers]="RandomData.markers" [xaxis]="RandomData.xaxis"
+                        [tooltip]="RandomData.tooltip" [fill]="RandomData.fill"></apx-chart>
+                </div>
+            </div>
+        </div>
+    </div>
   
 </div>
 <!-- End Row-1 -->
