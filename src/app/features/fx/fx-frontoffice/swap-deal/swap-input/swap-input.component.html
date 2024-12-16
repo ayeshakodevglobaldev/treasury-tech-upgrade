@@ -2,77 +2,101 @@
 <app-page-header [title]="'Swap Deal Input'" [icon]="'grid'" [title1]="'Foregn Exchange Fx'"
     [activeitem]="'Swap Input'"></app-page-header>
 <!--End Page header-->
-
 <div class="main-swap-deal">
-    <div class="swap-deal">
-        <div class="container">
-            <h3>Swap Deal Input</h3>
-            <div class="row">
-                <div class="col-md-6">
+    <div class="inner-swap-deal bdr">
+        <h3>hello world</h3>
+        <div class="form">
+            <div class="container">
+                <form>
                     <div class="row">
-                        <div class="card-body pb-2">
-                            <div class="row row-sm">
-                                <div class="col-lg d-flex bg-success justify-content-between align-items-center">
-                                    <label>Country Party</label>
-                                    <input class="form-control" placeholder="Input box" type="text">
+                        <!-- left section start -->
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Counter Party</label>
+                                    <div class="col-sm-10 d-flex justify-content-end">
+                                        <input type="email" class="form-control" id="inputEmail3">
+                                    </div>
                                 </div>
-                                <!-- <div class="col-lg mg-t-10 mg-lg-t-0">
-                                    <input class="form-control mb-4" placeholder="Input box (readonly)" readonly="" type="text">
-                                </div> -->
-                                <!-- <div class="col-lg mg-t-10 mg-lg-t-0">
-                                    <input class="form-control mb-4" disabled="" placeholder="Input box (disabled)" type="text">
-                                </div> -->
+                                <div class="row">
+                                    <div class="trade d-flex justify-content-between align-items-center mt-2">
+                                        <label>We</label>
+                                        <div class="col-sm-10 d-flex justify-content-center gap-5">
+                                            <div class="radio-button">
+                                                <input class="custome-radio form-check-input" type="radio">
+                                                <label>Buy</label>
+                                            </div>
+                                            <div class="radio-button">
+                                                <input class="custome-radio form-check-input" type="radio">
+                                                <label>Sell</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- <div class="row row-sm">
-                                <div class="col-lg">
-                                    <textarea class="form-control mb-4" placeholder="Textarea" rows="3"></textarea>
+                        </div> <!-- left section end -->
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="trade d-flex justify-content-center">
+                                    <div class="radio-button">
+                                        <input class="custome-radio form-check-input" type="radio">
+                                        <label>Trade</label>
+                                    </div>
+                                    <div class="radio-button">
+                                        <input class="custome-radio form-check-input" type="radio">
+                                        <label>Trade</label>
+                                    </div>
                                 </div>
-                                <div class="col-lg mg-t-10">
-                                    <textarea class="form-control mb-4" placeholder="Textarea (readonly)" readonly=""
-                                        rows="3"></textarea>
-                                </div>
-                                <div class="col-lg mg-t-10">
-                                    <textarea class="form-control mb-4" disabled="" placeholder="Texarea (disabled)"
-                                        rows="3"></textarea>
-                                </div>
-                            </div> -->
-                        </div>
-        
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="card-body pb-2">
-                            <div class="row row-sm">
-                                <div class="col-lg d-flex bg-success justify-content-between align-items-center">
-                                    <label>Country Party</label>
-                                    <input class="form-control" placeholder="Input box" type="text">
-                                </div>
-                                <!-- <div class="col-lg mg-t-10 mg-lg-t-0">
-                                    <input class="form-control mb-4" placeholder="Input box (readonly)" readonly="" type="text">
-                                </div> -->
-                                <!-- <div class="col-lg mg-t-10 mg-lg-t-0">
-                                    <input class="form-control mb-4" disabled="" placeholder="Input box (disabled)" type="text">
-                                </div> -->
                             </div>
-                            <!-- <div class="row row-sm">
-                                <div class="col-lg">
-                                    <textarea class="form-control mb-4" placeholder="Textarea" rows="3"></textarea>
-                                </div>
-                                <div class="col-lg mg-t-10">
-                                    <textarea class="form-control mb-4" placeholder="Textarea (readonly)" readonly=""
-                                        rows="3"></textarea>
-                                </div>
-                                <div class="col-lg mg-t-10">
-                                    <textarea class="form-control mb-4" disabled="" placeholder="Texarea (disabled)"
-                                        rows="3"></textarea>
-                                </div>
-                            </div> -->
                         </div>
-        
-                    </div>
-                </div>
-            </div>
+                    </div> <!-- main row end -->
+                </form>
+            </div> <!-- main container end -->
         </div>
     </div>
 </div>
+
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Swap Deal Input</h2>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="card">
+      <div class="card-header">
+          <h3 class="card-title">Inputs & Textareas </h3>
+      </div>
+      <div class="card-body pb-2">
+          <div class="row row-sm">
+              <div class="col-lg">
+                  <input class="form-control mb-4" placeholder="Input box" type="text">
+              </div>
+              <div class="col-lg mg-t-10 mg-lg-t-0">
+                  <input class="form-control mb-4" placeholder="Input box (readonly)" readonly="" type="text">
+              </div>
+              <div class="col-lg mg-t-10 mg-lg-t-0">
+                  <input class="form-control mb-4" disabled="" placeholder="Input box (disabled)" type="text">
+              </div>
+          </div>
+          <div class="row row-sm">
+              <div class="col-lg">
+                  <textarea class="form-control mb-4" placeholder="Textarea" rows="3"></textarea>
+              </div>
+              <div class="col-lg mg-t-10">
+                  <textarea class="form-control mb-4" placeholder="Textarea (readonly)" readonly=""
+                      rows="3"></textarea>
+              </div>
+              <div class="col-lg mg-t-10">
+                  <textarea class="form-control mb-4" disabled="" placeholder="Texarea (disabled)"
+                      rows="3"></textarea>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div> -->
