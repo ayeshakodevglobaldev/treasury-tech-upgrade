@@ -3,7 +3,7 @@
     [activeitem]="'Swap Input'"></app-page-header>
 <!--End Page header-->
 <div class="main-swap-deal">
-    <div class="inner-swap-deal bdr">
+    <div class="inner-swap-deal bdr bg-#f4f4f4 pb-2">
         <h3>SWAP Deal Input</h3>
         <div class="form">
             <div class="container">
@@ -21,8 +21,8 @@
                                 </div>
                                 <!-- we section -->
                                     <div class="row bg-primarytrade d-flex justify-content-between align-items-center mt-3">
-                                        <label class="col-6 col-sm-6 col-md-6">We</label>
-                                        <div class="col-6 col-sm-6 col-md-6 d-flex justify-content-between">
+                                        <label class="col-6 col-sm-6 col-md-5">We</label>
+                                        <div class="col-6 col-sm-6 col-md-7 d-flex justify-content-between">
                                             <div class="radio-button">
                                                 <input class="custome-radio form-check-input" type="radio">
                                                 <label>Buy</label>
@@ -107,8 +107,8 @@
                                 </div>
                                 <!-- ready, spot, forward section  -->
                                 <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-6 col-form-label"></label>
-                                    <div class="col-md-6 d-flex justify-content-between">
+                                    <label for="inputEmail3" class="col-md-5 col-form-label"></label>
+                                    <div class="col-md-7 d-flex justify-content-between">
                                         <div class="radio-button">
                                             <input class="custome-radio form-check-input" type="radio">
                                             <label>Ready</label>
@@ -130,6 +130,20 @@
                                         <input type="email" class="form-control" id="inputEmail3">
                                     </div>
                                 </div>
+                                <!-- amount section -->
+                                <div class="row d-flex justify-content-between align-items-center mt-3">
+                                    <label for="inputEmail3" class="col-md-5 col-form-label">Amount</label>
+                                    <div class="col-md-7 d-flex justify-content-end">
+                                        <input type="email" class="form-control" id="inputEmail3">
+                                    </div>
+                                </div>
+                                <!-- brokerage amount section -->
+                                <div class="row d-flex justify-content-between align-items-center mt-3">
+                                    <label for="inputEmail3" class="col-md-5 col-form-label">Brokerage Amount</label>
+                                    <div class="col-md-7 d-flex justify-content-end">
+                                        <input type="email" class="form-control" id="inputEmail3">
+                                    </div>
+                                </div>
                             </div> <!-- left section row  -->
                         </div> <!-- left section end -->
 
@@ -140,15 +154,18 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <!-- trade radio button -->
-                                <div class="col-sm-12 trade d-flex justify-content-evenly">
-                                    <div class="radio-button">
-                                        <input class="custome-radio form-check-input" type="radio">
-                                        <label>Trade</label>
-                                    </div>
-                                    <div class="radio-button">
-                                        <input class="custome-radio form-check-input" type="radio">
-                                        <label>FE-25</label>
-                                    </div>
+                                <div class="row d-flex justify-content-between align-items-center mt-3">
+                                    <label for="inputEmail3" class="col-md-5 col-form-label"></label>
+                                    <div class="col-md-7 d-flex justify-content-between">
+                                        <div class="radio-button">
+                                            <input class="custome-radio form-check-input" type="radio">
+                                            <label>Ready</label>
+                                        </div>
+                                        <div class="radio-button">
+                                            <input class="custome-radio form-check-input" type="radio">
+                                            <label>Spot</label>
+                                        </div>
+                                  </div>
                                 </div>
                             </div>
                         </div>
