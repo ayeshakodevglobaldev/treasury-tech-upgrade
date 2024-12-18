@@ -16,7 +16,7 @@
                                 <div class="row d-flex justify-content-between align-items-center form-group">
                                     <label class="form-label col-sm-12 col-12 col-md-5">Country Party</label>
                                     <div class="drop-down col-sm-12 col-12 col-md-7">
-                                        <ng-select placeholder="--Select--">
+                                        <ng-select placeholder="--SELECT BANK--">
                                             <ng-option *ngFor="let country of countries"
                                                 [value]="country.id">{{country.name}}</ng-option>
                                         </ng-select>
@@ -24,16 +24,16 @@
                                 </div>
                                 <!-- we section -->
                                 <div class="row bg-primarytrade d-flex justify-content-between align-items-center mt-3">
-                                    <label class="col-6 col-sm-6 col-md-5">We</label>
-                                    <div class="col-6 col-sm-6 col-md-7 d-flex justify-content-between">
-                                        <div class="radio-button">
-                                            <input class="custome-radio form-check-input" type="radio">
-                                            <label>Buy</label>
-                                        </div>
-                                        <div class="radio-button">
-                                            <input class="custome-radio form-check-input" type="radio">
-                                            <label>Sell</label>
-                                        </div>
+                                    <label class="col-2 col-sm-6 col-md-4">We</label>
+                                    <div class="col-10 col-sm-6 col-md-8 d-flex justify-content-between">
+                                        <label class="d-flex justify-content-center col-6 col-md-6 custom-control form-radio">
+                                            <input type="radio" class="custom-control-input" name="b-s" value="option1" checked="">
+                                            <span class="custom-control-label">Buy</span>
+                                        </label>
+                                        <label class="d-flex justify-content-center col-6 col-md-6 custom-control form-radio">
+                                            <input type="radio" class="custom-control-input" name="b-s" value="option1" checked="">
+                                            <span class="custom-control-label">Sell</span>
+                                        </label>
                                     </div>
                                 </div>
 
@@ -42,109 +42,120 @@
                                     <h1>LEG - 1</h1>
                                 </div>
                                 <!-- currency buy section -->
-                                <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-5 col-form-label">Currency Buy</label>
-                                    <div class="col-md-7 d-flex justify-content-end">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                <div class="row d-flex justify-content-between align-items-center form-group">
+                                    <label class="form-label col-sm-12 col-12 col-md-5">Currency Buy</label>
+                                    <div class="drop-down col-sm-12 col-12 col-md-7">
+                                        <ng-select placeholder="--SELECT CURRENCY--">
+                                            <ng-option *ngFor="let currency of currencies"
+                                                [value]="currency.id">{{currency.name}}</ng-option>
+                                        </ng-select>
                                     </div>
                                 </div>
                                 <!-- buy amount section -->
-                                <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-5 col-form-label">Buy Amount</label>
-                                    <div class="col-md-7 d-flex justify-content-end">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                <div class="form-group row d-flex justify-content-between align-items-center mt-3">
+                                    <label class="col-md-5  form-label">Buy Amount</label>
+                                    <div class="col-md-7">
+                                        <input type="number" dir="rtl" class="text-dark font-size-12 form-control" placeholder="0.00">
                                     </div>
                                 </div>
                                 <!-- maturity date section -->
-                                <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-5 col-form-label">Maturity Date</label>
+                                <div class="form-group row d-flex justify-content-between align-items-center mt-3">
+                                    <label class="col-md-5 form-label">Maturity Date</label>
                                     <div class="col-md-7 d-flex justify-content-end">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                        <input class="form-control font-size-12" type="date" name="date">
                                     </div>
                                 </div>
+                               
                                 <!-- Deal rate section -->
-                                <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-5 col-form-label">Deal Rate</label>
-                                    <div class="col-md-7 d-flex justify-content-end">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                <div class="form-group row d-flex justify-content-between align-items-center mt-3">
+                                    <label class="col-md-5  form-label">Deal Rate</label>
+                                    <div class="col-md-7">
+                                        <input type="number" dir="rtl" class="text-dark font-size-12 form-control no-spinner" placeholder="0.000000">
                                     </div>
                                 </div>
                                 <!-- invers rate calc section -->
-                                <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-5 col-form-label">Inverse Rate Calc.</label>
-                                    <div class="col-md-7 d-flex justify-content-end">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                <div class="form-group row d-flex justify-content-between align-items-center mt-3">
+                                    <label class="col-md-5  form-label">Inverse Rate Calc.</label>
+                                    <div class="col-md-7">
+                                        <input type="number" dir="rtl" class="text-dark font-size-12 form-control no-spinner" placeholder="0.000000">
                                     </div>
                                 </div>
                                 <!-- pkr equiv section -->
-                                <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-5 col-form-label">Pkr Equiv</label>
-                                    <div class="col-md-7 d-flex justify-content-end">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                <div class="form-group row d-flex justify-content-between align-items-center mt-3">
+                                    <label class="col-md-5  form-label">Pkr Equiv.</label>
+                                    <div class="col-md-7">
+                                        <input type="number" dir="rtl" class="text-dark font-size-12 form-control no-spinner" placeholder="0.00">
                                     </div>
                                 </div>
                                 <!-- mode of deal section -->
-                                <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-5 col-form-label">Mode Of Deal</label>
-                                    <div class="col-md-7 d-flex justify-content-end">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                <div class="row d-flex justify-content-between align-items-center form-group">
+                                    <label class="form-label col-sm-12 col-12 col-md-5">Mode Of Deal</label>
+                                    <div class="drop-down col-sm-12 col-12 col-md-7">
+                                        <ng-select placeholder="--SELECT Deal Mode--">
+                                            <ng-option *ngFor="let deal of deals"
+                                                [value]="deal.id">{{deal.name}}</ng-option>
+                                        </ng-select>
                                     </div>
                                 </div>
                                 <!-- broker code section -->
-                                <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-5 col-form-label">Broker Code</label>
-                                    <div class="col-md-7 d-flex justify-content-end">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                <div class="row d-flex justify-content-between align-items-center form-group">
+                                    <label class="form-label col-sm-12 col-12 col-md-5">Broker Code</label>
+                                    <div class="drop-down col-sm-12 col-12 col-md-7">
+                                        <ng-select placeholder="--Broker--">
+                                            <ng-option *ngFor="let broker of brokers"
+                                                [value]="broker.id">{{broker.name}}</ng-option>
+                                        </ng-select>
                                     </div>
                                 </div>
+
                                 <!-- lg2 section -->
                                 <div class="row mt-3">
                                     <h1>LEG - 2</h1>
                                 </div>
                                 <!-- maturity date section -->
-                                <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-5 col-form-label">Maturity Date</label>
+                                <div class="form-group row d-flex justify-content-between align-items-center mt-3">
+                                    <label class="col-md-5 form-label">Maturity Date</label>
                                     <div class="col-md-7 d-flex justify-content-end">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                        <input class="form-control font-size-12" type="date" name="date">
                                     </div>
                                 </div>
                                 <!-- ready, spot, forward section  -->
-                                <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-5 col-form-label"></label>
-                                    <div class="col-md-7 d-flex justify-content-between">
-                                        <div class="radio-button">
-                                            <input class="custome-radio form-check-input" type="radio">
-                                            <label>Ready</label>
-                                        </div>
-                                        <div class="radio-button">
-                                            <input class="custome-radio form-check-input" type="radio">
-                                            <label>Spot</label>
-                                        </div>
-                                        <div class="radio-button">
-                                            <input class="custome-radio form-check-input" type="radio">
-                                            <label>Forward</label>
-                                        </div>
+                                <div class="row bg-primarytrade d-flex justify-content-between align-items-center mt-3">
+                                    <label class="col-2 col-sm-6 col-md-4"></label>
+                                    <div class="col-10 col-sm-6 col-md-8 d-flex justify-content-between">
+                                        <label class="d-flex justify-content-center col-6 col-md-6 custom-control form-radio">
+                                            <input type="radio" class="custom-control-input" name="r-s-f" value="option1" checked="">
+                                            <span class="custom-control-label">Ready</span>
+                                        </label>
+                                        <label class="d-flex justify-content-center col-6 col-md-6 custom-control form-radio">
+                                            <input type="radio" class="custom-control-input" name="r-s-f" value="option1" checked="">
+                                            <span class="custom-control-label">Spot</span>
+                                        </label>
+                                        <label class="d-flex justify-content-center col-6 col-md-6 custom-control form-radio">
+                                            <input type="radio" class="custom-control-input" name="r-s-f" value="option1" checked="">
+                                            <span class="custom-control-label">Forward</span>
+                                        </label>
                                     </div>
                                 </div>
                                 <!-- swap point section -->
-                                <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-5 col-form-label">Swap Points</label>
-                                    <div class="col-md-7 d-flex justify-content-end">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                <div class="form-group row d-flex justify-content-between align-items-center mt-3">
+                                    <label class="col-md-5  form-label">Swap Points</label>
+                                    <div class="col-md-7">
+                                        <input type="number" dir="rtl" class="text-dark font-size-12 form-control no-spinner" placeholder="0.000000">
                                     </div>
                                 </div>
                                 <!-- amount section -->
-                                <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-5 col-form-label">Amount</label>
-                                    <div class="col-md-7 d-flex justify-content-end">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                <div class="form-group row d-flex justify-content-between align-items-center mt-3">
+                                    <label class="col-md-5  form-label">Amount</label>
+                                    <div class="col-md-7">
+                                        <input type="number" dir="rtl" class="text-dark font-size-12 form-control no-spinner" placeholder="0.00">
                                     </div>
                                 </div>
                                 <!-- brokerage amount section -->
-                                <div class="row d-flex justify-content-between align-items-center mt-3">
-                                    <label for="inputEmail3" class="col-md-5 col-form-label">Brokerage Amount</label>
-                                    <div class="col-md-7 d-flex justify-content-end">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                <div class="form-group row d-flex justify-content-between align-items-center mt-3">
+                                    <label class="col-md-5  form-label">Brokerage Amount</label>
+                                    <div class="col-md-7">
+                                        <input type="number" dir="rtl" class="text-dark font-size-12 form-control no-spinner" placeholder="0.00">
                                     </div>
                                 </div>
                             </div> <!-- left section row  -->
