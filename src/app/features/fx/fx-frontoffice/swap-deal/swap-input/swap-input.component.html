@@ -13,27 +13,30 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <!-- counter party section -->
-                                <div class="row d-flex justify-content-between align-items-center">
-                                    <label for="inputEmail3" class="col-sm-12 col-12 col-md-5 col-form-label">Country Party</label>
-                                   <div class="col-sm-12 col-12 col-md-7 d-flex justify-content-end">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                <div class="row d-flex justify-content-between align-items-center form-group">
+                                    <label class="form-label col-sm-12 col-12 col-md-5">Country Party</label>
+                                    <div class="drop-down col-sm-12 col-12 col-md-7">
+                                        <ng-select placeholder="--Select--">
+                                            <ng-option *ngFor="let country of countries"
+                                                [value]="country.id">{{country.name}}</ng-option>
+                                        </ng-select>
                                     </div>
                                 </div>
                                 <!-- we section -->
-                                    <div class="row bg-primarytrade d-flex justify-content-between align-items-center mt-3">
-                                        <label class="col-6 col-sm-6 col-md-5">We</label>
-                                        <div class="col-6 col-sm-6 col-md-7 d-flex justify-content-between">
-                                            <div class="radio-button">
-                                                <input class="custome-radio form-check-input" type="radio">
-                                                <label>Buy</label>
-                                            </div>
-                                            <div class="radio-button">
-                                                <input class="custome-radio form-check-input" type="radio">
-                                                <label>Sell</label>
-                                            </div>
+                                <div class="row bg-primarytrade d-flex justify-content-between align-items-center mt-3">
+                                    <label class="col-6 col-sm-6 col-md-5">We</label>
+                                    <div class="col-6 col-sm-6 col-md-7 d-flex justify-content-between">
+                                        <div class="radio-button">
+                                            <input class="custome-radio form-check-input" type="radio">
+                                            <label>Buy</label>
+                                        </div>
+                                        <div class="radio-button">
+                                            <input class="custome-radio form-check-input" type="radio">
+                                            <label>Sell</label>
                                         </div>
                                     </div>
-                                
+                                </div>
+
                                 <!-- lg1 section -->
                                 <div class="row mt-3">
                                     <h1>LEG - 1</h1>
@@ -59,15 +62,15 @@
                                         <input type="email" class="form-control" id="inputEmail3">
                                     </div>
                                 </div>
-                                 <!-- Deal rate section -->
-                                 <div class="row d-flex justify-content-between align-items-center mt-3">
+                                <!-- Deal rate section -->
+                                <div class="row d-flex justify-content-between align-items-center mt-3">
                                     <label for="inputEmail3" class="col-md-5 col-form-label">Deal Rate</label>
                                     <div class="col-md-7 d-flex justify-content-end">
                                         <input type="email" class="form-control" id="inputEmail3">
                                     </div>
                                 </div>
-                                 <!-- invers rate calc section -->
-                                 <div class="row d-flex justify-content-between align-items-center mt-3">
+                                <!-- invers rate calc section -->
+                                <div class="row d-flex justify-content-between align-items-center mt-3">
                                     <label for="inputEmail3" class="col-md-5 col-form-label">Inverse Rate Calc.</label>
                                     <div class="col-md-7 d-flex justify-content-end">
                                         <input type="email" class="form-control" id="inputEmail3">
@@ -80,15 +83,15 @@
                                         <input type="email" class="form-control" id="inputEmail3">
                                     </div>
                                 </div>
-                                 <!-- mode of deal section -->
-                                 <div class="row d-flex justify-content-between align-items-center mt-3">
+                                <!-- mode of deal section -->
+                                <div class="row d-flex justify-content-between align-items-center mt-3">
                                     <label for="inputEmail3" class="col-md-5 col-form-label">Mode Of Deal</label>
                                     <div class="col-md-7 d-flex justify-content-end">
                                         <input type="email" class="form-control" id="inputEmail3">
                                     </div>
                                 </div>
-                                 <!-- broker code section -->
-                                 <div class="row d-flex justify-content-between align-items-center mt-3">
+                                <!-- broker code section -->
+                                <div class="row d-flex justify-content-between align-items-center mt-3">
                                     <label for="inputEmail3" class="col-md-5 col-form-label">Broker Code</label>
                                     <div class="col-md-7 d-flex justify-content-end">
                                         <input type="email" class="form-control" id="inputEmail3">
@@ -98,8 +101,8 @@
                                 <div class="row mt-3">
                                     <h1>LEG - 2</h1>
                                 </div>
-                                 <!-- maturity date section -->
-                                 <div class="row d-flex justify-content-between align-items-center mt-3">
+                                <!-- maturity date section -->
+                                <div class="row d-flex justify-content-between align-items-center mt-3">
                                     <label for="inputEmail3" class="col-md-5 col-form-label">Maturity Date</label>
                                     <div class="col-md-7 d-flex justify-content-end">
                                         <input type="email" class="form-control" id="inputEmail3">
@@ -123,8 +126,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                 <!-- swap point section -->
-                                 <div class="row d-flex justify-content-between align-items-center mt-3">
+                                <!-- swap point section -->
+                                <div class="row d-flex justify-content-between align-items-center mt-3">
                                     <label for="inputEmail3" class="col-md-5 col-form-label">Swap Points</label>
                                     <div class="col-md-7 d-flex justify-content-end">
                                         <input type="email" class="form-control" id="inputEmail3">
@@ -165,7 +168,7 @@
                                             <input class="custome-radio form-check-input" type="radio">
                                             <label>Spot</label>
                                         </div>
-                                  </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
