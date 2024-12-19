@@ -36,4 +36,12 @@ export class SwapInputComponent {
     { id: 1, name: 'Js Global Capital' },
     
   ]
+  // TS for right section
+  currencysells = [
+    { id: 1, name: 'Dollar ($)' },
+    { id: 1, name: 'Pound (£)' },
+    { id: 1, name: 'Euro (€)' },
+    { id: 1, name: 'Riyal (﷼)' },
+    { id: 1, name: 'Dinnar (د.ك)' },
+  ]
 }
