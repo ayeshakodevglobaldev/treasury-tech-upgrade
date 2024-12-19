@@ -44,4 +44,9 @@ export class SwapInputComponent {
     { id: 1, name: 'Riyal (﷼)' },
     { id: 1, name: 'Dinnar (د.ك)' },
   ]
+  direct = [
+    { id: 1, name: 'Yes' },
+    { id: 1, name: 'No' },
+    
+  ]
 }

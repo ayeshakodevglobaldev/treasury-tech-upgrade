@@ -10,40 +10,37 @@
                 <form>
                     <div class="row">
                         <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
-                            
-                            <div class="lg-1">
-                                <h2>LG-1</h2>
-                            </div>
-                            <div class="row mt-4">
+                          <div class="row">
                                 <div class="col-lg-6 col-md-12">
                                     <form class="form-horizontal">
                                         <div class="form-group row align-items-center align-items-center">
-                                            <label class="col-md-4 form-label">Currency Buy</label>
+                                            <label class="col-md-4 form-label">Country Party</label>
                                             <div class="drop-down col-sm-12 col-12 col-md-8">
                                                 <ng-select placeholder="--SELECT CURRENCY--">
-                                                    <ng-option *ngFor="let currency of currencies"
-                                                        [value]="currency.id">{{currency.name}}</ng-option>
+                                                    <ng-option *ngFor="let country of countries"
+                                                        [value]="country.id">{{country.name}}</ng-option>
                                                 </ng-select>
                                             </div>
                                         </div>
-                                        
-                                       
-                                        
-                                        
-
-                                        
+                                        <div class="form-group row align-items-center">
+                                            <label class="col-md-4 form-label" for="example-email">We</label>
+                                            <div class="col-md-8 d-flex justify-content-between">
+                                                <label class="d-flex justify-content-start col-6 col-md-6 custom-control form-radio">
+                                                    <input type="radio" class="custom-control-input" name="we" value="option1" checked="">
+                                                    <span class="custom-control-label">Buy</span>
+                                                </label>
+                                                <label class="d-flex justify-content-start col-6 col-md-6 custom-control form-radio">
+                                                    <input type="radio" class="custom-control-input" name="we" value="option1" checked="">
+                                                    <span class="custom-control-label">Sell</span>
+                                                </label>
+                                               
+                                            </div>
+                                        </div>
                                     </form>
                                 </div>
                                 <div class="col-lg-6 col-md-12">
                                     <form class="form-horizontal">
-                                       
-                                        
-                                        
-                                        
-                                       
-                                       
-                                        
-                                        <div class="form-group row align-items-center mt-5">
+                                    <div class="form-group row align-items-center mt-2">
                                             <label class="col-md-4 form-label" for="example-email">Deal Type</label>
                                             <div class="col-md-8 d-flex justify-content-between">
                                                 <label class="d-flex justify-content-start col-6 col-md-6 custom-control form-radio">
@@ -94,7 +91,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group row align-items-center">
-                                                <label class="col-md-4 form-label">Date</label>
+                                                <label class="col-md-4 form-label">Maturity Date</label>
                                                 <div class="col-md-8">
                                                     <input class="form-control" type="date" name="date">
                                                 </div>
@@ -177,15 +174,15 @@
                                             <div class="form-group row align-items-center">
                                                 <label class="col-md-4 form-label" for="example-email">Deal Type</label>
                                                 <div class="col-md-8 d-flex justify-content-between">
-                                                    <label class="d-flex justify-content-start col-6 col-md-6 custom-control form-radio">
+                                                    <label class="d-flex justify-content-start col-6 col-md-4 custom-control form-radio">
                                                         <input type="radio" class="custom-control-input" name="deal-type" value="option1" checked="">
                                                         <span class="custom-control-label">Ready</span>
                                                     </label>
-                                                    <label class="d-flex justify-content-start col-6 col-md-6 custom-control form-radio">
+                                                    <label class="d-flex justify-content-start col-6 col-md-4 custom-control form-radio">
                                                         <input type="radio" class="custom-control-input" name="deal-type" value="option1" checked="">
                                                         <span class="custom-control-label">Spot</span>
                                                     </label>
-                                                    <label class="d-flex justify-content-start col-6 col-md-6 custom-control form-radio">
+                                                    <label class="d-flex justify-content-start col-6 col-md-4 custom-control form-radio">
                                                         <input type="radio" class="custom-control-input" name="deal-type" value="option1" checked="">
                                                         <span class="custom-control-label">Forward</span>
                                                     </label>
@@ -212,10 +209,13 @@
                                                    
                                                 </div>
                                             </div>
-                                            <div class="form-group row align-items-center">
-                                                <label class="col-md-3 form-label">Search</label>
-                                                <div class="col-md-9">
-                                                    <input class="form-control" type="search" name="search">
+                                            <div class="form-group row align-items-center align-items-center">
+                                                <label class="col-md-4 form-label">Direct Settle</label>
+                                                <div class="drop-down col-sm-12 col-12 col-md-8">
+                                                    <ng-select placeholder="--SELECT CURRENCY--">
+                                                        <ng-option *ngFor="let dir of direct"
+                                                            [value]="dir.id">{{dir.name}}</ng-option>
+                                                    </ng-select>
                                                 </div>
                                             </div>
                                            
@@ -226,6 +226,121 @@
 
                             
                         </div>
+                        <!--  -->
+                        <!--  -->
+                        <!--  -->
+                        <!--  -->
+                        <!--  -->
+                        <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+                            
+                            <div class="lg-1">
+                                <h2>LG-2</h2>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-6 col-md-12">
+                                    <form class="form-horizontal">
+                                        <div class="form-group row align-items-center">
+                                            <label class="col-md-4 form-label">Maturity Date</label>
+                                            <div class="col-md-8">
+                                                <input class="form-control" type="date" name="date">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row align-items-center">
+                                            <label class="col-md-4 form-label" for="example-email"></label>
+                                            <div class="col-md-8 d-flex justify-content-between">
+                                                <label class="d-flex justify-content-start col-6 col-md-4 custom-control form-radio">
+                                                    <input type="radio" class="custom-control-input" name="blank" value="option1" checked="">
+                                                    <span class="custom-control-label">Ready</span>
+                                                </label>
+                                                <label class="d-flex justify-content-start col-6 col-md-4 custom-control form-radio">
+                                                    <input type="radio" class="custom-control-input" name="blank" value="option1" checked="">
+                                                    <span class="custom-control-label">Spot</span>
+                                                </label>
+                                                <label class="d-flex justify-content-start col-6 col-md-4 custom-control form-radio">
+                                                    <input type="radio" class="custom-control-input" name="blank" value="option1" checked="">
+                                                    <span class="custom-control-label">Forward</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row align-items-center">
+                                            <label class="col-md-4 form-label" for="example-email">Swap Points</label>
+                                            <div class="col-md-8">
+                                                <input type="number" dir="rtl" id="example-email" name="example-email"
+                                                    class="form-control" placeholder="0.000000">
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="form-group row align-items-center">
+                                            <label class="col-md-4 form-label" for="example-email">Amount</label>
+                                            <div class="col-md-8">
+                                                <input type="number" dir="rtl" id="example-email" name="example-email"
+                                                    class="form-control" placeholder="0.00">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row align-items-center">
+                                            <label class="col-md-4 form-label" for="example-email">Brokerage Amount</label>
+                                            <div class="col-md-8">
+                                                <input type="number" dir="rtl" id="example-email" name="example-email"
+                                                    class="form-control" placeholder="0.00">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <form class="form-horizontal">
+                                        <div class="form-group row align-items-center">
+                                            <label class="col-md-4 form-label" for="example-email">Maturity Days</label>
+                                            <div class="col-md-8">
+                                                <input type="number" dir="rtl" id="example-email" name="example-email"
+                                                    class="form-control" placeholder="1">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row align-items-center invisible">
+                                            <label class="col-md-4 form-label" for="example-email">ABC</label>
+                                            <div class="col-md-8">
+                                                <input type="number" dir="rtl" id="example-email" name="example-email"
+                                                    class="form-control" placeholder="0">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row align-items-center">
+                                            <label class="col-md-4 form-label" for="example-email">Rate</label>
+                                            <div class="col-md-8">
+                                                <input type="number" dir="rtl" id="example-email" name="example-email"
+                                                    class="form-control" placeholder="0.000000">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row align-items-center">
+                                            <label class="col-md-4 form-label" for="example-email">PKR Equivalent</label>
+                                            <div class="col-md-8">
+                                                <input type="number" dir="rtl" id="example-email" name="example-email"
+                                                    class="form-control" placeholder="0.00">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group row align-items-center invisible">
+                                            <label class="col-md-3 form-label">ABC</label>
+                                            <div class="col-md-9">
+                                                <input class="form-control" type="search" name="search">
+                                            </div>
+                                        </div>
+                                       
+                                       
+                                    </form>
+                                </div>
+                            </div>
+
+                        
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="form-group row">
+                                <label class="col-md-2 form-label">Remarks</label>
+                                <div class="col-md-10">
+                                    <textarea class="form-control" rows="6">Remarks</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </form>
             </div> <!-- main container end -->

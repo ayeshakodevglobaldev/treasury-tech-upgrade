@@ -5,6 +5,10 @@
     width: 90%;
     margin: 0 auto;
 }
+label{
+    font-weight: 700;
+    font-size: 12px;
+}
 p{
     margin: 0;
     padding: 0;
@@ -19,21 +23,15 @@ h3{
     font-weight: 700;
     
 }
+h2{
+    letter-spacing: 3px;
+    
+}
 .row{
     width: 100%;
     font-size: 12px;
     
 }
-
-// css for left section
-.custome-radio{
-    height: 12px;
-    width: 12px;
-}
-.font-size-12{
-    font-size: 12px;
-}
-// css for right section
-.currency-sell{
-    margin-top: 130px;
+textarea{
+    height: 100px;
 }
