@@ -1,5 +1,146 @@
-
 <!--Page header-->
-<app-page-header [title]="'Trasnsfer Deal Input'"  [icon]="'grid'"  [title1]="'Foregn Exchange Fx'" [activeitem]="'Transfer Input'"></app-page-header>
+<app-page-header
+  [title]="'Trasnsfer Deal Input'"
+  [icon]="'grid'"
+  [title1]="'Foregn Exchange Fx'"
+  [activeitem]="'Transfer Input'"
+  [isBtnList]="true"
+></app-page-header>
 <!--End Page header-->
 
+<div class="row">
+  <div class="col-xl-12 col-lg-12 col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Transfer Input</h3>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <div class="form-group">
+              <label class="form-label"
+                >Currency<span class="text-red">*</span></label
+              >
+              <ng-select aria-placeholder="--Select--" placeholder="Select Currency">
+                <ng-option value="1">AUD</ng-option>
+                <ng-option value="2">JPY</ng-option>
+                <ng-option value="3">PKR</ng-option>
+                <ng-option value="4">GBP</ng-option>
+              </ng-select>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="form-group">
+              <label class="form-label"
+                >Value Date <span class="text-red">*</span></label
+              >
+              <input class="form-control" type="date" name="date" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="form-group">
+              <label class="form-label"
+                >Transfer Amount <span class="text-red">*</span></label
+              >
+              <input
+                type="number"
+                class="form-control"
+                placeholder="0.00"
+              />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="form-group">
+              <label class="form-label"
+                >PKR Amount <span class="text-red">*</span></label
+              >
+              <input
+                type="number"
+                class="form-control"
+                placeholder="0.00"
+              />
+            </div>
+          </div>
+          <div class="col-md-12 px-0">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="form-label"
+                >Nostro Debit <span class="text-red">*</span></label
+              >
+              <ng-select aria-placeholder="--Select--" placeholder="Nostro">
+                <ng-option value="1">JP MORGAN - NEW YORK</ng-option>
+                <ng-option value="2">JP MORGAN - SAMPLE DATA</ng-option>
+              </ng-select>
+            </div>
+          </div>
+        </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="form-group">
+              <label class="form-label"
+                >Opening AIP Balance DR <span class="text-red">*</span></label
+              >
+              <input
+                type="number"
+                class="form-control"
+                placeholder="0.00"
+              />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="form-group">
+              <label class="form-label"
+                >Mesg Ac No. <span class="text-red">*</span></label
+              >
+              <input
+                type="number"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col-md-12 px-0">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="form-label"
+                >Nostro Credit <span class="text-red">*</span></label
+              >
+              <ng-select aria-placeholder="--Select--" placeholder="Nostro">
+                <ng-option value="1">JP MORGAN - NEW YORK</ng-option>
+                <ng-option value="2">JP MORGAN - SAMPLE DATA</ng-option>
+              </ng-select>
+            </div>
+          </div>
+        </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="form-group">
+              <label class="form-label"
+                >Opening AIP Balance DR <span class="text-red">*</span></label
+              >
+              <input
+                type="number"
+                class="form-control"
+                placeholder="0.00"
+              />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="form-group">
+              <label class="form-label"
+                >Mesg No. <span class="text-red">*</span></label
+              >
+              <input
+                type="number"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label class="form-label">Deal Remarks</label>
+              <textarea class="form-control" rows="6">Remarks</textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

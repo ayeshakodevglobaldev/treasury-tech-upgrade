@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./transfer-input.component.scss']
 })
 export class TransferInputComponent {
+  active:any;
 constructor(){
   console.log("transfer input")
 }
