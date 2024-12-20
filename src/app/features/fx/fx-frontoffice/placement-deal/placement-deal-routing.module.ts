@@ -7,7 +7,7 @@ const routes: Routes = [
     path: '',
     children: [
       {
-        path: 'input',
+        path: 'placement-input',
         component:PlacementInputComponent
       },
      
