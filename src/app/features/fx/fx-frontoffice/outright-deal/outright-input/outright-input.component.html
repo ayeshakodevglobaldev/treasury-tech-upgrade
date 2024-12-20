@@ -4,6 +4,7 @@
   [icon]="'grid'"
   [title1]="'Foregn Exchange Fx'"
   [activeitem]="'Swap Input'"
+  [isBtnList]="true"  
 ></app-page-header>
 <!--End Page header-->
 
@@ -16,17 +17,16 @@
       </div>
       <div class="card-body">
         <div class="row">
-          <form class="">
+          <form class="d-flex flex-wrap">
             <div class="col-lg-6 col-md-12">
               <div class="form-group row">
                 <label class="col-md-3 form-label">Counter Party</label>
                 <div class="col-md-9">
-                  <ng-select>
-                    <ng-option>Apple</ng-option>
-                    <ng-option>Orange</ng-option>
-                    <ng-option>Mango</ng-option>
-                    <ng-option>Grapes</ng-option>
-                    <ng-option>Banana</ng-option>
+                  <ng-select placeholder="Counter Party">
+                    <ng-option>MCB Bank Limited</ng-option>
+                    <ng-option>State Bank of Pakistan</ng-option>
+                    <ng-option>Treasury Client</ng-option>
+                    <ng-option>United Bank Limited</ng-option>
                   </ng-select>
                 </div>
               </div>
@@ -59,12 +59,12 @@
               <div class="form-group row">
                 <label class="col-md-3 form-label">Currency Buy</label>
                 <div class="col-md-9">
-                  <ng-select>
-                    <ng-option>Apple</ng-option>
-                    <ng-option>Orange</ng-option>
-                    <ng-option>Mango</ng-option>
-                    <ng-option>Grapes</ng-option>
-                    <ng-option>Banana</ng-option>
+                  <ng-select placeholder="Currency Buy">
+                    <ng-option>AUD</ng-option>
+                    <ng-option>JPY</ng-option>
+                    <ng-option>PKR</ng-option>
+                    <ng-option>GBP</ng-option>
+                    <ng-option>EUR</ng-option>
                   </ng-select>
                 </div>
               </div>
@@ -107,12 +107,12 @@
               <div class="form-group row">
                 <label class="col-md-3 form-label">Mode of Deal</label>
                 <div class="col-md-9">
-                  <ng-select>
-                    <ng-option>Apple</ng-option>
-                    <ng-option>Orange</ng-option>
-                    <ng-option>Mango</ng-option>
-                    <ng-option>Grapes</ng-option>
-                    <ng-option>Banana</ng-option>
+                  <ng-select placeholder="Deal Mode">
+                    <ng-option>Broker</ng-option>
+                    <ng-option>Reuter</ng-option>
+                    <ng-option>Telephone</ng-option>
+                    <ng-option>Fax</ng-option>
+                    <ng-option>Trader</ng-option>
                   </ng-select>
                 </div>
               </div>
@@ -145,14 +145,10 @@
             </div>
             <div class="col-lg-6 col-md-12">
               <div class="form-group row">
-                <label class="col-md-3 form-label">Borker</label>
+                <label class="col-md-3 form-label">Broker</label>
                 <div class="col-md-9">
-                  <ng-select>
-                    <ng-option>Apple</ng-option>
-                    <ng-option>Orange</ng-option>
-                    <ng-option>Mango</ng-option>
-                    <ng-option>Grapes</ng-option>
-                    <ng-option>Banana</ng-option>
+                  <ng-select placeholder="Brokers">
+                    <ng-option>Js Global Capital</ng-option>
                   </ng-select>
                 </div>
               </div>
@@ -165,12 +161,12 @@
               <div class="form-group row">
                 <label class="col-md-3 form-label">Currency Sell</label>
                 <div class="col-md-9">
-                  <ng-select>
-                    <ng-option>Apple</ng-option>
-                    <ng-option>Orange</ng-option>
-                    <ng-option>Mango</ng-option>
-                    <ng-option>Grapes</ng-option>
-                    <ng-option>Banana</ng-option>
+                  <ng-select placeholder="Currency Sell">
+                    <ng-option>AUD</ng-option>
+                    <ng-option>JPY</ng-option>
+                    <ng-option>PKR</ng-option>
+                    <ng-option>GBP</ng-option>
+                    <ng-option>EUR</ng-option>
                   </ng-select>
                 </div>
               </div>
@@ -237,11 +233,8 @@
                 <label class="col-md-3 form-label">Direct Set!</label>
                 <div class="col-md-9">
                   <ng-select>
-                    <ng-option>Apple</ng-option>
-                    <ng-option>Orange</ng-option>
-                    <ng-option>Mango</ng-option>
-                    <ng-option>Grapes</ng-option>
-                    <ng-option>Banana</ng-option>
+                    <ng-option>Yes</ng-option>
+                    <ng-option>No</ng-option>
                   </ng-select>
                 </div>
               </div>
@@ -279,6 +272,12 @@
                     <span class="custom-control-label">None</span>
                   </label>
                 </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label">Remarks</label>
+                <textarea class="form-control" rows="6">Remarks</textarea>
               </div>
             </div>
           </form>
