@@ -1,1 +1,741 @@
-<p>dashboard work</p>
+<!-- Page header-->
+<app-page-header
+  [title]="'Hi! Welcome Back'"
+  [icon]="'home'"
+  [title1]="'Home'"
+  [activeitem]="'Sales Dashboard'"
+></app-page-header>
+<!--End Page header -->
+
+<!-- Row-1 -->
+
+<div class="row">
+  <div class="col-xxl-6 col-xl-8 col-lg-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Gainers and Losers</div>
+      </div>
+      <div class="card-body">
+        <div>
+          <div class="d-flex flex-row mb-4 flex-wrap">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-xm-12 ps-0">
+              <div class="card dash1-card border-0 mb-0">
+                <div class="card-body">
+                  <p class="mb-1">XRP</p>
+                  <h2 class="mb-1 number-font">$3,257</h2>
+                  <small class="fs-12 text-muted">Compared to Last Month</small>
+                  <span class="ratio bg-warning">76%</span>
+                </div>
+                <apx-chart
+                  [chart]="ApexData1.chart"
+                  [stroke]="ApexData1.stroke"
+                  [fill]="ApexData1.fill"
+                  [series]="ApexData1.series"
+                  [yaxis]="ApexData1.yaxis"
+                  [colors]="ApexData1.colors"
+                >
+                </apx-chart>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-xm-12 ps-0">
+              <div class="card dash1-card border-0 mb-0">
+                <div class="card-body">
+                  <p class="mb-1">Diem</p>
+                  <h2 class="mb-1 number-font">$1,678</h2>
+                  <small class="fs-12 text-muted">Compared to Last Month</small>
+                  <span class="ratio bg-info">85%</span>
+                </div>
+                <apx-chart
+                  [chart]="ApexData2.chart"
+                  [stroke]="ApexData2.stroke"
+                  [fill]="ApexData2.fill"
+                  [series]="ApexData2.series"
+                  [yaxis]="ApexData2.yaxis"
+                  [colors]="ApexData2.colors"
+                >
+                </apx-chart>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-xm-12 ps-0">
+              <div class="card dash1-card border-0 mb-0">
+                <div class="card-body">
+                  <p class="mb-1">Monero</p>
+                  <h2 class="mb-1 number-font">$2,590</h2>
+                  <small class="fs-12 text-muted">Compared to Last Month</small>
+                  <span class="ratio bg-danger">62%</span>
+                </div>
+                <apx-chart
+                  [chart]="ApexData3.chart"
+                  [stroke]="ApexData3.stroke"
+                  [fill]="ApexData3.fill"
+                  [series]="ApexData3.series"
+                  [yaxis]="ApexData3.yaxis"
+                  [colors]="ApexData3.colors"
+                >
+                </apx-chart>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xxl-3 col-xl-4 col-lg-12">
+    <div class="card overflow-hidden">
+      <div class="card-header border-bottom">
+        <h4 class="card-title fw-semibold">Latest Transactions</h4>
+      </div>
+      <div class="card-body p-0 customers mt-1">
+        <div class="list-group py-1 latest-transaction-scroll">
+          <a href="javascript:void(0);" class="border-0 mb-1">
+            <div class="list-group-item border-0">
+              <div class="media mt-0 align-items-center">
+                <div class="avatar bg-primary-transparent me-3">
+                  <i class="fe fe-chevrons-right"></i>
+                </div>
+                <div class="media-body">
+                  <div class="d-flex align-items-center">
+                    <div class="mt-0">
+                      <h5 class="mb-1 fs-13 fw-normal text-dark">
+                        To Bank Al Habib Saving Account<span
+                          class="fs-13 fw-semibold ms-1"
+                          >Savings Section</span
+                        >
+                      </h5>
+                      <p class="mb-0 fs-12 text-muted">Transfer 4.53pm</p>
+                    </div>
+                    <span class="ms-auto fs-14 fw-semibold">
+                      <span class="float-end">-$2,543</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:void(0);" class="border-0 mb-1">
+            <div class="list-group-item border-0">
+              <div class="media mt-0 align-items-center">
+                <div class="avatar bg-warning-transparent me-3">
+                  <i class="fe fe-briefcase"></i>
+                </div>
+                <div class="media-body">
+                  <div class="d-flex align-items-center">
+                    <div class="mt-0">
+                      <h5 class="mb-1 fs-13 fw-normal text-dark">
+                        Payment For
+                        <span class="fs-13 fw-semibold ms-1">Day Job</span>
+                      </h5>
+                      <p class="mb-0 fs-12 text-muted">Received 2.45pm</p>
+                    </div>
+                    <span class="ms-auto fs-14 fw-semibold">
+                      <span class="float-end">+$32,543</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:void(0);" class="border-0 mb-1">
+            <div class="list-group-item border-0">
+              <div class="media mt-0 align-items-center">
+                <div class="avatar bg-success-transparent me-3">
+                  <i class="fe fe-dollar-sign"></i>
+                </div>
+                <div class="media-body">
+                  <div class="d-flex align-items-center">
+                    <div class="mt-0">
+                      <h5 class="mb-1 fs-13 fw-normal text-dark">
+                        Bought items from<span class="fs-13 fw-semibold ms-1"
+                          >Ecommerce site</span
+                        >
+                      </h5>
+                      <p class="mb-0 fs-12 text-muted">Payment 8.00am</p>
+                    </div>
+                    <span class="ms-auto fs-14 fw-semibold">
+                      <span class="float-end">-$256</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:void(0);" class="border-0 mb-1">
+            <div class="list-group-item border-0">
+              <div class="media mt-0 align-items-center">
+                <div class="avatar bg-info-transparent me-3">
+                  <i class="fe fe-file-text"></i>
+                </div>
+                <div class="media-body">
+                  <div class="d-flex align-items-center">
+                    <div class="mt-0">
+                      <h5 class="mb-1 fs-13 fw-normal text-dark">
+                        Paid Monthly Expenses<span
+                          class="fs-13 fw-semibold ms-1"
+                          >Bills & Loans</span
+                        >
+                      </h5>
+                      <p class="mb-0 fs-12 text-muted">Payment 6.43am</p>
+                    </div>
+                    <span class="ms-auto fs-14 fw-semibold">
+                      <span class="float-end">-$1,298</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:void(0);" class="border-0 mb-1">
+            <div class="list-group-item border-0">
+              <div class="media mt-0 align-items-center">
+                <div class="avatar bg-primary-transparent me-3">
+                  <i class="fe fe-chevrons-right"></i>
+                </div>
+                <div class="media-body">
+                  <div class="d-flex align-items-center">
+                    <div class="mt-0">
+                      <h5 class="mb-1 fs-13 fw-normal text-dark">
+                        To Bel Bcron Bank<span class="fs-13 fw-semibold ms-1"
+                          >Savings Section</span
+                        >
+                      </h5>
+                      <p class="mb-0 fs-12 text-muted">Transfer 4.53pm</p>
+                    </div>
+                    <span class="ms-auto fs-14 fw-semibold">
+                      <span class="float-end">-$2,543</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="javascript:void(0);" class="border-0">
+            <div class="list-group-item border-0">
+              <div class="media mt-0 align-items-center">
+                <div class="avatar bg-warning-transparent me-3">
+                  <i class="fe fe-briefcase"></i>
+                </div>
+                <div class="media-body">
+                  <div class="d-flex align-items-center">
+                    <div class="mt-0">
+                      <h5 class="mb-1 fs-13 fw-normal text-dark">
+                        Payment For
+                        <span class="fs-13 fw-semibold ms-1">Day Job</span>
+                      </h5>
+                      <p class="mb-0 fs-12 text-muted">Received 2.45pm</p>
+                    </div>
+                    <span class="ms-auto fs-14 fw-semibold">
+                      <span class="float-end">+$32,543</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xxl-3 col-xl-4 col-lg-12">
+    <div class="card custom-card">
+      <div class="card-body">
+        <div class="mb-2">
+          <a href="javascript:void(0)" class="h4 text-dark">AAPL Profile</a>
+        </div>
+        <dl class="row">
+          <dt class="col-sm-4">Sector:</dt>
+          <dd class="col-sm-8">Electronic Tehnology</dd>
+
+          <dt class="col-sm-4">Industry:</dt>
+          <dd class="col-sm-8">Telecommunications Equipment</dd>
+
+          <dt class="col-sm-4">Employee:</dt>
+          <dd class="col-sm-8">16400</dd>
+        </dl>
+
+        <p class="text-muted mt-2 mb-2 scroll-dashboard-profile">
+          Apple Inc., founded in 1976 and headquartered in Cupertino,
+          California, is a global leader in technology and innovation. Renowned
+          for its iconic products such as the iPhone, iPad, Mac, Apple Watch,
+          and AirPods, Apple has redefined the consumer electronics landscape
+          with its seamless integration of hardware, software, and services. Its
+          ecosystem includes proprietary operating systems like iOS and macOS,
+          cloud solutions through iCloud, and subscription services such as
+          Apple Music, Apple TV+, and the App Store. With a mission to deliver
+          exceptional user experiences, Apple emphasizes innovation,
+          sustainability, and privacy. As one of the world’s most valuable
+          companies, it continues to shape the future of technology while
+        </p>
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+ 
+    <div class="col-xl-8 col-lg-12 col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">Top Product Sales Overview</h5>
+          <div class="card-options" ngbDropdown>
+            <a
+              href="javascript:void(0);"
+              class="option-dots"
+              data-bs-toggle="dropdown"
+              ngbDropdownToggle
+              aria-haspopup="true"
+              aria-expanded="false"
+              ><i class="fe fe-more-horizontal"></i
+            ></a>
+            <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+              <a
+                class="dropdown-item"
+                href="javascript:void(0);"
+                ngbDropdownItem
+                >Today</a
+              >
+              <a
+                class="dropdown-item"
+                href="javascript:void(0);"
+                ngbDropdownItem
+                >Last Week</a
+              >
+              <a
+                class="dropdown-item"
+                href="javascript:void(0);"
+                ngbDropdownItem
+                >Last Month</a
+              >
+              <a
+                class="dropdown-item"
+                href="javascript:void(0);"
+                ngbDropdownItem
+                >Last Year</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table
+              class="table table-vcenter text-nowrap mb-0 table-bordered border-top"
+            >
+              <thead class="">
+                <tr>
+                  <th>TRACKING ID</th>
+                  <th>Product</th>
+                  <th>Sold</th>
+                  <th>Payment Mode</th>
+                  <th>Stock</th>
+                  <th>Amount</th>
+                  <th>Stock Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="text-primary fw-semibold">#CHDE12300</span>
+                  </td>
+                  <td class="font-weight-bold text-truncate">
+                    <img
+                      class="wd-25 ht-25 rounded shadow me-3"
+                      src="./assets/images/orders/7.jpg"
+                      alt="media1"
+                    />
+                    New Book
+                  </td>
+                  <td><span class="badge bg-primary-transparent">181</span></td>
+                  <td><span class="fw-semibold"> Online Payment</span></td>
+                  <td>112</td>
+                  <td class="number-font">$2,356</td>
+                  <td>
+                    <i class="fa fa-check me-1 text-success"></i> In Stock
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="text-primary fw-semibold">#CHDE12301</span>
+                  </td>
+                  <td class="font-weight-bold text-truncate">
+                    <img
+                      class="wd-25 ht-25 rounded shadow me-3"
+                      src="./assets/images/orders/8.jpg"
+                      alt="media1"
+                    />
+                    New Bowl
+                  </td>
+                  <td><span class="badge bg-info-transparent">110</span></td>
+                  <td><span class="fw-semibold">Cash on Delivery</span></td>
+                  <td>210</td>
+                  <td class="number-font">$3,522</td>
+                  <td><i class="fa fa-check text-success"></i> In Stock</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="text-primary fw-semibold">#CHDE12302</span>
+                  </td>
+                  <td class="font-weight-bold text-truncate">
+                    <img
+                      class="wd-25 ht-25 rounded shadow me-3"
+                      src="./assets/images/orders/9.jpg"
+                      alt="media1"
+                    />
+                    Modal Car
+                  </td>
+                  <td><span class="badge bg-success-transparent">153</span></td>
+                  <td><span class="fw-semibold">Cash on Delivery</span></td>
+                  <td>215</td>
+                  <td class="number-font">$5,362</td>
+                  <td><i class="fa fa-check text-success"></i> In Stock</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="text-primary fw-semibold">#CHDE12303</span>
+                  </td>
+                  <td class="font-weight-bold text-truncate">
+                    <img
+                      class="wd-25 ht-25 rounded shadow me-3"
+                      src="./assets/images/orders/10.jpg"
+                      alt="media1"
+                    />
+                    Headset
+                  </td>
+                  <td><span class="badge bg-primary-transparent">221</span></td>
+                  <td><span class="fw-semibold">Online Payment</span></td>
+                  <td>102</td>
+                  <td class="number-font">$1,326</td>
+                  <td><i class="fa fa-check text-success"></i> In Stock</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="text-primary fw-semibold">#CHDE12304</span>
+                  </td>
+                  <td class="font-weight-bold text-truncate">
+                    <img
+                      class="wd-25 ht-25 rounded shadow me-3"
+                      src="./assets/images/orders/12.jpg"
+                      alt="media1"
+                    />
+                    Watch
+                  </td>
+                  <td><span class="badge bg-danger-transparent">314</span></td>
+                  <td><span class="fw-semibold">Cash on Delivery</span></td>
+                  <td>325</td>
+                  <td class="number-font">$5,234</td>
+                  <td><i class="fa fa-check text-success"></i> In Stock</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="text-primary fw-semibold">#CHDE12305</span>
+                  </td>
+                  <td class="font-weight-bold text-truncate">
+                    <img
+                      class="wd-25 ht-25 rounded shadow me-3"
+                      src="./assets/images/orders/13.jpg"
+                      alt="media1"
+                    />
+                    Shoes
+                  </td>
+                  <td><span class="badge bg-success-transparent">181</span></td>
+                  <td><span class="fw-semibold">Online Payment</span></td>
+                  <td>0</td>
+                  <td class="number-font">$3,256</td>
+                  <td>
+                    <i class="fa fa-exclamation-triangle text-warning"></i> Out
+                    of stock
+                  </td>
+                </tr>
+                <tr class="mb-0">
+                  <td>
+                    <span class="text-primary fw-semibold">#CHDE12306</span>
+                  </td>
+                  <td class="font-weight-bold text-truncate">
+                    <img
+                      class="wd-25 ht-25 rounded shadow me-3"
+                      src="./assets/images/orders/11.jpg"
+                      alt="media1"
+                    />EarPhones
+                  </td>
+                  <td><span class="badge bg-warning-transparent">680</span></td>
+                  <td><span class="fw-semibold">Online Payment</span></td>
+                  <td>0</td>
+                  <td class="number-font">$7,652</td>
+                  <td>
+                    <i class="fa fa-exclamation-triangle text-danger"></i> Out
+                    of stock
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Row-3 -->
+    <div class="col-xxl-4 col-xl-6 col-lg-12 col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-title">Recent Customers</h5>
+            <div class="card-options" ngbDropdown>
+              <a
+                href="javascript:void(0);"
+                class="option-dots"
+                data-bs-toggle="dropdown"
+                ngbDropdownToggle
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><i class="fe fe-more-horizontal"></i
+              ></a>
+              <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+                <a
+                  class="dropdown-item"
+                  href="javascript:void(0);"
+                  ngbDropdownItem
+                  >Today</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="javascript:void(0);"
+                  ngbDropdownItem
+                  >Last Week</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="javascript:void(0);"
+                  ngbDropdownItem
+                  >Last Month</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="javascript:void(0);"
+                  ngbDropdownItem
+                  >Last Year</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="list-card">
+              <span class="bg-warning list-bar"></span>
+              <div class="row align-items-center">
+                <div class="col-9 col-sm-9">
+                  <div class="d-sm-flex mt-0">
+                    <img
+                      src="./assets/images/users/1.jpg"
+                      alt="img"
+                      class="avatar brround avatar-md"
+                    />
+                    <div class="media-body ms-3">
+                      <div class="d-md-flex align-items-center mt-1">
+                        <h6 class="mb-1">Lisa Marshall</h6>
+                      </div>
+                      <span class="mb-0 fs-13 text-muted"
+                        >User ID:#2342<span
+                          class="ms-2 text-success fs-13 font-weight-semibold d-inline-flex"
+                          >Paid</span
+                        ></span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 col-sm-3">
+                  <div class="text-end">
+                    <span class="font-weight-semibold fs-20 number-font"
+                      >$558</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-card">
+              <span class="bg-danger list-bar"></span>
+              <div class="row align-items-center">
+                <div class="col-9 col-sm-9">
+                  <div class="d-sm-flex mt-0">
+                    <img
+                      src="./assets/images/users/2.jpg"
+                      alt="img"
+                      class="avatar brround avatar-md"
+                    />
+                    <div class="media-body ms-3">
+                      <div class="d-md-flex align-items-center mt-1">
+                        <h6 class="mb-1">Sonia Smith</h6>
+                      </div>
+                      <span class="mb-0 fs-13 text-muted"
+                        >User ID:#8763<span
+                          class="ms-2 text-success fs-13 font-weight-semibold d-inline-flex"
+                          >Paid</span
+                        ></span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 col-sm-3">
+                  <div class="text-end">
+                    <span class="font-weight-semibold fs-20 number-font"
+                      >$358</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-card">
+              <span class="bg-success list-bar"></span>
+              <div class="row align-items-center">
+                <div class="col-9 col-sm-9">
+                  <div class="d-sm-flex mt-0">
+                    <img
+                      src="./assets/images/users/11.jpg"
+                      alt="img"
+                      class="avatar brround avatar-md"
+                    />
+                    <div class="media-body ms-3">
+                      <div class="d-md-flex align-items-center mt-1">
+                        <h6 class="mb-1">Joseph Abraham</h6>
+                      </div>
+                      <span class="mb-0 fs-13 text-muted"
+                        >User ID:#1076<span
+                          class="ms-2 text-danger fs-13 font-weight-semibold d-inline-flex"
+                          >Pending</span
+                        ></span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 col-sm-3">
+                  <div class="text-end">
+                    <span class="font-weight-semibold fs-20 number-font"
+                      >$796</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-card">
+              <span class="bg-primary list-bar"></span>
+              <div class="row align-items-center">
+                <div class="col-9 col-sm-9">
+                  <div class="d-sm-flex mt-0">
+                    <img
+                      src="./assets/images/users/3.jpg"
+                      alt="img"
+                      class="avatar brround avatar-md"
+                    />
+                    <div class="media-body ms-3">
+                      <div class="d-md-flex align-items-center mt-1">
+                        <h6 class="mb-1">Joseph Abraham</h6>
+                      </div>
+                      <span class="mb-0 fs-13 text-muted"
+                        >User ID:#986<span
+                          class="ms-2 text-success fs-13 font-weight-semibold d-inline-flex"
+                          >Paid</span
+                        ></span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 col-sm-3">
+                  <div class="text-end">
+                    <span class="font-weight-semibold fs-20 number-font"
+                      >$867</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    <!-- End Row-3 -->
+    <div class="col-xxl-4 col-xl-6  col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Revenue in Countries</h5>
+                <div class="card-options" ngbDropdown>
+                    <a href="javascript:void(0);" class="option-dots" data-bs-toggle="dropdown"  ngbDropdownToggle aria-haspopup="true" aria-expanded="false"><i class="fe fe-more-horizontal"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+                        <a class="dropdown-item" href="javascript:void(0);" ngbDropdownItem>Today</a>
+                        <a class="dropdown-item" href="javascript:void(0);" ngbDropdownItem>Last Week</a>
+                        <a class="dropdown-item" href="javascript:void(0);" ngbDropdownItem>Last Month</a>
+                        <a class="dropdown-item" href="javascript:void(0);" ngbDropdownItem>Last Year</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="">
+                    <div class="mb-4">
+                        <div class="d-flex">
+                            <span class=""><img src="./assets/images/flags/us.svg" class="wd-28 ht-28 me-2" alt="">United States</span>
+                            <div class="ms-auto"><span class="text-success me-1"><i class="fe fe-trending-up"></i></span><span class="number-font">$45,870</span></div>
+                        </div>
+                        <div class="progress  mt-1" role="progressbar" aria-label="Example 6px high" style="height: 6px">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex">
+                            <span class=""><img src="./assets/images/flags/ru.svg" class="wd-28 ht-28 me-2" alt="">Russia</span>
+                            <div class="ms-auto"><span class="text-success me-1"><i class="fe fe-trending-up"></i></span><span class="number-font">$22,710</span></div>
+                        </div>
+                        <div class="progress  mt-1" role="progressbar" aria-label="Example 6px high" style="height: 6px">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex">
+                            <span class=""><img src="./assets/images/flags/ca.svg" class="wd-28 ht-28 me-2" alt="">Canada</span>
+                            <div class="ms-auto"><span class="text-danger me-1"><i class="fe fe-trending-down"></i></span><span class="number-font">$56,291</span></div>
+                        </div>
+                        <div class="progress  mt-1" role="progressbar" aria-label="Example 6px high" style="height: 6px">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex">
+                            <span class=""><img src="./assets/images/flags/ge.svg" class="wd-28 ht-28 me-2" alt="">Germany</span>
+                            <div class="ms-auto"><span class="text-success me-1"><i class="fe fe-trending-up"></i></span><span class="number-font">$67,357</span></div>
+                        </div>
+                        <div class="progress  mt-1" role="progressbar" aria-label="Example 6px high" style="height: 6px">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex">
+                            <span class=""><img src="./assets/images/flags/br.svg" class="wd-28 ht-28 me-2" alt="">Brazil</span>
+                            <div class="ms-auto"><span class="text-success me-1"><i class="fe fe-trending-up"></i></span><span class="number-font">$34,209</span></div>
+                        </div>
+                        <div class="progress  mt-1" role="progressbar" aria-label="Example 6px high" style="height: 6px">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-indigo" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-0">
+                        <div class="d-flex">
+                            <span class=""><img src="./assets/images/flags/au.svg" class="wd-28 ht-28 me-2" alt="">Australia</span>
+                            <div class="ms-auto"><span class="text-success me-1"><i class="fe fe-trending-up"></i></span><span class="number-font">$12,876</span></div>
+                        </div>
+                        <div class="progress  mt-1" role="progressbar" aria-label="Example 6px high" style="height: 6px">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-8 col-xl-12 col-lg-8 col-md-12">
+        <div class="card custom-card overflow-auto area-chart">
+            <div class="card-body">
+                <div>
+                    <h6 class="main-content-label mb-1">Area Chart With Random data</h6>
+                    <p class="text-muted  card-sub-title">Below is the area chart with random data example.</p>
+                </div>
+                <div class="chartjs-wrapper-demo">
+                    <apx-chart [series]="RandomData.series" [chart]="RandomData.chart"
+                        [annotations]="RandomData.annotations" [colors]="RandomData.colors"
+                        [dataLabels]="RandomData.dataLabels" [markers]="RandomData.markers" [xaxis]="RandomData.xaxis"
+                        [tooltip]="RandomData.tooltip" [fill]="RandomData.fill"></apx-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</div>
+<!-- End Row-1 -->
