@@ -67,7 +67,7 @@ export class NavService implements OnDestroy {
     //Title
     { headTitle: 'MAIN' },
     {
-      path: '/dashboard',
+      path: '/dashboards',
       title: 'Dashboard',
       badgeClass: 'badge bg-success text-light bg-side-text',
       badgeValue: '1',
@@ -122,7 +122,7 @@ export class NavService implements OnDestroy {
           active: false,
           Menusub: true,
           children: [
-            
+
             {
               title: 'Deals for outright',
               type: 'sub',
@@ -195,7 +195,7 @@ export class NavService implements OnDestroy {
                   path: '/features/fx/fx-frontoffice/swap-deal/swap-amendment',
                   title: 'Amendment',
                   type: 'link',
-                }, 
+                },
               ],
             },
             {
@@ -231,7 +231,7 @@ export class NavService implements OnDestroy {
       ],
     },
 
-    
+
   ];
 
   //array

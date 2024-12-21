@@ -1,0 +1,25 @@
+.dash1-card .ratio{
+    width: auto !important;
+}
+
+.card-body{
+    height: auto;
+}
+
+.chartsh {
+    >div{
+        z-index: 9 !important;
+    }
+    &:last-child {
+        z-index: 9 !important;
+    }
+}
+
+.latest-transaction-scroll{
+    height: 275px;
+    overflow-y: auto;
+}
+.scroll-dashboard-profile{
+    height: 131px;
+    overflow-y: auto;
+}
