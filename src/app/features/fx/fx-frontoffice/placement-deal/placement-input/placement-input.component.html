@@ -1,4 +1,239 @@
 <!--Page header-->
-<app-page-header [title]="'Placement Outright'"  [icon]="'grid'"  [title1]="'Foregn Exchange Fx'" [activeitem]="'Placement/borrowing Input'"></app-page-header>
+<app-page-header
+  [title]="'Placement Outright'"
+  [icon]="'grid'"
+  [title1]="'Foregn Exchange Fx'"
+  [activeitem]="'Placement/borrowing Input'"
+  [isBtnList]="true"
+></app-page-header>
 <!--End Page header-->
 
+<!-- Row -->
+<div class="row">
+  <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Outright Deal</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <form class="d-flex flex-wrap">
+            <div class="col-lg-6 col-md-12">
+              <div class="form-group row">
+                <label class="col-md-3 form-label">Currency</label>
+                <div class="col-md-9">
+                  <ng-select placeholder="Select Currency">
+                    <ng-option>AUD</ng-option>
+                    <ng-option>JPY</ng-option>
+                    <ng-option>PKR</ng-option>
+                    <ng-option>GBP</ng-option>
+                    <ng-option>EUR</ng-option>
+                  </ng-select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 form-label">Counter Party</label>
+                <div class="col-md-9">
+                  <ng-select placeholder="Counter Party">
+                    <ng-option>MCB Bank Limited</ng-option>
+                    <ng-option>State Bank of Pakistan</ng-option>
+                    <ng-option>Treasury Client</ng-option>
+                    <ng-option>United Bank Limited</ng-option>
+                  </ng-select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 form-label"
+                  >Counter Party Corresp.</label
+                >
+                <div class="col-md-9">
+                  <ng-select placeholder="Counter Party Correspondent">
+                    <ng-option>MCB Bank Limited</ng-option>
+                    <ng-option>State Bank of Pakistan</ng-option>
+                    <ng-option>Treasury Client</ng-option>
+                    <ng-option>United Bank Limited</ng-option>
+                  </ng-select>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="form-group">
+                <!-- <div class="form-label">FE-25</div> -->
+                <div
+                  class="custom-controls-stacked d-flex w-75 justify-content-between"
+                >
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="example-radios"
+                      value="option1"
+                      checked
+                    />
+                    <span class="custom-control-label">FE-25</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="example-radios"
+                      value="option2"
+                    />
+                    <span class="custom-control-label">Trade</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- <div class="form-label">We</div> -->
+                <div
+                  class="custom-controls-stacked d-flex w-75 justify-content-between"
+                >
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="example-radios"
+                      value="option1"
+                      checked
+                    />
+                    <span class="custom-control-label">Borrowing</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="example-radios"
+                      value="option2"
+                    />
+                    <span class="custom-control-label">Placement</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- <div class="form-label">We</div> -->
+                <div
+                  class="custom-controls-stacked d-flex w-75 justify-content-between"
+                >
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="example-radios"
+                      value="option1"
+                      checked
+                    />
+                    <span class="custom-control-label">CRR</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="example-radios"
+                      value="option2"
+                    />
+                    <span class="custom-control-label">SCRR</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="example-radios"
+                      value="option3"
+                    />
+                    <span class="custom-control-label">Interbank</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group row">
+                    <label class="col-md-3 form-label">FCY Amount</label>
+                    <div class="col-md-9">
+                      <input class="form-control" type="number" name="number" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-md-3 form-label">Interest Rate</label>
+                    <div class="col-md-9">
+                      <input class="form-control" type="number" name="number" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-md-3 form-label">Start Date</label>
+                    <div class="col-md-9">
+                      <input class="form-control" type="date" name="date" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group row">
+                    <label class="col-md-3 form-label">PKR Amount</label>
+                    <div class="col-md-9">
+                      <input class="form-control" type="number" name="number" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-md-3 form-label">No. of Days</label>
+                    <div class="col-md-9">
+                      <input class="form-control" type="number" name="number" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-md-3 form-label">Maturity Date</label>
+                    <div class="col-md-9">
+                      <input class="form-control" type="date" name="date" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label">Nostro Debit</label>
+                <div>
+                  <ng-select>
+                    <ng-option>JP Morgan - Newyork</ng-option>
+                    <ng-option>Mashreq Bank - Newyork</ng-option>
+                  </ng-select>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label">Nostro Credit</label>
+                <div>
+                  <ng-select>
+                    <ng-option>JP Morgan - Newyork</ng-option>
+                    <ng-option>Mashreq Bank - Newyork</ng-option>
+                  </ng-select>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label">Nostro Interest</label>
+                <div>
+                  <ng-select>
+                    <ng-option>JP Morgan - Newyork</ng-option>
+                    <ng-option>Mashreq Bank - Newyork</ng-option>
+                  </ng-select>
+                </div>
+              </div>
+            </div>
+           
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label">Remarks</label>
+                <textarea class="form-control" rows="6">Remarks</textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Row -->
