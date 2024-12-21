@@ -8,6 +8,7 @@ import { SwapEditingComponent } from './swap-editing/swap-editing.component';
 import { SwapAmendmentComponent } from './swap-amendment/swap-amendment.component';
 import { SwapCancellationComponent } from './swap-cancellation/swap-cancellation.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     SwapDealRoutingModule,
-    SharedModule
+    SharedModule,
+    NgSelectModule,
   ]
 })
 export class SwapDealModule { }
