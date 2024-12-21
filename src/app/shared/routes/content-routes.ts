@@ -2,12 +2,12 @@ import { Routes } from '@angular/router';
 
 export const content: Routes = [
     {
-        path: 'dashboards',
+        path: 'dashboard',
         loadChildren: () => import('../../components/dashboard/dashboard.module').then(m => m.DashboardModule)
     },
     {
-      path:'dashboard-view',
-      loadChildren:()=> import('../../dashboard/dashboard.module').then(m=>m.DashboardModule)
+        path: 'dashboard-view',
+        loadChildren: () => import('../../dashboard/dashboard.module').then(m => m.DashboardModule)
     },
     {
         path: 'apps/contact',
