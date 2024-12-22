@@ -76,7 +76,7 @@ export class NavService implements OnDestroy {
     //   active: false,
     // },
     {
-      path: '/dashboard-view',
+      path: '/dashboard',
       title: 'Dashboard',
       badgeClass: 'badge bg-sucess text-light bg-side-text',
       type: 'link',
