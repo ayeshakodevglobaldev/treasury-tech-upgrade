@@ -9,7 +9,7 @@ export class SwapInputComponent {
   constructor(){
     console.log("Swap  input")
   }
-  
+
   ngOnInit(): void {
   }
   countries = [
@@ -34,7 +34,7 @@ export class SwapInputComponent {
   ]
   brokers = [
     { id: 1, name: 'Js Global Capital' },
-    
+
   ]
   // TS for right section
   currencysells = [
@@ -47,6 +47,7 @@ export class SwapInputComponent {
   direct = [
     { id: 1, name: 'Yes' },
     { id: 1, name: 'No' },
-    
+
   ]
 }
+
