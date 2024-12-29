@@ -9,6 +9,7 @@ import { SwapAmendmentComponent } from './swap-amendment/swap-amendment.componen
 import { SwapCancellationComponent } from './swap-cancellation/swap-cancellation.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
     SwapDealRoutingModule,
     SharedModule,
     NgSelectModule,
+    ReactiveFormsModule,
   ]
 })
 export class SwapDealModule { }
