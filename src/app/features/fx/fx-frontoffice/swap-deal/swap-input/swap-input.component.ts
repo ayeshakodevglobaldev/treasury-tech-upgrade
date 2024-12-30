@@ -30,6 +30,7 @@ export class SwapInputComponent {
   ngOnInit(): void {
     // Initialize the form with controls and validation rules
     this.form = new FormGroup({
+      countryParty: new FormControl(null, Validators.required),
       currencyBuy: new FormControl(null, Validators.required),
       buyAmount: new FormControl(null, [Validators.required, Validators.min(0.01)]),
     });
@@ -38,6 +39,9 @@ export class SwapInputComponent {
   // Getter for currencyBuy to simplify template code
   get currencyBuy() {
     return this.form.get('currencyBuy');
+  }
+  get countryParty() {
+    return this.form.get('countryParty');
   }
 
   // Method called on form submit
