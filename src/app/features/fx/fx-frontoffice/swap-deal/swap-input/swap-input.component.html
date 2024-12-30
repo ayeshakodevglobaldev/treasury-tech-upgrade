@@ -261,12 +261,17 @@
                         <div class="col-md-8">
                           <input
                             type="number"
+                            formControlName="sellAmount"
                             dir="rtl"
-                            id="example-email"
+                            id="sellamount"
                             name="example-email"
                             class="form-control"
                             placeholder="0.00"
                           />
+                          <div *ngIf="form.get('sellAmount')?.touched && form.get('sellAmount')?.invalid" class="text-danger">
+                            <div *ngIf="form.get('sellAmount')?.hasError('required')">This field is required.</div>
+                            <div *ngIf="form.get('sellAmount')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                          </div>
                         </div>
                       </div>
                       <div class="form-group row align-items-center">
@@ -277,11 +282,16 @@
                           <input
                             type="number"
                             dir="rtl"
-                            id="example-email"
+                            formControlName="daysMaturity"
+                            id="daysmaturity"
                             name="example-email"
                             class="form-control"
                             placeholder="0"
                           />
+                          <div *ngIf="form.get('daysMaturity')?.touched && form.get('daysMaturity')?.invalid" class="text-danger">
+                            <div *ngIf="form.get('daysMaturity')?.hasError('required')">This field is required.</div>
+                            <div *ngIf="form.get('daysMaturity')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                          </div>
                         </div>
                       </div>
                       <div class="form-group row align-items-center">
@@ -292,11 +302,16 @@
                           <input
                             type="number"
                             dir="rtl"
+                            formControlName="systemRate"
                             id="example-email"
-                            name="example-email"
+                            name="systemrate"
                             class="form-control"
                             placeholder="0.00"
                           />
+                          <div *ngIf="form.get('systemRate')?.touched && form.get('systemRate')?.invalid" class="text-danger">
+                            <div *ngIf="form.get('systemRate')?.hasError('required')">This field is required.</div>
+                            <div *ngIf="form.get('systemRate')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                          </div>
                         </div>
                       </div>
                       <div class="form-group d-flex justify-content-between">
@@ -378,10 +393,13 @@
                       <div class="form-group row">
                         <label class="col-md-4 form-label">Direct Settle</label>
                         <div class="col-md-8">
-                          <ng-select placeholder="--SELECT DIRECT SETTLE --">
+                          <ng-select  formControlName="directSettle" placeholder="--SELECT DIRECT SETTLE --">
                             <ng-option>Yes</ng-option>
                             <ng-option>No</ng-option>
                           </ng-select>
+                          <div *ngIf="directSettle?.touched && directSettle?.invalid" class="text-danger">
+                            This field is required.
+                          </div>
                         </div>
                       </div>
                     

@@ -39,6 +39,10 @@ export class SwapInputComponent {
       dealRate: new FormControl(null, [Validators.required, Validators.min(0.01)]),
       inverseRate: new FormControl(null, [Validators.required, Validators.min(0.01)]),
       pkrEquiv: new FormControl(null, [Validators.required, Validators.min(0.01)]),
+      sellAmount: new FormControl(null, [Validators.required, Validators.min(0.01)]),
+      daysMaturity: new FormControl(null, [Validators.required, Validators.min(0.01)]),
+      systemRate: new FormControl(null, [Validators.required, Validators.min(0.01)]),
+      directSettle: new FormControl(null, [Validators.required, Validators.min(0.01)]),
     });
   }
 
@@ -57,6 +61,9 @@ export class SwapInputComponent {
   }
   get currencySell() {
     return this.form.get('currencySell');
+  }
+  get directSettle() {
+    return this.form.get('directSettle');
   }
 
 
