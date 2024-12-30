@@ -69,7 +69,7 @@
                   <div class="col-lg-6 col-md-12">
                     
                       <div class="form-group d-flex justify-content-between">
-                        <div class="form-label">Deal Type</div>
+                        <div class="form-label invisible">Deal Type</div>
                         <div
                           class="custom-controls-stacked d-flex w-75 justify-content-evenly"
                         >
@@ -154,12 +154,17 @@
                         <div class="col-md-8">
                           <input
                             type="number"
+                            formControlName="dealRate"
+                            id="dealrate"
                             dir="rtl"
-                            id="example-email"
                             name="example-email"
                             class="form-control"
                             placeholder="0.000000"
                           />
+                          <div *ngIf="form.get('dealRate')?.touched && form.get('dealRate')?.invalid" class="text-danger">
+                            <div *ngIf="form.get('dealRate')?.hasError('required')">This field is required.</div>
+                            <div *ngIf="form.get('dealRate')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                          </div>
                         </div>
                       </div>
                       <div class="form-group row align-items-center">
@@ -170,11 +175,16 @@
                           <input
                             type="number"
                             dir="rtl"
-                            id="example-email"
+                            formControlName="inverseRate"
+                            id="inverserate"
                             name="example-email"
                             class="form-control"
                             placeholder="0.000000"
                           />
+                          <div *ngIf="form.get('inverseRate')?.touched && form.get('inverseRate')?.invalid" class="text-danger">
+                            <div *ngIf="form.get('inverseRate')?.hasError('required')">This field is required.</div>
+                            <div *ngIf="form.get('inverseRate')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                          </div>
                         </div>
                       </div>
                       <div class="form-group row align-items-center">
@@ -184,33 +194,44 @@
                         <div class="col-md-8">
                           <input
                             type="number"
+                            formControlName="pkrEquiv"
                             dir="rtl"
-                            id="example-email"
+                            id="pkrequiv"
                             name="example-email"
                             class="form-control"
                             placeholder="0.00"
                           />
+                          <div *ngIf="form.get('pkrEquiv')?.touched && form.get('pkrEquiv')?.invalid" class="text-danger">
+                            <div *ngIf="form.get('pkrEquiv')?.hasError('required')">This field is required.</div>
+                            <div *ngIf="form.get('pkrEquiv')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                          </div>
                         </div>
                       </div>
                       <div class="form-group row">
                         <label class="col-md-4 form-label">Mode Of Deal</label>
                         <div class="col-md-8">
-                          <ng-select placeholder="--SELECT DEAL MODE--">
+                          <ng-select formControlName="modeDeal" placeholder="--SELECT DEAL MODE--">
                             <ng-option>Broker</ng-option>
                             <ng-option>Reuter</ng-option>
                             <ng-option>Telephone</ng-option>
                             <ng-option>Fax</ng-option>
                             <ng-option>Trade</ng-option>
                           </ng-select>
+                          <div *ngIf="modeDeal?.touched && modeDeal?.invalid" class="text-danger">
+                            This field is required.
+                          </div>
                         </div>
                       </div>
 
                       <div class="form-group row">
                         <label class="col-md-4 form-label">Broker Code</label>
                         <div class="col-md-8">
-                          <ng-select placeholder="--SELECT BROKER CODE--">
+                          <ng-select formControlName="brokerCode" placeholder="--SELECT BROKER CODE--">
                             <ng-option>Js Global Capital</ng-option>
                           </ng-select>
+                          <div *ngIf="brokerCode?.touched && brokerCode?.invalid" class="text-danger">
+                            This field is required.
+                          </div>
                         </div>
                       </div>
                     
@@ -220,13 +241,16 @@
                     <div class="form-group row">
                       <label class="col-md-4 form-label">Currency Sells</label>
                       <div class="col-md-8">
-                        <ng-select placeholder="--SELECT CURRENCY SELLS--">
+                        <ng-select formControlName="currencySell" placeholder="--SELECT CURRENCY SELLS--">
                           <ng-option>Dollar ($)</ng-option>
                           <ng-option>Pound (£)</ng-option>
                           <ng-option>Euro (€)</ng-option>
                           <ng-option>Riyal (﷼)</ng-option>
                           <ng-option>Dinnar (د.ك)</ng-option>
                         </ng-select>
+                        <div *ngIf="currencySell?.touched && currencySell?.invalid" class="text-danger">
+                          This field is required.
+                        </div>
                       </div>
                     </div>
 

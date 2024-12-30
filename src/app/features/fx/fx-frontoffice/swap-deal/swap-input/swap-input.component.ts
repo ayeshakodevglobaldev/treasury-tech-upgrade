@@ -32,7 +32,13 @@ export class SwapInputComponent {
     this.form = new FormGroup({
       countryParty: new FormControl(null, Validators.required),
       currencyBuy: new FormControl(null, Validators.required),
+      modeDeal: new FormControl(null, Validators.required),
+      brokerCode: new FormControl(null, Validators.required),
+      currencySell: new FormControl(null, Validators.required),
       buyAmount: new FormControl(null, [Validators.required, Validators.min(0.01)]),
+      dealRate: new FormControl(null, [Validators.required, Validators.min(0.01)]),
+      inverseRate: new FormControl(null, [Validators.required, Validators.min(0.01)]),
+      pkrEquiv: new FormControl(null, [Validators.required, Validators.min(0.01)]),
     });
   }
 
@@ -43,6 +49,16 @@ export class SwapInputComponent {
   get countryParty() {
     return this.form.get('countryParty');
   }
+  get modeDeal() {
+    return this.form.get('modeDeal');
+  }
+  get brokerCode() {
+    return this.form.get('brokerCode');
+  }
+  get currencySell() {
+    return this.form.get('currencySell');
+  }
+
 
   // Method called on form submit
   onSubmit(): void {
