@@ -514,11 +514,16 @@
                           <input
                             type="number"
                             dir="rtl"
-                            id="example-email"
+                            formControlName="brokerageAmount"
+                            id="brokerageamount"
                             name="example-email"
                             class="form-control"
                             placeholder="0.00"
                           />
+                          <div *ngIf="form.get('brokerageAmount')?.touched && form.get('brokerageAmount')?.invalid" class="text-danger">
+                            <div *ngIf="form.get('brokerageAmount')?.hasError('required')">This field is required.</div>
+                            <div *ngIf="form.get('brokerageAmount')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                          </div>
                         </div>
                       </div>
                     

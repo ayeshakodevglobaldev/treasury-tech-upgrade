@@ -45,6 +45,7 @@ export class SwapInputComponent {
       directSettle: new FormControl(null, [Validators.required, Validators.min(0.01)]),
       swapPoint: new FormControl(null, [Validators.required, Validators.min(0.01)]),
       Amount: new FormControl(null, [Validators.required, Validators.min(0.01)]),
+      brokerageAmount: new FormControl(null, [Validators.required, Validators.min(0.01)]),
     });
   }
 
