@@ -538,11 +538,16 @@
                           <input
                             type="number"
                             dir="rtl"
-                            id="example-email"
+                            formControlName="maturitydays"
+                            id="maturityDays"
                             name="example-email"
                             class="form-control"
                             placeholder="1"
                           />
+                          <div *ngIf="form.get('maturitydays')?.touched && form.get('maturitydays')?.invalid" class="text-danger">
+                            <div *ngIf="form.get('maturitydays')?.hasError('required')">This field is required.</div>
+                            <div *ngIf="form.get('maturitydays')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                          </div>
                         </div>
                       </div>
                       <div class="form-group row align-items-center invisible">
@@ -568,11 +573,16 @@
                           <input
                             type="number"
                             dir="rtl"
-                            id="example-email"
+                            formControlName="Rate"
+                            id="rate"
                             name="example-email"
                             class="form-control"
                             placeholder="0.000000"
                           />
+                          <div *ngIf="form.get('Rate')?.touched && form.get('Rate')?.invalid" class="text-danger">
+                            <div *ngIf="form.get('Rate')?.hasError('required')">This field is required.</div>
+                            <div *ngIf="form.get('Rate')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                          </div>
                         </div>
                       </div>
                       <div class="form-group row align-items-center">

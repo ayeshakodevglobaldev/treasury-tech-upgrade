@@ -46,6 +46,8 @@ export class SwapInputComponent {
       swapPoint: new FormControl(null, [Validators.required, Validators.min(0.01)]),
       Amount: new FormControl(null, [Validators.required, Validators.min(0.01)]),
       brokerageAmount: new FormControl(null, [Validators.required, Validators.min(0.01)]),
+      maturitydays: new FormControl(null, [Validators.required, Validators.min(0.01)]),
+      Rate: new FormControl(null, [Validators.required, Validators.min(0.01)]),
     });
   }
 
