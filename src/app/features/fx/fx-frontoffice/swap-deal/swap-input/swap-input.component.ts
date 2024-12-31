@@ -43,6 +43,8 @@ export class SwapInputComponent {
       daysMaturity: new FormControl(null, [Validators.required, Validators.min(0.01)]),
       systemRate: new FormControl(null, [Validators.required, Validators.min(0.01)]),
       directSettle: new FormControl(null, [Validators.required, Validators.min(0.01)]),
+      swapPoint: new FormControl(null, [Validators.required, Validators.min(0.01)]),
+      Amount: new FormControl(null, [Validators.required, Validators.min(0.01)]),
     });
   }
 

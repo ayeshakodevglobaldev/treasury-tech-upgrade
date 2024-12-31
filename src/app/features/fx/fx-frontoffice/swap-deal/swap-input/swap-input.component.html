@@ -473,11 +473,16 @@
                           <input
                             type="number"
                             dir="rtl"
-                            id="example-email"
+                            formControlName="swapPoint"
+                            id="swappoint"
                             name="example-email"
                             class="form-control"
                             placeholder="0.000000"
                           />
+                          <div *ngIf="form.get('swapPoint')?.touched && form.get('swapPoint')?.invalid" class="text-danger">
+                            <div *ngIf="form.get('swapPoint')?.hasError('required')">This field is required.</div>
+                            <div *ngIf="form.get('swapPoint')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                          </div>
                         </div>
                       </div>
 
@@ -488,12 +493,17 @@
                         <div class="col-md-8">
                           <input
                             type="number"
+                            formControlName="Amount"
                             dir="rtl"
-                            id="example-email"
+                            id="amount"
                             name="example-email"
                             class="form-control"
                             placeholder="0.00"
                           />
+                          <div *ngIf="form.get('Amount')?.touched && form.get('Amount')?.invalid" class="text-danger">
+                            <div *ngIf="form.get('Amount')?.hasError('required')">This field is required.</div>
+                            <div *ngIf="form.get('Amount')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                          </div>
                         </div>
                       </div>
                       <div class="form-group row align-items-center">
