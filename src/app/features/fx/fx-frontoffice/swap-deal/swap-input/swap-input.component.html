@@ -319,7 +319,7 @@
                         <div
                           class="custom-controls-stacked w-75"
                         >
-                         <div class="d-flex w-100 justify-content-evenly">
+                         <div class="custom-controls-stacked d-flex w-75 justify-content-evenly">
                           <label class="custom-control custom-radio form-radio">
                             <input
                               type="radio"
@@ -352,7 +352,7 @@
                             <span class="custom-control-label">Forward</span>
                           </label>
                          </div>
-                         <div *ngIf="dealType?.touched && dealType?.invalid" class="text-danger bg-success text-center">
+                         <div *ngIf="dealType?.touched && dealType?.invalid" class="text-danger text-center">
                            Please select a deal type.
                          </div>
                         </div>
@@ -374,29 +374,36 @@
                       </div>
                       <div class="form-group align-items-center d-flex justify-content-between">
                         <div class="form-label">Brokerage</div>
+                       <div class="custom-controls-stacked w-75">
                         <div
-                          class="custom-controls-stacked d-flex w-75 justify-content-evenly"
-                        >
-                          <label class="custom-control custom-radio form-radio">
-                            <input
-                              type="radio"
-                              class="custom-control-input"
-                              name="direct-settle"
-                              value="option1"
-                              checked
-                            />
-                            <span class="custom-control-label">Yes</span>
-                          </label>
-                          <label class="custom-control custom-radio form-radio">
-                            <input
-                              type="radio"
-                              class="custom-control-input"
-                              name="direct-settle"
-                              value="option2"
-                            />
-                            <span class="custom-control-label">No</span>
-                          </label>
-                        </div>
+                        class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                      >
+                        <label class="custom-control custom-radio form-radio">
+                          <input
+                            type="radio"
+                            formControlName="brokerAmount"
+                            class="custom-control-input"
+                            name="example-radios"
+                            value="option1"
+                            checked
+                          />
+                          <span class="custom-control-label">Yes</span>
+                        </label>
+                        <label class="custom-control custom-radio form-radio">
+                          <input
+                            type="radio"
+                            formControlName="brokerAmount"
+                            class="custom-control-input"
+                            name="example-radios"
+                            value="option2"
+                          />
+                          <span class="custom-control-label">No</span>
+                        </label>
+                      </div>
+                      <div *ngIf="brokerAmount?.touched && brokerAmount?.invalid" class="text-danger text-center">
+                        Please select a brokerage amount.
+                      </div>
+                       </div>
                       </div>
                       <div class="form-group align-items-center row">
                         <label class="col-md-4 form-label">Direct Settle</label>
@@ -439,38 +446,43 @@
                         ></label>
                         <div class="form-group align-items-center d-flex justify-content-between">
                           <div class="form-label invisible">Direct Settle</div>
-                          <div
-                            class="custom-controls-stacked d-flex w-75 justify-content-evenly"
-                          >
-                            <label class="custom-control custom-radio form-radio">
-                              <input
-                                type="radio"
-                                class="custom-control-input"
-                                name="invisible"
-                                value="option1"
-                                checked
-                              />
-                              <span class="custom-control-label">Ready</span>
-                            </label>
-                            <label class="custom-control custom-radio form-radio">
-                              <input
-                                type="radio"
-                                class="custom-control-input"
-                                name="invisible"
-                                value="option2"
-                              />
-                              <span class="custom-control-label">Spot</span>
-                            </label>
-                            <label class="custom-control custom-radio form-radio">
-                              <input
-                                type="radio"
-                                class="custom-control-input"
-                                name="invisible"
-                                value="option2"
-                              />
-                              <span class="custom-control-label">Forward</span>
-                            </label>
-                          </div>
+                      <div class="custom-controls-stacked w-75">
+                        <div
+                        class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                      >
+                        <label class="custom-control custom-radio form-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="invisible"
+                            value="option1"
+                            checked
+                          />
+                          <span class="custom-control-label">Ready</span>
+                        </label>
+                        <label class="custom-control custom-radio form-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="invisible"
+                            value="option2"
+                          />
+                          <span class="custom-control-label">Spot</span>
+                        </label>
+                        <label class="custom-control custom-radio form-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="invisible"
+                            value="option2"
+                          />
+                          <span class="custom-control-label">Forward</span>
+                        </label>
+                      </div>
+                      <div *ngIf="dealType?.touched && dealType?.invalid" class="text-danger text-center">
+                        Please select a deal type.
+                      </div>
+                      </div>
                         </div>
                       </div>
                       <div class="form-group align-items-center row align-items-center">
@@ -573,7 +585,7 @@
                           />
                         </div>
                       </div>
-                      <div class="form-group align-items-center row align-items-center">
+                      <div class="form-group align-items-center row align-items-center mt-4">
                         <label class="col-md-4 form-label" for="example-email"
                           >Rate</label
                         >
@@ -630,7 +642,7 @@
               </div>
               <div class="col-md-12">
                 <div class="row">
-                  <div class="form-group align-items-center row">
+                  <div class="form-group row">
                     <label class="col-md-2 form-label">Remarks</label>
                     <div class="col-md-10">
                       <textarea class="form-control" rows="6">Remarks</textarea>
