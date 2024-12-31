@@ -48,6 +48,7 @@ export class SwapInputComponent {
       brokerageAmount: new FormControl(null, [Validators.required, Validators.min(0.01)]),
       maturitydays: new FormControl(null, [Validators.required, Validators.min(0.01)]),
       Rate: new FormControl(null, [Validators.required, Validators.min(0.01)]),
+      pkrEquivalent: new FormControl(null, [Validators.required, Validators.min(0.01)]),
     });
   }
 
