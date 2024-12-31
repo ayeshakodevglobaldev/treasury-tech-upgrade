@@ -49,8 +49,9 @@ export class SwapInputComponent {
       maturitydays: new FormControl(null, [Validators.required, Validators.min(0.01)]),
       Rate: new FormControl(null, [Validators.required, Validators.min(0.01)]),
       pkrEquivalent: new FormControl(null, [Validators.required, Validators.min(0.01)]),
-      dealType: new FormControl(null, Validators.required),
-      brokerAmount: new FormControl(null, Validators.required),
+     
+     
+      
     });
   }
 
@@ -73,12 +74,7 @@ export class SwapInputComponent {
   get directSettle() {
     return this.form.get('directSettle');
   }
-  get dealType() {
-    return this.form.get('dealType');
-  }
-  get brokerAmount() {
-    return this.form.get('brokerAmount');
-  }
+  
 
   // Method called on form submit
   onSubmit(): void {

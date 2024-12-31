@@ -1,10 +1,6 @@
 <!--Page header-->
-<app-page-header
-  [title]="'Swap Deal Input'"
-  [icon]="'grid'"
-  [title1]="'Foregn Exchange Fx'"
-  [activeitem]="'Swap Input'"
-></app-page-header>
+<app-page-header [title]="'Swap Deal Input'" [icon]="'grid'" [title1]="'Foregn Exchange Fx'"
+  [activeitem]="'Swap Input'"></app-page-header>
 
 <div class="row">
   <div class="col-xl-12 col-lg-12 col-md-12">
@@ -18,650 +14,493 @@
       <!-- <h3>SWAP Deal Input</h3> -->
 
 
-          <form  [formGroup]="form" (ngSubmit)="onSubmit()">
-            <div class="row px-4 py-3">
-              <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
-                <div class="row">
-                  <div class="col-lg-6 col-md-12">
-                    
-                    <div class="form-group align-items-center align-items-center row">
-                      <label class="col-md-4 form-label">Counter Party</label>
-                      <div class="col-md-8">
-                        <ng-select formControlName="countryParty"  placeholder="--SELECT COUNTRY PARTY--">
-                          <ng-option>MCB Bank Limited</ng-option>
-                          <ng-option>State Bank of Pakistan</ng-option>
-                          <ng-option>Treasury Client</ng-option>
-                          <ng-option>United Bank Limited</ng-option>
-                        </ng-select>
-                        <div *ngIf="countryParty?.touched && countryParty?.invalid" class="text-danger">
-                          This field is required.
-                        </div>
-                      </div>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="row px-4 py-3">
+          <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+
+                <div class="form-group align-items-center align-items-center row">
+                  <label class="col-md-4 form-label">Counter Party</label>
+                  <div class="col-md-8">
+                    <ng-select formControlName="countryParty" placeholder="--SELECT COUNTRY PARTY--">
+                      <ng-option>MCB Bank Limited</ng-option>
+                      <ng-option>State Bank of Pakistan</ng-option>
+                      <ng-option>Treasury Client</ng-option>
+                      <ng-option>United Bank Limited</ng-option>
+                    </ng-select>
+                    <div *ngIf="countryParty?.touched && countryParty?.invalid" class="text-danger">
+                      This field is required.
                     </div>
-                      <div class="form-group align-items-center d-flex justify-content-between">
-                        <div class="form-label">We</div>
-                        <div
-                          class="custom-controls-stacked d-flex w-75 justify-content-evenly"
-                        >
-                          <label class="custom-control custom-radio form-radio">
-                            <input
-                              type="radio"
-                              class="custom-control-input"
-                              name="we"
-                              value="option1"
-                              checked
-                            />
-                            <span class="custom-control-label">Buy</span>
-                          </label>
-                          <label class="custom-control custom-radio form-radio">
-                            <input
-                              type="radio"
-                              class="custom-control-input"
-                              name="we"
-                              value="option2"
-                            />
-                            <span class="custom-control-label">Sell</span>
-                          </label>
-                        </div>
-                      </div>
-                    
                   </div>
-                  <div class="col-lg-6 col-md-12">
-                    
-                      <div class="form-group align-items-center d-flex justify-content-between">
-                        <div class="form-label invisible">Deal Type</div>
-                        <div
-                          class="custom-controls-stacked d-flex w-75 justify-content-evenly"
-                        >
-                          <label class="custom-control custom-radio form-radio">
-                            <input
-                              type="radio"
-                              class="custom-control-input"
-                              name="trade"
-                              value="option1"
-                              checked
-                            />
-                            <span class="custom-control-label">Trade</span>
-                          </label>
-                          <label class="custom-control custom-radio form-radio">
-                            <input
-                              type="radio"
-                              class="custom-control-input"
-                              name="trade"
-                              value="option2"
-                            />
-                            <span class="custom-control-label">FE-25</span>
-                          </label>
-                        </div>
-                      </div>
-                    
+                </div>
+                <div class="form-group d-flex justify-content-between">
+                  <div class="form-label">We</div>
+                  <div
+                    class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                  >
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        name="we"
+                        value="option1"
+                        
+                      />
+                      <span class="custom-control-label">Buy</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        name="we"
+                        value="option2"
+                      />
+                      <span class="custom-control-label">Sell</span>
+                    </label>
+                   </div>
+                </div>
+
+              </div>
+              <div class="col-lg-6 col-md-12">
+
+                <div class="form-group d-flex justify-content-between mt-2">
+                  <div class="form-label"></div>
+                  <div
+                    class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                  >
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        name="trade"
+                        value="option1"
+                      
+                      />
+                      <span class="custom-control-label">Trade</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        name="trade"
+                        value="option2"
+                      />
+                      <span class="custom-control-label">FE-25</span>
+                    </label>
+                   </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+            <div class="lg-1">
+              <h2>LEG-1</h2>
+            </div>
+            <div class="row mt-4">
+              <div class="col-lg-6 col-md-12">
+
+                <div class="form-group align-items-center row">
+                  <label class="col-md-4 form-label">Currency Buy</label>
+                  <div class="col-md-8">
+                    <ng-select formControlName="currencyBuy" placeholder="--SELECT CURRENCY BUY--">
+                      <ng-option>Dollar ($)</ng-option>
+                      <ng-option>Pound (£)</ng-option>
+                      <ng-option>Euro (€)</ng-option>
+                      <ng-option>Riyal (﷼)</ng-option>
+                      <ng-option>Dinnar (د.ك)</ng-option>
+                    </ng-select>
+                    <div *ngIf="currencyBuy?.touched && currencyBuy?.invalid" class="text-danger">
+                      This field is required.
+                    </div>
                   </div>
+                </div>
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label" for="example-email">Buy Amount</label>
+                  <div class="col-md-8">
+                    <input type="number" dir="rtl" id="buyAmount" formControlName="buyAmount" name="example-email"
+                      class="form-control" placeholder="0.00" />
+                    <div *ngIf="form.get('buyAmount')?.touched && form.get('buyAmount')?.invalid" class="text-danger">
+                      <div *ngIf="form.get('buyAmount')?.hasError('required')">This field is required.</div>
+                      <div *ngIf="form.get('buyAmount')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label">Maturity Date</label>
+                  <div class="col-md-8">
+                    <input class="form-control" type="date" name="date" />
+                  </div>
+                </div>
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label" for="example-email">Deal Rate</label>
+                  <div class="col-md-8">
+                    <input type="number" formControlName="dealRate" id="dealrate" dir="rtl" name="example-email"
+                      class="form-control" placeholder="0.000000" />
+                    <div *ngIf="form.get('dealRate')?.touched && form.get('dealRate')?.invalid" class="text-danger">
+                      <div *ngIf="form.get('dealRate')?.hasError('required')">This field is required.</div>
+                      <div *ngIf="form.get('dealRate')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label" for="example-email">Inverse Rate Calc.</label>
+                  <div class="col-md-8">
+                    <input type="number" dir="rtl" formControlName="inverseRate" id="inverserate" name="example-email"
+                      class="form-control" placeholder="0.000000" />
+                    <div *ngIf="form.get('inverseRate')?.touched && form.get('inverseRate')?.invalid"
+                      class="text-danger">
+                      <div *ngIf="form.get('inverseRate')?.hasError('required')">This field is required.</div>
+                      <div *ngIf="form.get('inverseRate')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label" for="example-email">Pkr Equiv.</label>
+                  <div class="col-md-8">
+                    <input type="number" formControlName="pkrEquiv" dir="rtl" id="pkrequiv" name="example-email"
+                      class="form-control" placeholder="0.00" />
+                    <div *ngIf="form.get('pkrEquiv')?.touched && form.get('pkrEquiv')?.invalid" class="text-danger">
+                      <div *ngIf="form.get('pkrEquiv')?.hasError('required')">This field is required.</div>
+                      <div *ngIf="form.get('pkrEquiv')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group align-items-center row">
+                  <label class="col-md-4 form-label">Mode Of Deal</label>
+                  <div class="col-md-8">
+                    <ng-select formControlName="modeDeal" placeholder="--SELECT DEAL MODE--">
+                      <ng-option>Broker</ng-option>
+                      <ng-option>Reuter</ng-option>
+                      <ng-option>Telephone</ng-option>
+                      <ng-option>Fax</ng-option>
+                      <ng-option>Trade</ng-option>
+                    </ng-select>
+                    <div *ngIf="modeDeal?.touched && modeDeal?.invalid" class="text-danger">
+                      This field is required.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group align-items-center row">
+                  <label class="col-md-4 form-label">Broker Code</label>
+                  <div class="col-md-8">
+                    <ng-select formControlName="brokerCode" placeholder="--SELECT BROKER CODE--">
+                      <ng-option>Js Global Capital</ng-option>
+                    </ng-select>
+                    <div *ngIf="brokerCode?.touched && brokerCode?.invalid" class="text-danger">
+                      This field is required.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-6 col-md-12">
+
+                <div class="form-group align-items-center row">
+                  <label class="col-md-4 form-label">Currency Sells</label>
+                  <div class="col-md-8">
+                    <ng-select formControlName="currencySell" placeholder="--SELECT CURRENCY SELLS--">
+                      <ng-option>Dollar ($)</ng-option>
+                      <ng-option>Pound (£)</ng-option>
+                      <ng-option>Euro (€)</ng-option>
+                      <ng-option>Riyal (﷼)</ng-option>
+                      <ng-option>Dinnar (د.ك)</ng-option>
+                    </ng-select>
+                    <div *ngIf="currencySell?.touched && currencySell?.invalid" class="text-danger">
+                      This field is required.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label" for="example-email">Sell Amount</label>
+                  <div class="col-md-8">
+                    <input type="number" formControlName="sellAmount" dir="rtl" id="sellamount" name="example-email"
+                      class="form-control" placeholder="0.00" />
+                    <div *ngIf="form.get('sellAmount')?.touched && form.get('sellAmount')?.invalid" class="text-danger">
+                      <div *ngIf="form.get('sellAmount')?.hasError('required')">This field is required.</div>
+                      <div *ngIf="form.get('sellAmount')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label" for="example-email">Days To Maturity</label>
+                  <div class="col-md-8">
+                    <input type="number" dir="rtl" formControlName="daysMaturity" id="daysmaturity" name="example-email"
+                      class="form-control" placeholder="0" />
+                    <div *ngIf="form.get('daysMaturity')?.touched && form.get('daysMaturity')?.invalid"
+                      class="text-danger">
+                      <div *ngIf="form.get('daysMaturity')?.hasError('required')">This field is required.</div>
+                      <div *ngIf="form.get('daysMaturity')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label" for="example-email">System Calc. Rate</label>
+                  <div class="col-md-8">
+                    <input type="number" dir="rtl" formControlName="systemRate" id="example-email" name="systemrate"
+                      class="form-control" placeholder="0.00" />
+                    <div *ngIf="form.get('systemRate')?.touched && form.get('systemRate')?.invalid" class="text-danger">
+                      <div *ngIf="form.get('systemRate')?.hasError('required')">This field is required.</div>
+                      <div *ngIf="form.get('systemRate')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group d-flex justify-content-between">
+                  <div class="form-label">Deal Type</div>
+                  <div
+                    class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                  >
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        name="lg1-dealtype"
+                        value="option1"
+                      
+                      />
+                      <span class="custom-control-label">Ready</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        name="lg1-dealtype"
+                        value="option2"
+                      />
+                      <span class="custom-control-label">Spot</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        name="lg1-dealtype"
+                        value="option2"
+                      />
+                      <span class="custom-control-label">Forward</span>
+                    </label>
+                   </div>
+                </div>
+                <div class="form-group align-items-center row align-items-center invisible  mt-4">
+                  <label class="col-md-4 form-label" for="example-email">System Calc. Rate</label>
+                  <div class="col-md-8">
+                    <input type="number" dir="rtl" id="example-email" name="example-email" class="form-control"
+                      placeholder="0.00" />
+                  </div>
+                </div>
+                <div class="form-group d-flex justify-content-between">
+                  <div class="form-label">Brokerage</div>
+                  <div
+                    class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                  >
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        name="lg1-brokerage"
+                        value="option1"
+                        
+                      />
+                      <span class="custom-control-label">Yes</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        name="lg1-brokerage"
+                        value="option2"
+                      />
+                      <span class="custom-control-label">No</span>
+                    </label>
+                   </div>
+                </div>
+                <div class="form-group align-items-center row">
+                  <label class="col-md-4 form-label">Direct Settle</label>
+                  <div class="col-md-8">
+                    <ng-select formControlName="directSettle" placeholder="--SELECT DIRECT SETTLE --">
+                      <ng-option>Yes</ng-option>
+                      <ng-option>No</ng-option>
+                    </ng-select>
+                    <div *ngIf="directSettle?.touched && directSettle?.invalid" class="text-danger">
+                      This field is required.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+            <div class="lg-1">
+              <h2>LEG-2</h2>
+            </div>
+            <div class="row mt-4">
+              <div class="col-lg-6 col-md-12">
+
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label">Maturity Date</label>
+                  <div class="col-md-8">
+                    <input class="form-control" type="date" name="date" />
+                  </div>
+                </div>
+                <div class="form-group d-flex justify-content-between">
+                <div class="form-label"></div>
+                <div
+                  class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                >
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="example-radios"
+                      value="option1"
+                      
+                    />
+                    <span class="custom-control-label">Ready</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="example-radios"
+                      value="option2"
+                    />
+                    <span class="custom-control-label">Spot</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="example-radios"
+                      value="option3"
+                    />
+                    <span class="custom-control-label">Forward</span>
+                  </label>
                 </div>
               </div>
-              <!--  -->
-              <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
-                <div class="lg-1">
-                  <h2>LEG-1</h2>
-                </div>
-                <div class="row mt-4">
-                  <div class="col-lg-6 col-md-12">
-                    
-                    <div class="form-group align-items-center row">
-                      <label class="col-md-4 form-label">Currency Buy</label>
-                      <div class="col-md-8">
-                        <ng-select  formControlName="currencyBuy" placeholder="--SELECT CURRENCY BUY--">
-                          <ng-option>Dollar ($)</ng-option>
-                          <ng-option>Pound (£)</ng-option>
-                          <ng-option>Euro (€)</ng-option>
-                          <ng-option>Riyal (﷼)</ng-option>
-                          <ng-option>Dinnar (د.ك)</ng-option>
-                        </ng-select>
-                        <div *ngIf="currencyBuy?.touched && currencyBuy?.invalid" class="text-danger">
-                          This field is required.
-                        </div>
-                      </div>
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label" for="example-email">Swap Points</label>
+                  <div class="col-md-8">
+                    <input type="number" dir="rtl" formControlName="swapPoint" id="swappoint" name="example-email"
+                      class="form-control" placeholder="0.000000" />
+                    <div *ngIf="form.get('swapPoint')?.touched && form.get('swapPoint')?.invalid" class="text-danger">
+                      <div *ngIf="form.get('swapPoint')?.hasError('required')">This field is required.</div>
+                      <div *ngIf="form.get('swapPoint')?.hasError('min')">Buy Amount should be greater than 0.</div>
                     </div>
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >Buy Amount</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            dir="rtl"
-                            id="buyAmount"
-                            formControlName="buyAmount"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="0.00"
-                          />
-                          <div *ngIf="form.get('buyAmount')?.touched && form.get('buyAmount')?.invalid" class="text-danger">
-                            <div *ngIf="form.get('buyAmount')?.hasError('required')">This field is required.</div>
-                            <div *ngIf="form.get('buyAmount')?.hasError('min')">Buy Amount should be greater than 0.</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label">Maturity Date</label>
-                        <div class="col-md-8">
-                          <input class="form-control" type="date" name="date" />
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >Deal Rate</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            formControlName="dealRate"
-                            id="dealrate"
-                            dir="rtl"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="0.000000"
-                          />
-                          <div *ngIf="form.get('dealRate')?.touched && form.get('dealRate')?.invalid" class="text-danger">
-                            <div *ngIf="form.get('dealRate')?.hasError('required')">This field is required.</div>
-                            <div *ngIf="form.get('dealRate')?.hasError('min')">Buy Amount should be greater than 0.</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >Inverse Rate Calc.</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            dir="rtl"
-                            formControlName="inverseRate"
-                            id="inverserate"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="0.000000"
-                          />
-                          <div *ngIf="form.get('inverseRate')?.touched && form.get('inverseRate')?.invalid" class="text-danger">
-                            <div *ngIf="form.get('inverseRate')?.hasError('required')">This field is required.</div>
-                            <div *ngIf="form.get('inverseRate')?.hasError('min')">Buy Amount should be greater than 0.</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >Pkr Equiv.</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            formControlName="pkrEquiv"
-                            dir="rtl"
-                            id="pkrequiv"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="0.00"
-                          />
-                          <div *ngIf="form.get('pkrEquiv')?.touched && form.get('pkrEquiv')?.invalid" class="text-danger">
-                            <div *ngIf="form.get('pkrEquiv')?.hasError('required')">This field is required.</div>
-                            <div *ngIf="form.get('pkrEquiv')?.hasError('min')">Buy Amount should be greater than 0.</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row">
-                        <label class="col-md-4 form-label">Mode Of Deal</label>
-                        <div class="col-md-8">
-                          <ng-select formControlName="modeDeal" placeholder="--SELECT DEAL MODE--">
-                            <ng-option>Broker</ng-option>
-                            <ng-option>Reuter</ng-option>
-                            <ng-option>Telephone</ng-option>
-                            <ng-option>Fax</ng-option>
-                            <ng-option>Trade</ng-option>
-                          </ng-select>
-                          <div *ngIf="modeDeal?.touched && modeDeal?.invalid" class="text-danger">
-                            This field is required.
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="form-group align-items-center row">
-                        <label class="col-md-4 form-label">Broker Code</label>
-                        <div class="col-md-8">
-                          <ng-select formControlName="brokerCode" placeholder="--SELECT BROKER CODE--">
-                            <ng-option>Js Global Capital</ng-option>
-                          </ng-select>
-                          <div *ngIf="brokerCode?.touched && brokerCode?.invalid" class="text-danger">
-                            This field is required.
-                          </div>
-                        </div>
-                      </div>
-                    
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    
-                    <div class="form-group align-items-center row">
-                      <label class="col-md-4 form-label">Currency Sells</label>
-                      <div class="col-md-8">
-                        <ng-select formControlName="currencySell" placeholder="--SELECT CURRENCY SELLS--">
-                          <ng-option>Dollar ($)</ng-option>
-                          <ng-option>Pound (£)</ng-option>
-                          <ng-option>Euro (€)</ng-option>
-                          <ng-option>Riyal (﷼)</ng-option>
-                          <ng-option>Dinnar (د.ك)</ng-option>
-                        </ng-select>
-                        <div *ngIf="currencySell?.touched && currencySell?.invalid" class="text-danger">
-                          This field is required.
-                        </div>
-                      </div>
-                    </div>
-
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >Sell Amount</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            formControlName="sellAmount"
-                            dir="rtl"
-                            id="sellamount"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="0.00"
-                          />
-                          <div *ngIf="form.get('sellAmount')?.touched && form.get('sellAmount')?.invalid" class="text-danger">
-                            <div *ngIf="form.get('sellAmount')?.hasError('required')">This field is required.</div>
-                            <div *ngIf="form.get('sellAmount')?.hasError('min')">Buy Amount should be greater than 0.</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >Days To Maturity</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            dir="rtl"
-                            formControlName="daysMaturity"
-                            id="daysmaturity"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="0"
-                          />
-                          <div *ngIf="form.get('daysMaturity')?.touched && form.get('daysMaturity')?.invalid" class="text-danger">
-                            <div *ngIf="form.get('daysMaturity')?.hasError('required')">This field is required.</div>
-                            <div *ngIf="form.get('daysMaturity')?.hasError('min')">Buy Amount should be greater than 0.</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >System Calc. Rate</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            dir="rtl"
-                            formControlName="systemRate"
-                            id="example-email"
-                            name="systemrate"
-                            class="form-control"
-                            placeholder="0.00"
-                          />
-                          <div *ngIf="form.get('systemRate')?.touched && form.get('systemRate')?.invalid" class="text-danger">
-                            <div *ngIf="form.get('systemRate')?.hasError('required')">This field is required.</div>
-                            <div *ngIf="form.get('systemRate')?.hasError('min')">Buy Amount should be greater than 0.</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center d-flex justify-content-between mt-4">
-                        <div class="form-label">Deal Type</div>
-                        <div
-                          class="custom-controls-stacked w-75"
-                        >
-                         <div class="custom-controls-stacked d-flex w-75 justify-content-evenly">
-                          <label class="custom-control custom-radio form-radio">
-                            <input
-                              type="radio"
-                              formControlName="dealType"
-                              class="custom-control-input"
-                              name="example-radios"
-                              value="option1"
-                              checked
-                            />
-                            <span class="custom-control-label">Ready</span>
-                          </label>
-                          <label class="custom-control custom-radio form-radio">
-                            <input
-                              type="radio"
-                               formControlName="dealType"
-                              class="custom-control-input"
-                              name="example-radios"
-                              value="option2"
-                            />
-                            <span class="custom-control-label">Spot</span>
-                          </label>
-                          <label class="custom-control custom-radio form-radio">
-                            <input
-                              type="radio"
-                              formControlName="dealType"
-                              class="custom-control-input"
-                              name="example-radios"
-                              value="option3"
-                            />
-                            <span class="custom-control-label">Forward</span>
-                          </label>
-                         </div>
-                         <div *ngIf="dealType?.touched && dealType?.invalid" class="text-danger text-center">
-                           Please select a deal type.
-                         </div>
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row align-items-center invisible  mt-4">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >System Calc. Rate</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            dir="rtl"
-                            id="example-email"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="0.00"
-                          />
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center d-flex justify-content-between">
-                        <div class="form-label">Brokerage</div>
-                       <div class="custom-controls-stacked w-75">
-                        <div
-                        class="custom-controls-stacked d-flex w-75 justify-content-evenly"
-                      >
-                        <label class="custom-control custom-radio form-radio">
-                          <input
-                            type="radio"
-                            formControlName="brokerAmount"
-                            class="custom-control-input"
-                            name="example-radios"
-                            value="option1"
-                            checked
-                          />
-                          <span class="custom-control-label">Yes</span>
-                        </label>
-                        <label class="custom-control custom-radio form-radio">
-                          <input
-                            type="radio"
-                            formControlName="brokerAmount"
-                            class="custom-control-input"
-                            name="example-radios"
-                            value="option2"
-                          />
-                          <span class="custom-control-label">No</span>
-                        </label>
-                      </div>
-                      <div *ngIf="brokerAmount?.touched && brokerAmount?.invalid" class="text-danger text-center">
-                        Please select a brokerage amount.
-                      </div>
-                       </div>
-                      </div>
-                      <div class="form-group align-items-center row">
-                        <label class="col-md-4 form-label">Direct Settle</label>
-                        <div class="col-md-8">
-                          <ng-select  formControlName="directSettle" placeholder="--SELECT DIRECT SETTLE --">
-                            <ng-option>Yes</ng-option>
-                            <ng-option>No</ng-option>
-                          </ng-select>
-                          <div *ngIf="directSettle?.touched && directSettle?.invalid" class="text-danger">
-                            This field is required.
-                          </div>
-                        </div>
-                      </div>
-                    
                   </div>
                 </div>
+
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label" for="example-email">Amount</label>
+                  <div class="col-md-8">
+                    <input type="number" formControlName="Amount" dir="rtl" id="amount" name="example-email"
+                      class="form-control" placeholder="0.00" />
+                    <div *ngIf="form.get('Amount')?.touched && form.get('Amount')?.invalid" class="text-danger">
+                      <div *ngIf="form.get('Amount')?.hasError('required')">This field is required.</div>
+                      <div *ngIf="form.get('Amount')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label" for="example-email">Brokerage Amount</label>
+                  <div class="col-md-8">
+                    <input type="number" dir="rtl" formControlName="brokerageAmount" id="brokerageamount"
+                      name="example-email" class="form-control" placeholder="0.00" />
+                    <div *ngIf="form.get('brokerageAmount')?.touched && form.get('brokerageAmount')?.invalid"
+                      class="text-danger">
+                      <div *ngIf="form.get('brokerageAmount')?.hasError('required')">This field is required.</div>
+                      <div *ngIf="form.get('brokerageAmount')?.hasError('min')">Buy Amount should be greater than 0.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
-              <!--  -->
-              <!--  -->
-              <!--  -->
-              <!--  -->
-              <!--  -->
-              <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
-                <div class="lg-1">
-                  <h2>LEG-2</h2>
-                </div>
-                <div class="row mt-4">
-                  <div class="col-lg-6 col-md-12">
-                    
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label">Maturity Date</label>
-                        <div class="col-md-8">
-                          <input class="form-control" type="date" name="date" />
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row align-items-center">
-                        <label
-                          class="col-md-4 form-label"
-                          for="example-email"
-                        ></label>
-                        <div class="form-group align-items-center d-flex justify-content-between">
-                          <div class="form-label invisible">Direct Settle</div>
-                      <div class="custom-controls-stacked w-75">
-                        <div
-                        class="custom-controls-stacked d-flex w-75 justify-content-evenly"
-                      >
-                        <label class="custom-control custom-radio form-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input"
-                            name="invisible"
-                            value="option1"
-                            checked
-                          />
-                          <span class="custom-control-label">Ready</span>
-                        </label>
-                        <label class="custom-control custom-radio form-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input"
-                            name="invisible"
-                            value="option2"
-                          />
-                          <span class="custom-control-label">Spot</span>
-                        </label>
-                        <label class="custom-control custom-radio form-radio">
-                          <input
-                            type="radio"
-                            class="custom-control-input"
-                            name="invisible"
-                            value="option2"
-                          />
-                          <span class="custom-control-label">Forward</span>
-                        </label>
-                      </div>
-                      <div *ngIf="dealType?.touched && dealType?.invalid" class="text-danger text-center">
-                        Please select a deal type.
-                      </div>
-                      </div>
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >Swap Points</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            dir="rtl"
-                            formControlName="swapPoint"
-                            id="swappoint"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="0.000000"
-                          />
-                          <div *ngIf="form.get('swapPoint')?.touched && form.get('swapPoint')?.invalid" class="text-danger">
-                            <div *ngIf="form.get('swapPoint')?.hasError('required')">This field is required.</div>
-                            <div *ngIf="form.get('swapPoint')?.hasError('min')">Buy Amount should be greater than 0.</div>
-                          </div>
-                        </div>
-                      </div>
+              <div class="col-lg-6 col-md-12">
 
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >Amount</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            formControlName="Amount"
-                            dir="rtl"
-                            id="amount"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="0.00"
-                          />
-                          <div *ngIf="form.get('Amount')?.touched && form.get('Amount')?.invalid" class="text-danger">
-                            <div *ngIf="form.get('Amount')?.hasError('required')">This field is required.</div>
-                            <div *ngIf="form.get('Amount')?.hasError('min')">Buy Amount should be greater than 0.</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >Brokerage Amount</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            dir="rtl"
-                            formControlName="brokerageAmount"
-                            id="brokerageamount"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="0.00"
-                          />
-                          <div *ngIf="form.get('brokerageAmount')?.touched && form.get('brokerageAmount')?.invalid" class="text-danger">
-                            <div *ngIf="form.get('brokerageAmount')?.hasError('required')">This field is required.</div>
-                            <div *ngIf="form.get('brokerageAmount')?.hasError('min')">Buy Amount should be greater than 0.</div>
-                          </div>
-                        </div>
-                      </div>
-                    
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >Maturity Days</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            dir="rtl"
-                            formControlName="maturitydays"
-                            id="maturityDays"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="1"
-                          />
-                          <div *ngIf="form.get('maturitydays')?.touched && form.get('maturitydays')?.invalid" class="text-danger">
-                            <div *ngIf="form.get('maturitydays')?.hasError('required')">This field is required.</div>
-                            <div *ngIf="form.get('maturitydays')?.hasError('min')">Buy Amount should be greater than 0.</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row align-items-center invisible">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >ABC</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            dir="rtl"
-                            id="example-email"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="0"
-                          />
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row align-items-center mt-4">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >Rate</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            dir="rtl"
-                            formControlName="Rate"
-                            id="rate"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="0.000000"
-                          />
-                          <div *ngIf="form.get('Rate')?.touched && form.get('Rate')?.invalid" class="text-danger">
-                            <div *ngIf="form.get('Rate')?.hasError('required')">This field is required.</div>
-                            <div *ngIf="form.get('Rate')?.hasError('min')">Buy Amount should be greater than 0.</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group align-items-center row align-items-center">
-                        <label class="col-md-4 form-label" for="example-email"
-                          >PKR Equivalent</label
-                        >
-                        <div class="col-md-8">
-                          <input
-                            type="number"
-                            dir="rtl"
-                            formControlName="pkrEquivalent"
-                            id="pkrequivalent"
-                            name="example-email"
-                            class="form-control"
-                            placeholder="0.00"
-                          />
-                          <div *ngIf="form.get('pkrEquivalent')?.touched && form.get('pkrEquivalent')?.invalid" class="text-danger">
-                            <div *ngIf="form.get('pkrEquivalent')?.hasError('required')">This field is required.</div>
-                            <div *ngIf="form.get('pkrEquivalent')?.hasError('min')">Buy Amount should be greater than 0.</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="form-group align-items-center row align-items-center invisible">
-                        <label class="col-md-3 form-label">ABC</label>
-                        <div class="col-md-9">
-                          <input
-                            class="form-control"
-                            type="search"
-                            name="search"
-                          />
-                        </div>
-                      </div>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="row">
-                  <div class="form-group row">
-                    <label class="col-md-2 form-label">Remarks</label>
-                    <div class="col-md-10">
-                      <textarea class="form-control" rows="6">Remarks</textarea>
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label" for="example-email">Maturity Days</label>
+                  <div class="col-md-8">
+                    <input type="number" dir="rtl" formControlName="maturitydays" id="maturityDays" name="example-email"
+                      class="form-control" placeholder="1" />
+                    <div *ngIf="form.get('maturitydays')?.touched && form.get('maturitydays')?.invalid"
+                      class="text-danger">
+                      <div *ngIf="form.get('maturitydays')?.hasError('required')">This field is required.</div>
+                      <div *ngIf="form.get('maturitydays')?.hasError('min')">Buy Amount should be greater than 0.</div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-12">
-                <div class="row">
-                  <div class="form-group align-items-center row">
-                    <label class="col-md-2 form-label"></label>
-                    <div class="col-md-10">
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group align-items-center row align-items-center invisible">
+                  <label class="col-md-4 form-label" for="example-email">ABC</label>
+                  <div class="col-md-8">
+                    <input type="number" dir="rtl" id="example-email" name="example-email" class="form-control"
+                      placeholder="0" />
+                  </div>
+                </div>
+                <div class="form-group align-items-center row align-items-center mt-4">
+                  <label class="col-md-4 form-label" for="example-email">Rate</label>
+                  <div class="col-md-8">
+                    <input type="number" dir="rtl" formControlName="Rate" id="rate" name="example-email"
+                      class="form-control" placeholder="0.000000" />
+                    <div *ngIf="form.get('Rate')?.touched && form.get('Rate')?.invalid" class="text-danger">
+                      <div *ngIf="form.get('Rate')?.hasError('required')">This field is required.</div>
+                      <div *ngIf="form.get('Rate')?.hasError('min')">Buy Amount should be greater than 0.</div>
                     </div>
                   </div>
+                </div>
+                <div class="form-group align-items-center row align-items-center">
+                  <label class="col-md-4 form-label" for="example-email">PKR Equivalent</label>
+                  <div class="col-md-8">
+                    <input type="number" dir="rtl" formControlName="pkrEquivalent" id="pkrequivalent"
+                      name="example-email" class="form-control" placeholder="0.00" />
+                    <div *ngIf="form.get('pkrEquivalent')?.touched && form.get('pkrEquivalent')?.invalid"
+                      class="text-danger">
+                      <div *ngIf="form.get('pkrEquivalent')?.hasError('required')">This field is required.</div>
+                      <div *ngIf="form.get('pkrEquivalent')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group align-items-center row align-items-center invisible">
+                  <label class="col-md-3 form-label">ABC</label>
+                  <div class="col-md-9">
+                    <input class="form-control" type="search" name="search" />
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="form-group row">
+                <label class="col-md-2 form-label">Remarks</label>
+                <div class="col-md-10">
+                  <textarea class="form-control" rows="6">Remarks</textarea>
                 </div>
               </div>
             </div>
-          </form>
+          </div>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="form-group align-items-center row">
+                <label class="col-md-2 form-label"></label>
+                <div class="col-md-10">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
 
 
       <!-- </div> -->
