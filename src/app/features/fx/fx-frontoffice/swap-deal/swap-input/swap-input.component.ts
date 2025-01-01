@@ -53,7 +53,7 @@ export class SwapInputComponent {
       blank: new FormControl(null, Validators.required),
       dealtype: new FormControl(null, Validators.required),
       brokerage: new FormControl(null, Validators.required),
-     
+      blankB: new FormControl(null, Validators.required),
      
       
     });
@@ -89,6 +89,9 @@ export class SwapInputComponent {
   }
   get brokerage() {
     return this.form.get('brokerage');
+  }
+  get blankB() {
+    return this.form.get('blankB');
   }
 
   // Method called on form submit

@@ -296,7 +296,7 @@
                         formControlName="dealtype"
                         class="custom-control-input"
                         name="dealtype"
-                        value="option2"
+                        value="option3"
                       />
                       <span class="custom-control-label">Forward</span>
                     </label>
@@ -382,40 +382,48 @@
                   </div>
                 </div>
                 <div class="form-group d-flex justify-content-between">
-                <div class="form-label"></div>
-                <div
-                  class="custom-controls-stacked d-flex w-75 justify-content-evenly"
-                >
-                  <label class="custom-control custom-radio">
-                    <input
-                      type="radio"
-                      class="custom-control-input"
-                      name="example-radios"
-                      value="option1"
-                      
-                    />
-                    <span class="custom-control-label">Ready</span>
-                  </label>
-                  <label class="custom-control custom-radio">
-                    <input
-                      type="radio"
-                      class="custom-control-input"
-                      name="example-radios"
-                      value="option2"
-                    />
-                    <span class="custom-control-label">Spot</span>
-                  </label>
-                  <label class="custom-control custom-radio">
-                    <input
-                      type="radio"
-                      class="custom-control-input"
-                      name="example-radios"
-                      value="option3"
-                    />
-                    <span class="custom-control-label">Forward</span>
-                  </label>
+                  <div class="form-label"></div>
+                  <div class="custom-controls-stacked w-75">
+                    <div
+                    class="d-flex justify-content-evenly"
+                  >
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        formControlName="blankB"
+                        class="custom-control-input"
+                        name="blankB"
+                        value="option1"
+                        
+                      />
+                      <span class="custom-control-label">Ready</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        formControlName="blankB"
+                        class="custom-control-input"
+                        name="blankB"
+                        value="option2"
+                      />
+                      <span class="custom-control-label">Spot</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        formControlName="blankB"
+                        class="custom-control-input"
+                        name="blankB"
+                        value="option3"
+                      />
+                      <span class="custom-control-label">Forward</span>
+                    </label>
+                   </div>
+                   <div *ngIf="blankB?.touched && blankB?.invalid" class="text-danger ms-5">
+                    Please select an option.
+                  </div>
+                  </div>
                 </div>
-              </div>
                 <div class="form-group align-items-center row align-items-center">
                   <label class="col-md-4 form-label" for="example-email">Swap Points</label>
                   <div class="col-md-8">
