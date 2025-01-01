@@ -36,12 +36,14 @@
                 </div>
                 <div class="form-group d-flex justify-content-between">
                   <div class="form-label">We</div>
-                  <div
-                    class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                  <div class="custom-controls-stacked w-75">
+                    <div
+                    class="d-flex justify-content-evenly"
                   >
                     <label class="custom-control custom-radio">
                       <input
                         type="radio"
+                        formControlName="we"
                         class="custom-control-input"
                         name="we"
                         value="option1"
@@ -52,6 +54,7 @@
                     <label class="custom-control custom-radio">
                       <input
                         type="radio"
+                        formControlName="we"
                         class="custom-control-input"
                         name="we"
                         value="option2"
@@ -59,6 +62,10 @@
                       <span class="custom-control-label">Sell</span>
                     </label>
                    </div>
+                   <div *ngIf="we?.touched && we?.invalid" class="text-danger ms-5">
+                    Please select an option.
+                  </div>
+                  </div>
                 </div>
 
               </div>
@@ -66,29 +73,36 @@
 
                 <div class="form-group d-flex justify-content-between mt-2">
                   <div class="form-label"></div>
-                  <div
-                    class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                  <div class="custom-controls-stacked w-75">
+                    <div
+                    class="d-flex justify-content-evenly"
                   >
                     <label class="custom-control custom-radio">
                       <input
                         type="radio"
+                        formControlName="blank"
                         class="custom-control-input"
-                        name="trade"
+                        name="blank"
                         value="option1"
-                      
+                        
                       />
                       <span class="custom-control-label">Trade</span>
                     </label>
                     <label class="custom-control custom-radio">
                       <input
                         type="radio"
+                        formControlName="blank"
                         class="custom-control-input"
-                        name="trade"
+                        name="blank"
                         value="option2"
                       />
                       <span class="custom-control-label">FE-25</span>
                     </label>
                    </div>
+                   <div *ngIf="blank?.touched && blank?.invalid" class="text-danger ms-5">
+                    Please select an option.
+                  </div>
+                  </div>
                 </div>
 
               </div>
@@ -251,24 +265,27 @@
                 </div>
                 <div class="form-group d-flex justify-content-between">
                   <div class="form-label">Deal Type</div>
-                  <div
-                    class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                  <div class="custom-controls-stacked w-75">
+                    <div
+                    class="d-flex justify-content-evenly"
                   >
                     <label class="custom-control custom-radio">
                       <input
                         type="radio"
+                        formControlName="dealtype"
                         class="custom-control-input"
-                        name="lg1-dealtype"
+                        name="dealtype"
                         value="option1"
-                      
+                        
                       />
                       <span class="custom-control-label">Ready</span>
                     </label>
                     <label class="custom-control custom-radio">
                       <input
                         type="radio"
+                        formControlName="dealtype"
                         class="custom-control-input"
-                        name="lg1-dealtype"
+                        name="dealtype"
                         value="option2"
                       />
                       <span class="custom-control-label">Spot</span>
@@ -276,14 +293,20 @@
                     <label class="custom-control custom-radio">
                       <input
                         type="radio"
+                        formControlName="dealtype"
                         class="custom-control-input"
-                        name="lg1-dealtype"
+                        name="dealtype"
                         value="option2"
                       />
                       <span class="custom-control-label">Forward</span>
                     </label>
                    </div>
+                   <div *ngIf="dealtype?.touched && dealtype?.invalid" class="text-danger ms-5">
+                    Please select an option.
+                  </div>
+                  </div>
                 </div>
+
                 <div class="form-group align-items-center row align-items-center invisible  mt-4">
                   <label class="col-md-4 form-label" for="example-email">System Calc. Rate</label>
                   <div class="col-md-8">
@@ -293,14 +316,16 @@
                 </div>
                 <div class="form-group d-flex justify-content-between">
                   <div class="form-label">Brokerage</div>
-                  <div
-                    class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                  <div class="custom-controls-stacked w-75">
+                    <div
+                    class="d-flex justify-content-evenly"
                   >
                     <label class="custom-control custom-radio">
                       <input
                         type="radio"
+                        formControlName="brokerage"
                         class="custom-control-input"
-                        name="lg1-brokerage"
+                        name="brokerage"
                         value="option1"
                         
                       />
@@ -309,13 +334,18 @@
                     <label class="custom-control custom-radio">
                       <input
                         type="radio"
+                        formControlName="brokerage"
                         class="custom-control-input"
-                        name="lg1-brokerage"
+                        name="brokerage"
                         value="option2"
                       />
                       <span class="custom-control-label">No</span>
                     </label>
                    </div>
+                   <div *ngIf="brokerage?.touched && brokerage?.invalid" class="text-danger ms-5">
+                    Please select an option.
+                  </div>
+                  </div>
                 </div>
                 <div class="form-group align-items-center row">
                   <label class="col-md-4 form-label">Direct Settle</label>
