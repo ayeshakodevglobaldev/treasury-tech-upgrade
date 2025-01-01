@@ -30,7 +30,7 @@
                       <ng-option>United Bank Limited</ng-option>
                     </ng-select>
                     <div *ngIf="countryParty?.touched && countryParty?.invalid" class="text-danger">
-                      This field is required.
+                      Country party is required.
                     </div>
                   </div>
                 </div>
@@ -113,7 +113,7 @@
                       <ng-option>Dinnar (د.ك)</ng-option>
                     </ng-select>
                     <div *ngIf="currencyBuy?.touched && currencyBuy?.invalid" class="text-danger">
-                      This field is required.
+                      Currency buy is required.
                     </div>
                   </div>
                 </div>
@@ -123,8 +123,8 @@
                     <input type="number" dir="rtl" id="buyAmount" formControlName="buyAmount" name="example-email"
                       class="form-control" placeholder="0.00" />
                     <div *ngIf="form.get('buyAmount')?.touched && form.get('buyAmount')?.invalid" class="text-danger">
-                      <div *ngIf="form.get('buyAmount')?.hasError('required')">This field is required.</div>
-                      <div *ngIf="form.get('buyAmount')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                      <div *ngIf="form.get('buyAmount')?.hasError('required')">Buy amount is required.</div>
+                      <div *ngIf="form.get('buyAmount')?.hasError('min')">Buy Amount cannot be zero or negative.</div>
                     </div>
                   </div>
                 </div>
@@ -140,8 +140,8 @@
                     <input type="number" formControlName="dealRate" id="dealrate" dir="rtl" name="example-email"
                       class="form-control" placeholder="0.000000" />
                     <div *ngIf="form.get('dealRate')?.touched && form.get('dealRate')?.invalid" class="text-danger">
-                      <div *ngIf="form.get('dealRate')?.hasError('required')">This field is required.</div>
-                      <div *ngIf="form.get('dealRate')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                      <div *ngIf="form.get('dealRate')?.hasError('required')">Deal rate is required.</div>
+                      <div *ngIf="form.get('dealRate')?.hasError('min')">Deal rate cannot be zero or negative.</div>
                     </div>
                   </div>
                 </div>
@@ -152,8 +152,8 @@
                       class="form-control" placeholder="0.000000" />
                     <div *ngIf="form.get('inverseRate')?.touched && form.get('inverseRate')?.invalid"
                       class="text-danger">
-                      <div *ngIf="form.get('inverseRate')?.hasError('required')">This field is required.</div>
-                      <div *ngIf="form.get('inverseRate')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                      <div *ngIf="form.get('inverseRate')?.hasError('required')">Inverse rate calc. is required.</div>
+                      <div *ngIf="form.get('inverseRate')?.hasError('min')">Inverse rate calc.  cannot be zero or negative.</div>
                     </div>
                   </div>
                 </div>
@@ -163,8 +163,8 @@
                     <input type="number" formControlName="pkrEquiv" dir="rtl" id="pkrequiv" name="example-email"
                       class="form-control" placeholder="0.00" />
                     <div *ngIf="form.get('pkrEquiv')?.touched && form.get('pkrEquiv')?.invalid" class="text-danger">
-                      <div *ngIf="form.get('pkrEquiv')?.hasError('required')">This field is required.</div>
-                      <div *ngIf="form.get('pkrEquiv')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                      <div *ngIf="form.get('pkrEquiv')?.hasError('required')">Pkr equiv is required.</div>
+                      <div *ngIf="form.get('pkrEquiv')?.hasError('min')">Pkr equiv  cannot be zero or negative.</div>
                     </div>
                   </div>
                 </div>
@@ -179,7 +179,7 @@
                       <ng-option>Trade</ng-option>
                     </ng-select>
                     <div *ngIf="modeDeal?.touched && modeDeal?.invalid" class="text-danger">
-                      This field is required.
+                      Mode deal is required.
                     </div>
                   </div>
                 </div>
@@ -191,7 +191,7 @@
                       <ng-option>Js Global Capital</ng-option>
                     </ng-select>
                     <div *ngIf="brokerCode?.touched && brokerCode?.invalid" class="text-danger">
-                      This field is required.
+                      Broker code is required.
                     </div>
                   </div>
                 </div>
@@ -210,7 +210,7 @@
                       <ng-option>Dinnar (د.ك)</ng-option>
                     </ng-select>
                     <div *ngIf="currencySell?.touched && currencySell?.invalid" class="text-danger">
-                      This field is required.
+                      Currency sells is required.
                     </div>
                   </div>
                 </div>
@@ -221,8 +221,8 @@
                     <input type="number" formControlName="sellAmount" dir="rtl" id="sellamount" name="example-email"
                       class="form-control" placeholder="0.00" />
                     <div *ngIf="form.get('sellAmount')?.touched && form.get('sellAmount')?.invalid" class="text-danger">
-                      <div *ngIf="form.get('sellAmount')?.hasError('required')">This field is required.</div>
-                      <div *ngIf="form.get('sellAmount')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                      <div *ngIf="form.get('sellAmount')?.hasError('required')">Sell amount is required.</div>
+                      <div *ngIf="form.get('sellAmount')?.hasError('min')">Sell amount cannot be zero or negative.</div>
                     </div>
                   </div>
                 </div>
@@ -233,8 +233,8 @@
                       class="form-control" placeholder="0" />
                     <div *ngIf="form.get('daysMaturity')?.touched && form.get('daysMaturity')?.invalid"
                       class="text-danger">
-                      <div *ngIf="form.get('daysMaturity')?.hasError('required')">This field is required.</div>
-                      <div *ngIf="form.get('daysMaturity')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                      <div *ngIf="form.get('daysMaturity')?.hasError('required')">Days maturity is required.</div>
+                      <div *ngIf="form.get('daysMaturity')?.hasError('min')">Days Maturity cannot be zero or negative.</div>
                     </div>
                   </div>
                 </div>
@@ -244,8 +244,8 @@
                     <input type="number" dir="rtl" formControlName="systemRate" id="example-email" name="systemrate"
                       class="form-control" placeholder="0.00" />
                     <div *ngIf="form.get('systemRate')?.touched && form.get('systemRate')?.invalid" class="text-danger">
-                      <div *ngIf="form.get('systemRate')?.hasError('required')">This field is required.</div>
-                      <div *ngIf="form.get('systemRate')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                      <div *ngIf="form.get('systemRate')?.hasError('required')">System calc. rate is required.</div>
+                      <div *ngIf="form.get('systemRate')?.hasError('min')">System calc. rate cannot be zero or negative.</div>
                     </div>
                   </div>
                 </div>
@@ -325,7 +325,7 @@
                       <ng-option>No</ng-option>
                     </ng-select>
                     <div *ngIf="directSettle?.touched && directSettle?.invalid" class="text-danger">
-                      This field is required.
+                      Direct settle is required.
                     </div>
                   </div>
                 </div>
@@ -392,8 +392,8 @@
                     <input type="number" dir="rtl" formControlName="swapPoint" id="swappoint" name="example-email"
                       class="form-control" placeholder="0.000000" />
                     <div *ngIf="form.get('swapPoint')?.touched && form.get('swapPoint')?.invalid" class="text-danger">
-                      <div *ngIf="form.get('swapPoint')?.hasError('required')">This field is required.</div>
-                      <div *ngIf="form.get('swapPoint')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                      <div *ngIf="form.get('swapPoint')?.hasError('required')">Swap points is required.</div>
+                      <div *ngIf="form.get('swapPoint')?.hasError('min')">Swap points cannot be zero or negative.</div>
                     </div>
                   </div>
                 </div>
@@ -404,8 +404,8 @@
                     <input type="number" formControlName="Amount" dir="rtl" id="amount" name="example-email"
                       class="form-control" placeholder="0.00" />
                     <div *ngIf="form.get('Amount')?.touched && form.get('Amount')?.invalid" class="text-danger">
-                      <div *ngIf="form.get('Amount')?.hasError('required')">This field is required.</div>
-                      <div *ngIf="form.get('Amount')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                      <div *ngIf="form.get('Amount')?.hasError('required')">Amount is required.</div>
+                      <div *ngIf="form.get('Amount')?.hasError('min')">Amount cannot be zero or negative.</div>
                     </div>
                   </div>
                 </div>
@@ -416,8 +416,8 @@
                       name="example-email" class="form-control" placeholder="0.00" />
                     <div *ngIf="form.get('brokerageAmount')?.touched && form.get('brokerageAmount')?.invalid"
                       class="text-danger">
-                      <div *ngIf="form.get('brokerageAmount')?.hasError('required')">This field is required.</div>
-                      <div *ngIf="form.get('brokerageAmount')?.hasError('min')">Buy Amount should be greater than 0.
+                      <div *ngIf="form.get('brokerageAmount')?.hasError('required')">Brokerage amount is required.</div>
+                      <div *ngIf="form.get('brokerageAmount')?.hasError('min')">Brokerage amount cannot be zero or negative.
                       </div>
                     </div>
                   </div>
@@ -433,8 +433,8 @@
                       class="form-control" placeholder="1" />
                     <div *ngIf="form.get('maturitydays')?.touched && form.get('maturitydays')?.invalid"
                       class="text-danger">
-                      <div *ngIf="form.get('maturitydays')?.hasError('required')">This field is required.</div>
-                      <div *ngIf="form.get('maturitydays')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                      <div *ngIf="form.get('maturitydays')?.hasError('required')">Maturity days is required.</div>
+                      <div *ngIf="form.get('maturitydays')?.hasError('min')">Maturity days cannot be zero or negative.</div>
                     </div>
                   </div>
                 </div>
@@ -445,14 +445,14 @@
                       placeholder="0" />
                   </div>
                 </div>
-                <div class="form-group align-items-center row align-items-center mt-4">
+                <div class="form-group align-items-center row align-items-center">
                   <label class="col-md-4 form-label" for="example-email">Rate</label>
                   <div class="col-md-8">
                     <input type="number" dir="rtl" formControlName="Rate" id="rate" name="example-email"
                       class="form-control" placeholder="0.000000" />
                     <div *ngIf="form.get('Rate')?.touched && form.get('Rate')?.invalid" class="text-danger">
-                      <div *ngIf="form.get('Rate')?.hasError('required')">This field is required.</div>
-                      <div *ngIf="form.get('Rate')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                      <div *ngIf="form.get('Rate')?.hasError('required')">Rate is required.</div>
+                      <div *ngIf="form.get('Rate')?.hasError('min')">Rate cannot be zero or negative.</div>
                     </div>
                   </div>
                 </div>
@@ -463,8 +463,8 @@
                       name="example-email" class="form-control" placeholder="0.00" />
                     <div *ngIf="form.get('pkrEquivalent')?.touched && form.get('pkrEquivalent')?.invalid"
                       class="text-danger">
-                      <div *ngIf="form.get('pkrEquivalent')?.hasError('required')">This field is required.</div>
-                      <div *ngIf="form.get('pkrEquivalent')?.hasError('min')">Buy Amount should be greater than 0.</div>
+                      <div *ngIf="form.get('pkrEquivalent')?.hasError('required')">Pkr equivalent is required.</div>
+                      <div *ngIf="form.get('pkrEquivalent')?.hasError('min')">Pkr equivalent cannot be zero or negative.</div>
                     </div>
                   </div>
                 </div>
