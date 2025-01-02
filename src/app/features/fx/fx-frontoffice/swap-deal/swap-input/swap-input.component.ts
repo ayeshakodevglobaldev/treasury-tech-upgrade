@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators, ValidatorFn, AbstractControl  } from '@angular/forms';
 
 @Component({
   selector: 'app-swap-input',
@@ -7,22 +7,6 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./swap-input.component.scss']
 })
 export class SwapInputComponent {
-  // form: FormGroup;
-  // constructor(){
-  //   console.log("Swap  input")
-  //   this.form = new FormGroup({
-  //     currencyBuy: new FormControl(null, Validators.required),
-  //     buyAmount: new FormControl(null, [Validators.required, Validators.min(0.01)]),
-  //   });
-  // }
-
-  // onSubmit() {
-  //   if (this.form.invalid) {
-  //     return;
-  //   }
-
-  //   console.log(this.form.value);
-  // }
   form!: FormGroup;
 
   constructor() { }
@@ -54,6 +38,7 @@ export class SwapInputComponent {
       dealtype: new FormControl(null, Validators.required),
       brokerage: new FormControl(null, Validators.required),
       blankB: new FormControl(null, Validators.required),
+      LGAdate: new FormControl(null, [Validators.required, this.futureDateValidator]),
      
       
     });
@@ -93,7 +78,19 @@ export class SwapInputComponent {
   get blankB() {
     return this.form.get('blankB');
   }
+  get LGAdate() {
+    return this.form.get('LGAdate');
+  }
+  futureDateValidator: ValidatorFn = (control: AbstractControl): { [key: string]: boolean } | null => {
+    const inputDate = new Date(control.value);
+    const today = new Date();
+    today.setHours(2025,-1, 1, 0); // Reset the time portion for comparison
 
+    if (inputDate > today) {
+      return { futureDate: true }; // Invalid if the date is in the future
+    }
+    return null; // Valid date
+  };
   // Method called on form submit
   onSubmit(): void {
     // Trigger validation for all fields

@@ -145,7 +145,13 @@
                 <div class="form-group align-items-center row align-items-center">
                   <label class="col-md-4 form-label">Maturity Date</label>
                   <div class="col-md-8">
-                    <input class="form-control" type="date" name="date" />
+                    <input class="form-control" formControlName="LGAdate" type="date" name="date" />
+                    <div *ngIf="LGAdate?.touched && LGAdate?.invalid" class="text-danger">
+                      <div *ngIf="LGAdate?.hasError('required')">Date is required.</div>
+                      <div *ngIf="LGAdate?.hasError('futureDate')">
+                        Date cannot be in the future.
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="form-group align-items-center row align-items-center">
