@@ -39,6 +39,7 @@ export class SwapInputComponent {
       brokerage: new FormControl(null, Validators.required),
       blankB: new FormControl(null, Validators.required),
       LGAdate: new FormControl(null, [Validators.required, this.futureDateValidator]),
+      LGBdate: new FormControl(null, [Validators.required, this.futureDateValidator]),
      
       
     });
@@ -80,6 +81,9 @@ export class SwapInputComponent {
   }
   get LGAdate() {
     return this.form.get('LGAdate');
+  }
+  get LGBdate() {
+    return this.form.get('LGBdate');
   }
   futureDateValidator: ValidatorFn = (control: AbstractControl): { [key: string]: boolean } | null => {
     const inputDate = new Date(control.value);
