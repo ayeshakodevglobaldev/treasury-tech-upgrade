@@ -25,7 +25,7 @@
                       >
                         <label class="col-md-4 form-label">Country Party</label>
                         <div class="drop-down col-sm-12 col-12 col-md-8">
-                          <ng-select placeholder="--SELECT COUNTRY PARTY--">
+                          <ng-select placeholder="--SELECT CURRENCY--">
                             <ng-option
                               *ngFor="let country of countries"
                               [value]="country.id"
@@ -34,27 +34,32 @@
                           </ng-select>
                         </div>
                       </div>
-                      <div class="form-group d-flex justify-content-between">
-                        <div class="form-label">We</div>
-                        <div
-                          class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                      <div class="form-group row align-items-center">
+                        <label class="col-md-4 form-label" for="example-email"
+                          >We</label
                         >
-                          <label class="custom-control custom-radio form-radio">
+                        <div class="col-md-8 d-flex justify-content-between">
+                          <label
+                            class="d-flex justify-content-start col-6 col-md-6 custom-control form-radio"
+                          >
                             <input
                               type="radio"
                               class="custom-control-input"
                               name="we"
                               value="option1"
-                              checked
+                              checked=""
                             />
                             <span class="custom-control-label">Buy</span>
                           </label>
-                          <label class="custom-control custom-radio form-radio">
+                          <label
+                            class="d-flex justify-content-start col-6 col-md-6 custom-control form-radio"
+                          >
                             <input
                               type="radio"
                               class="custom-control-input"
                               name="we"
-                              value="option2"
+                              value="option1"
+                              checked=""
                             />
                             <span class="custom-control-label">Sell</span>
                           </label>
@@ -75,18 +80,21 @@
                             <input
                               type="radio"
                               class="custom-control-input"
-                              name="trade"
+                              name="broker-age"
                               value="option1"
-                              checked
+                              checked=""
                             />
                             <span class="custom-control-label">Trade</span>
                           </label>
-                          <label class="custom-control custom-radio form-radio">
+                          <label
+                            class="d-flex justify-content-start col-6 col-md-6 custom-control form-radio"
+                          >
                             <input
                               type="radio"
                               class="custom-control-input"
-                              name="trade"
-                              value="option2"
+                              name="broker-age"
+                              value="option1"
+                              checked=""
                             />
                             <span class="custom-control-label">FE-25</span>
                           </label>
@@ -96,6 +104,11 @@
                   </div>
                 </div>
               </div>
+              <!--  -->
+              <!--  -->
+              <!--  -->
+              <!--  -->
+              <!--  -->
               <!--  -->
               <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
                 <div class="lg-1">
@@ -109,7 +122,7 @@
                       >
                         <label class="col-md-4 form-label">Currency Buy</label>
                         <div class="drop-down col-sm-12 col-12 col-md-8">
-                          <ng-select placeholder="--SELECT CURRENCY BUY--">
+                          <ng-select placeholder="--SELECT CURRENCY--">
                             <ng-option
                               *ngFor="let currency of currencies"
                               [value]="currency.id"
@@ -279,10 +292,9 @@
                           />
                         </div>
                       </div>
-                      <div class="form-group d-flex justify-content-between">
-                        <div class="form-label">Deal Type</div>
-                        <div
-                          class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                      <div class="form-group row align-items-center">
+                        <label class="col-md-4 form-label" for="example-email"
+                          >Deal Type</label
                         >
                         <div class="d-flex justify-content-between">
                           <label
@@ -291,9 +303,9 @@
                             <input
                               type="radio"
                               class="custom-control-input"
-                              name="example-radios"
+                              name="deal-type"
                               value="option1"
-                              checked
+                              checked=""
                             />
                             <span class="custom-control-label">Ready</span>
                           </label>
@@ -303,8 +315,9 @@
                             <input
                               type="radio"
                               class="custom-control-input"
-                              name="example-radios"
-                              value="option2"
+                              name="deal-type"
+                              value="option1"
+                              checked=""
                             />
                             <span class="custom-control-label">Spot</span>
                           </label>
@@ -314,8 +327,9 @@
                             <input
                               type="radio"
                               class="custom-control-input"
-                              name="example-radios"
-                              value="option3"
+                              name="deal-type"
+                              value="option1"
+                              checked=""
                             />
                             <span class="custom-control-label">Forward</span>
                           </label>
@@ -340,22 +354,28 @@
                         <label class="col-md-4 form-label" for="example-email"
                           >Brokerage</label
                         >
-                          <label class="custom-control custom-radio form-radio">
+                        <div class="col-md-8 d-flex justify-content-between">
+                          <label
+                            class="d-flex justify-content-start col-6 col-md-6 custom-control form-radio"
+                          >
                             <input
                               type="radio"
                               class="custom-control-input"
-                              name="direct-settle"
+                              name="broker-age"
                               value="option1"
-                              checked
+                              checked=""
                             />
                             <span class="custom-control-label">Yes</span>
                           </label>
-                          <label class="custom-control custom-radio form-radio">
+                          <label
+                            class="d-flex justify-content-start col-6 col-md-6 custom-control form-radio"
+                          >
                             <input
                               type="radio"
                               class="custom-control-input"
-                              name="direct-settle"
-                              value="option2"
+                              name="broker-age"
+                              value="option1"
+                              checked=""
                             />
                             <span class="custom-control-label">No</span>
                           </label>
@@ -578,8 +598,8 @@
               </div>
             </div>
           </form>
-
-
+        </div>
+      </div>
       <!-- </div> -->
       <!-- </div> -->
     </div>
