@@ -40,8 +40,9 @@ export class SwapInputComponent {
       blankB: new FormControl(null, Validators.required),
       LGAdate: new FormControl(null, [Validators.required, this.futureDateValidator]),
       LGBdate: new FormControl(null, [Validators.required, this.futureDateValidator]),
-     
-      
+      remark: new FormControl('', [Validators.maxLength(200)])
+
+
     });
   }
 
@@ -85,6 +86,10 @@ export class SwapInputComponent {
   get LGBdate() {
     return this.form.get('LGBdate');
   }
+  get remark() {
+    return this.form.get('remark');
+  }
+
   futureDateValidator: ValidatorFn = (control: AbstractControl): { [key: string]: boolean } | null => {
     const inputDate = new Date(control.value);
     const today = new Date();
@@ -95,6 +100,7 @@ export class SwapInputComponent {
     }
     return null; // Valid date
   };
+
   // Method called on form submit
   onSubmit(): void {
     // Trigger validation for all fields
@@ -103,10 +109,10 @@ export class SwapInputComponent {
       this.form.markAllAsTouched();
       return;
     }
-    
+
     // Handle the form submission logic here if it's valid
     console.log('Form Submitted:', this.form.value);
   }
-  
+
 }
 

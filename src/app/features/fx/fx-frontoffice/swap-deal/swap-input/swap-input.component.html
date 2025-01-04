@@ -47,7 +47,7 @@
                         class="custom-control-input"
                         name="we"
                         value="option1"
-                        
+
                       />
                       <span class="custom-control-label">Buy</span>
                     </label>
@@ -84,7 +84,7 @@
                         class="custom-control-input"
                         name="blank"
                         value="option1"
-                        
+
                       />
                       <span class="custom-control-label">Trade</span>
                     </label>
@@ -282,7 +282,7 @@
                         class="custom-control-input"
                         name="dealtype"
                         value="option1"
-                        
+
                       />
                       <span class="custom-control-label">Ready</span>
                     </label>
@@ -333,7 +333,7 @@
                         class="custom-control-input"
                         name="brokerage"
                         value="option1"
-                        
+
                       />
                       <span class="custom-control-label">Yes</span>
                     </label>
@@ -406,7 +406,7 @@
                         class="custom-control-input"
                         name="blankB"
                         value="option1"
-                        
+
                       />
                       <span class="custom-control-label">Ready</span>
                     </label>
@@ -534,7 +534,10 @@
               <div class="form-group row">
                 <label class="col-md-2 form-label">Remarks</label>
                 <div class="col-md-10">
-                  <textarea class="form-control" rows="6">Remarks</textarea>
+                  <textarea formControlName="remark" class="form-control" rows="6">Remarks</textarea>
+                  <div *ngIf="remark?.touched && remark?.invalid" class="text-danger">
+                    <div *ngIf="remark?.hasError('maxlength')">Remark cannot be longer than 200 characters.</div>
+                  </div>
                 </div>
               </div>
             </div>
