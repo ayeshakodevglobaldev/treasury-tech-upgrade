@@ -7,19 +7,15 @@
 ></app-page-header>
 
 <div class="row">
-  <div class="col-xl-12 col-lg-12 col-md-12">
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
     <div class="card">
       <div class="card-header">
-        <h3 class="card-title">SWAP Deal Input</h3>
+        <h4 class="card-title">SWAP Deal Input</h4>
       </div>
-      <!--End Page header-->
-      <!-- <div class="main-swap-deal"> -->
-      <!-- <div class="inner-swap-deal bdr bg-#f4f4f4 pb-2"> -->
-      <!-- <h3>SWAP Deal Input</h3> -->
-
-
-          <form>
-            <div class="row px-4 py-3">
+      <div class="card-body">
+        <div  class="row">
+          <form class="d-flex flex-wrap">
+            <div class="row">
               <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
                 <div class="row">
                   <div class="col-lg-6 col-md-12">
@@ -68,12 +64,14 @@
                   </div>
                   <div class="col-lg-6 col-md-12">
                     <form class="form-horizontal">
-                      <div class="form-group d-flex justify-content-between">
-                        <div class="form-label">Deal Type</div>
-                        <div
-                          class="custom-controls-stacked d-flex w-75 justify-content-evenly"
-                        >
-                          <label class="custom-control custom-radio form-radio">
+                      <div class="form-group row align-items-center mt-2">
+                        <!-- <label class="col-md-4 form-label" for="example-email"
+                          >Deal Type</label
+                        > -->
+                        <div class="col-md-8 d-flex justify-content-between">
+                          <label
+                            class="d-flex justify-content-start col-6 col-md-6 custom-control form-radio"
+                          >
                             <input
                               type="radio"
                               class="custom-control-input"
@@ -101,7 +99,7 @@
               <!--  -->
               <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
                 <div class="lg-1">
-                  <h2>LG-1</h2>
+                  <h2>LEG-1</h2>
                 </div>
                 <div class="row mt-4">
                   <div class="col-lg-6 col-md-12">
@@ -286,7 +284,10 @@
                         <div
                           class="custom-controls-stacked d-flex w-75 justify-content-evenly"
                         >
-                          <label class="custom-control custom-radio form-radio">
+                        <div class="d-flex justify-content-between">
+                          <label
+                            class="d-flex justify-content-start custom-control form-radio"
+                          >
                             <input
                               type="radio"
                               class="custom-control-input"
@@ -296,7 +297,9 @@
                             />
                             <span class="custom-control-label">Ready</span>
                           </label>
-                          <label class="custom-control custom-radio form-radio">
+                          <label
+                            class="d-flex justify-content-start  custom-control form-radio"
+                          >
                             <input
                               type="radio"
                               class="custom-control-input"
@@ -305,7 +308,9 @@
                             />
                             <span class="custom-control-label">Spot</span>
                           </label>
-                          <label class="custom-control custom-radio form-radio">
+                          <label
+                            class="d-flex justify-content-start  custom-control form-radio"
+                          >
                             <input
                               type="radio"
                               class="custom-control-input"
@@ -331,10 +336,9 @@
                           />
                         </div>
                       </div>
-                      <div class="form-group d-flex justify-content-between">
-                        <div class="form-label">Direct Settle</div>
-                        <div
-                          class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                      <div class="form-group row align-items-center mt-5">
+                        <label class="col-md-4 form-label" for="example-email"
+                          >Brokerage</label
                         >
                           <label class="custom-control custom-radio form-radio">
                             <input
@@ -382,7 +386,7 @@
               <!--  -->
               <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
                 <div class="lg-1">
-                  <h2>LG-2</h2>
+                  <h2>LEG-2</h2>
                 </div>
                 <div class="row mt-4">
                   <div class="col-lg-6 col-md-12">
@@ -398,40 +402,43 @@
                           class="col-md-4 form-label"
                           for="example-email"
                         ></label>
-                        <div class="form-group d-flex justify-content-between">
-                          <div class="form-label invisible">Direct Settle</div>
-                          <div
-                            class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                        <div class=" d-flex justify-content-between">
+                          <label
+                            class="d-flex justify-content-start  custom-control form-radio"
                           >
-                            <label class="custom-control custom-radio form-radio">
-                              <input
-                                type="radio"
-                                class="custom-control-input"
-                                name="direct-settle"
-                                value="option1"
-                                checked
-                              />
-                              <span class="custom-control-label">Ready</span>
-                            </label>
-                            <label class="custom-control custom-radio form-radio">
-                              <input
-                                type="radio"
-                                class="custom-control-input"
-                                name="direct-settle"
-                                value="option2"
-                              />
-                              <span class="custom-control-label">Spot</span>
-                            </label>
-                            <label class="custom-control custom-radio form-radio">
-                              <input
-                                type="radio"
-                                class="custom-control-input"
-                                name="direct-settle"
-                                value="option2"
-                              />
-                              <span class="custom-control-label">Forward</span>
-                            </label>
-                          </div>
+                            <input
+                              type="radio"
+                              class="custom-control-input"
+                              name="blank"
+                              value="option1"
+                              checked=""
+                            />
+                            <span class="custom-control-label">Ready</span>
+                          </label>
+                          <label
+                            class="d-flex justify-content-start  custom-control form-radio"
+                          >
+                            <input
+                              type="radio"
+                              class="custom-control-input"
+                              name="blank"
+                              value="option1"
+                              checked=""
+                            />
+                            <span class="custom-control-label">Spot</span>
+                          </label>
+                          <label
+                            class="d-flex justify-content-start  custom-control form-radio"
+                          >
+                            <input
+                              type="radio"
+                              class="custom-control-input"
+                              name="blank"
+                              value="option1"
+                              checked=""
+                            />
+                            <span class="custom-control-label">Forward</span>
+                          </label>
                         </div>
                       </div>
                       <div class="form-group row align-items-center">

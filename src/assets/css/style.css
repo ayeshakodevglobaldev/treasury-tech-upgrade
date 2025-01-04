@@ -88,9 +88,9 @@ width
 /* ###### bootstrap ####### */
 :root {
     --pr-rgb: 112, 94, 200;
-    --primary-bg-color: #705ec8;
-    --primary-bg-hover: #705ec8fc;
-    --primary-bg-border: #705ec8;
+    --primary-bg-color: #ed2d4c;
+    --primary-bg-hover: #ed2d4ccc;
+    --primary-bg-border: #ed2d4c;
     --dark-theme: #272d47;
     --dark-body: #1a1c33;
     --primary-1: rgba(var(--pr-rgb), 0.1);
