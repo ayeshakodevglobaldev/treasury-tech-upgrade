@@ -12,9 +12,10 @@
                       ngbNav
                       #nav="ngbNav"
                       [(activeId)]="active"
-                      class="nav-tabs fir-base rounded-2 nav justify-content-center border-0"
+                      class="nav-tabs  rounded-2 nav justify-content-center border-0"
                     >
-                      <li ngbNavItem="Firebase">
+                    <!-- fir-base REMOVE class from above -->
+                      <!-- <li ngbNavItem="Firebase">
                         <a ngbNavLink class="firebase-img border-0">
                           <img src="./assets/images/svgs/firebase.svg" alt="" />
                         </a>
@@ -117,11 +118,17 @@
                             </div>
                           </form>
                         </ng-template>
-                      </li>
+                      </li> -->
                       <li ngbNavItem="Angular">
-                        <a ngbNavLink class="firebase-img  border-0">
+                        <!-- <a ngbNavLink class="firebase-img  border-0">
                           <img src="./favicon.ico" alt="" />
+                        </a> -->
+                        <a ngbNavLink class="kodev-img  border-0 p-0">
+                          <img src="./assets/images/png/Kodev-logo.png" alt="" />
                         </a>
+                        <div class="text-center title-style mb-6">
+                          <h1 class="mb-6">Login</h1>
+                        </div>
                         <ng-template ngbNavContent>
                           <form [formGroup]="loginForm" (ngSubmit)="Submit()">
                             <div class="form-group">
@@ -129,10 +136,8 @@
 
                                 {{error}}
                             </div>
-                            <div class="text-center title-style mb-6">
-                              <h1 class="mb-6">Login</h1>
-                            </div>
-                            <div class="btn-list d-flex mt-3 mb-2">
+                            
+                            <!-- <div class="btn-list d-flex mt-3 mb-2">
                               <a
                                 href="javascript:void(0);"
                                 class="btn btn-google btn-block btn-secondary me-2"
@@ -149,8 +154,8 @@
                                 class="btn btn-facebook btn-primary"
                                 ><i class="fab fa-facebook fa-1x"></i
                               ></a>
-                            </div>
-                            <div class="input-group mb-3">
+                            </div> -->
+                            <div class="input-group mb-3 mt-4">
                               <a
                                 href="javascript:void(0)"
                                 class="input-group-text bg-white text-muted"
@@ -238,7 +243,7 @@
                       <div></div>
                       <div></div>
                     </div>
-                    <img src="./assets/images/png/login.png" alt="img" />
+                    <img src="./assets/images/png/Kodev-login.png" alt="img" />
                   </div>
                 </div>
               </div>
