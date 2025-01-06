@@ -30,7 +30,12 @@ export const content: Routes = [
         loadChildren:()=>import('../../features/fx/fx-frontoffice/placement-deal/placement-deal.module').then(m=>m.PlacementDealModule)
     },
     {
-        path:'features/fx/fx-frontoffice/transfer-deal',
-        loadChildren:()=>import('../../features/fx/fx-frontoffice/transfer-deal/transfer-deal.module').then(m=>m.TransferDealModule)
-    }
+        path:'features/mm/mm-frontoffice/outright',
+        loadChildren:()=>import('../../features/mm/mm-frontoffice/outright/outright.module').then(m=>m.OutrightModule)
+    },
+    {
+        path:'features/mm/mm-frontoffice/call',
+        loadChildren:()=>import('../../features/mm/mm-frontoffice/call/call.module').then(m=>m.CallModule)
+    },
+
 ]
