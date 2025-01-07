@@ -12,16 +12,16 @@ import { PieChartData } from '../../shared/data/charts/apex';
 export class MmDashboardComponent {
  recentActivities = recentActivitiesData;
       recentCustomers = recentCustomersData;
-    
+
       constructor() { }
-    
+
       ngOnInit(): void {
-    
+        
       }
       ngAfterViewInit() {
-    
+
       }
-    
+
       public ApexData1:Partial<any> | any = chartData.ApexData1;
       public ApexData2:Partial<any> | any = chartData.ApexData2;
       public ApexData3:Partial<any> | any = chartData.ApexData3;

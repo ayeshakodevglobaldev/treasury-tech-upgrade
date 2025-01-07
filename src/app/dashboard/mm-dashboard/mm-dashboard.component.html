@@ -28,7 +28,7 @@
             Money Market Trader
           </div>
            <button class="btn btn-primary d-none d-sm-block me-2"><i class="fa fa-comments"></i> </button>
-                    <button class="btn btn-info d-none d-sm-block"><i class="fa fa-phone"></i> </button> 
+                    <button class="btn btn-info d-none d-sm-block"><i class="fa fa-phone"></i> </button>
         </div>
       </div>
       <div class="card-footer text-secondary border-top">
@@ -38,30 +38,36 @@
   </div> -->
   <div class="col-xl-3 col-md-12 col-lg-12 col-sm-12">
     <div class="card bg-primary text-white">
-        <div class="card-body text-center">
-            <img class="avatar avatar-xl brround mb-3 mx-auto" src="./assets/images/users/16.jpg" alt="img">
-            <h4 class="font-weight-semibold mb-1 text-white">Mr. Ghafoor</h4>
-            <p class="fs-12 mb-0">Money Market Trader</p>
+      <div class="card-body text-center">
+        <img
+          class="avatar avatar-xl brround mb-3 mx-auto"
+          src="./assets/images/users/16.jpg"
+          alt="img"
+        />
+        <h4 class="font-weight-semibold mb-1 text-white">Mr. Ghafoor</h4>
+        <p class="fs-12 mb-0">Money Market Trader</p>
+      </div>
+      <div class="card-body border-transparent">
+        <div class="row mb-3">
+          <div class="col-4 fs-12">Email</div>
+          <div class="col-8 font-weight-semibold fs-12">
+            kodevglobal@gmail.com
+          </div>
         </div>
-        <div class="card-body border-transparent">
-            <div class="row mb-3">
-                <div class="col-4 fs-12">Email</div>
-                <div class="col-8 font-weight-semibold fs-12">kodevglobal@gmail.com</div>
-            </div>
-            <!-- <div class="row">
+        <!-- <div class="row">
                 <div class="col-4 fs-12">Education</div>
                 <div class="col-8 font-weight-semibold fs-12">Bachelors of Engineering</div>
             </div> -->
-        </div>
+      </div>
     </div>
-</div>
+  </div>
   <div class="col-md-12 col-xl-9 col-lg-6">
     <div class="card">
       <div class="card-header">
         <div class="card-title">Trade Status</div>
       </div>
       <div class="card-body">
-        <div class="d-flex flex-row  flex-wrap">
+        <div class="d-flex flex-row flex-wrap">
           <div class="col-md-12 col-xl-4 col-lg-6">
             <div class="card text-center">
               <div class="card-body">
@@ -130,6 +136,22 @@
           <div class="ms-auto">
             <span class="text-white display-6"
               ><i class="fe fe-file-text"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-secondary">
+      <div class="card-body">
+        <div class="d-flex no-block align-items-center">
+          <div>
+            <h6 class="text-white">Sales</h6>
+            <h2 class="text-white m-0 font-weight-bold">25k</h2>
+          </div>
+          <div class="ms-auto">
+            <span class="text-white display-6"
+              ><i class="fe fe-bar-chart"></i
             ></span>
           </div>
         </div>
@@ -206,6 +228,17 @@
         </div>
       </div>
     </div>
+
+    <div class="card text-center">
+      <div class="card-body">
+        <span>Market Action</span>
+        <h3 class="mb-1 mt-1 font-weight-bold">Trades Maturity this week</h3>
+        <div class="text-muted">
+          <i class="si si-arrow-up-circle text-success"></i>
+          <span class="ms-1">Daily/Weekly</span> Increase
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="col-lg-3 col-md-6">
@@ -252,8 +285,8 @@
       </div>
     </div>
   </div>
-  
-  <div class="col-xl-12  col-lg-12 col-md-12">
+
+  <div class="col-xl-12 col-lg-12 col-md-12">
     <div class="card">
       <div class="card-header">
         <h5 class="card-title">Top Product Sales Overview</h5>
@@ -462,156 +495,6 @@
         </div>
       </div>
     </div>
-  </div> 
-  
-  <div class="col-md-12 col-xl-2 col-lg-6">
-    <div class="card text-center">
-      <div class="card-body">
-        <span>Market Action</span>
-        <h1 class="mb-1 mt-1 font-weight-bold">Trades Maturity this week</h1>
-        <div class="text-muted">
-          <i class="si si-arrow-up-circle text-success"></i>
-          <span class="">Daily/Weekly</span> Increase
-        </div>
-      </div>
-    </div>
   </div>
-  
-  <div class="col-xxl-6 col-xl-8 col-lg-12">
-    <div class="card">
-      <div class="card-header">
-        <div class="card-title">Gainers and Losers</div>
-      </div>
-      <div class="card-body">
-        <div>
-          <div class="d-flex flex-row mb-4 flex-wrap">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-xm-12 ps-0">
-              <div class="card dash1-card border-0 mb-0">
-                <div class="card-body">
-                  <p class="mb-1">Pending Approvals</p>
-                  <h4 class="mb-1 number-font">PKR 3,257</h4>
-                  <small class="fs-12 text-muted">Compared to Last Month</small>
-                  <span class="ratio bg-warning">76%</span>
-                </div>
-                <apx-chart
-                  [chart]="ApexData1.chart"
-                  [stroke]="ApexData1.stroke"
-                  [fill]="ApexData1.fill"
-                  [series]="ApexData1.series"
-                  [yaxis]="ApexData1.yaxis"
-                  [colors]="ApexData1.colors"
-                >
-                </apx-chart>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-xm-12 ps-0">
-              <div class="card dash1-card border-0 mb-0">
-                <div class="card-body">
-                  <p class="mb-1">Settle Trade Today</p>
-                  <h4 class="mb-1 number-font">PKR 1,678</h4>
-                  <small class="fs-12 text-muted">Compared to Last Month</small>
-                  <span class="ratio bg-info">85%</span>
-                </div>
-                <apx-chart
-                  [chart]="ApexData2.chart"
-                  [stroke]="ApexData2.stroke"
-                  [fill]="ApexData2.fill"
-                  [series]="ApexData2.series"
-                  [yaxis]="ApexData2.yaxis"
-                  [colors]="ApexData2.colors"
-                >
-                </apx-chart>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-xxl-3 col-xl-4 col-lg-12">
-    <div class="card overflow-hidden">
-      <div class="card-header border-bottom">
-        <h4 class="card-title fw-semibold">Latest Transactions</h4>
-      </div>
-      <div class="card-body p-0 customers mt-1">
-        <div class="list-group py-1 latest-transaction-scroll">
-          <a href="javascript:void(0);" class="border-0 mb-1">
-            <div class="list-group-item border-0">
-              <div class="media mt-0 align-items-center">
-                <div class="avatar bg-info-transparent me-3">
-                  <i class="fe fe-file-text"></i>
-                </div>
-                <div class="media-body">
-                  <div class="d-flex align-items-center">
-                    <div class="mt-0">
-                      <h5 class="mb-1 fs-13 fw-normal text-dark">
-                        Paid Monthly Expenses<span
-                          class="fs-13 fw-semibold ms-1"
-                          >Bills & Loans</span
-                        >
-                      </h5>
-                      <p class="mb-0 fs-12 text-muted">Payment 6.43am</p>
-                    </div>
-                    <span class="ms-auto fs-12 fw-semibold">
-                      <span class="float-end">-PKR1,298</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="javascript:void(0);" class="border-0 mb-1">
-            <div class="list-group-item border-0">
-              <div class="media mt-0 align-items-center">
-                <div class="avatar bg-primary-transparent me-3">
-                  <i class="fe fe-chevrons-right"></i>
-                </div>
-                <div class="media-body">
-                  <div class="d-flex align-items-center">
-                    <div class="mt-0">
-                      <h5 class="mb-1 fs-13 fw-normal text-dark">
-                        To Bel Bcron Bank<span class="fs-13 fw-semibold ms-1"
-                          >Savings Section</span
-                        >
-                      </h5>
-                      <p class="mb-0 fs-12 text-muted">Transfer 4.53pm</p>
-                    </div>
-                    <span class="ms-auto fs-12 fw-semibold">
-                      <span class="float-end">-PKR2,543</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="javascript:void(0);" class="border-0">
-            <div class="list-group-item border-0">
-              <div class="media mt-0 align-items-center">
-                <div class="avatar bg-warning-transparent me-3">
-                  <i class="fe fe-briefcase"></i>
-                </div>
-                <div class="media-body">
-                  <div class="d-flex align-items-center">
-                    <div class="mt-0">
-                      <h5 class="mb-1 fs-13 fw-normal text-dark">
-                        Payment For
-                        <span class="fs-13 fw-semibold ms-1">Day Job</span>
-                      </h5>
-                      <p class="mb-0 fs-12 text-muted">Received 2.45pm</p>
-                    </div>
-                    <span class="ms-auto fs-12 fw-semibold">
-                      <span class="float-end">+PKR32,543</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
 </div>
 <!-- End Row-1 -->
