@@ -8,11 +8,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { NgScrollbarModule } from 'ngx-scrollbar';
+import { MmDashboardComponent } from './mm-dashboard/mm-dashboard.component';
 
 
 @NgModule({
   declarations: [
-    DashboardComponent
+    DashboardComponent,
+    MmDashboardComponent
   ],
   imports: [
     CommonModule,
