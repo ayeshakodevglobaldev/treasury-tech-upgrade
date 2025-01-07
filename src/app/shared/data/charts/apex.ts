@@ -759,7 +759,7 @@ export const PieChartData:PieChart = {
     pieseries: [44, 55, 13, 43, 22],
     colors: ['#705ec8', '#fa057a', '#2dce89', '#ff5b51', '#fcbf09'],
     chart: {
-        height: 250,
+        height: 300,
         type: 'pie',
     },
     labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],

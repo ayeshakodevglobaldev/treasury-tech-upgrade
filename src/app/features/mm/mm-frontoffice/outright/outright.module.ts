@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { OutrightRoutingModule } from './outright-routing.module';
@@ -7,6 +7,7 @@ import { SukukVariableComponent } from './sukuk-variable/sukuk-variable.componen
 import { SukukFixedComponent } from './sukuk-fixed/sukuk-fixed.component';
 import { PibFloaterComponent } from './pib-floater/pib-floater.component';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -20,6 +21,8 @@ import { NgSelectModule } from '@ng-select/ng-select';
     CommonModule,
     OutrightRoutingModule,
     NgSelectModule,
-  ]
+    SharedModule,
+  ],
+  // schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class OutrightModule { }
