@@ -7,8 +7,17 @@
             <li class="breadcrumb-item active" aria-current="page"><a href="javascript:void(0)">{{activeitem}}</a></li>
         </ol>
     </div>
-    <div class="page-rightheader" >
-        <div class="btn btn-list" *ngIf="isBtnList">
+
+    <div class="page-rightheader" *ngIf="mmDashboardBtnList">
+      <div class="btn btn-list" >
+          <a href="javascript:void(0)" class="btn btn-info me-1"><i class="fe fe-save me-1"></i> Place New Trade </a>
+          <a href="javascript:void(0)" class="btn btn-danger me-1"><i class="fe fe-refresh-cw me-1"></i> View Blotter </a>
+          <a href="javascript:void(0)" class="btn btn-warning me-1"><i class="fe fe-log-out me-1"></i> Access IPS Accounts </a>
+      </div>
+  </div>
+
+    <div class="page-rightheader" *ngIf="isBtnList">
+        <div class="btn btn-list" >
             <a href="javascript:void(0)" class="btn btn-info me-1"><i class="fe fe-save me-1"></i> Save </a>
             <a href="javascript:void(0)" class="btn btn-danger me-1"><i class="fe fe-refresh-cw me-1"></i> Reset </a>
             <a href="javascript:void(0)" class="btn btn-warning me-1"><i class="fe fe-log-out me-1"></i> Exit </a>
