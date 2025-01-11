@@ -40,8 +40,8 @@ export class SwapInputComponent {
       blankB: new FormControl(null, Validators.required),
       LGAdate: new FormControl(null, [Validators.required, this.futureDateValidator]),
       LGBdate: new FormControl(null, [Validators.required, this.futureDateValidator]),
-     
-      
+
+
     });
   }
 
@@ -103,10 +103,10 @@ export class SwapInputComponent {
       this.form.markAllAsTouched();
       return;
     }
-    
+
     // Handle the form submission logic here if it's valid
     console.log('Form Submitted:', this.form.value);
   }
-  
+
 }
 
