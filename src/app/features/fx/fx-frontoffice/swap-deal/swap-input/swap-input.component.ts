@@ -42,7 +42,6 @@ export class SwapInputComponent {
       pkrEquivalent: new FormControl(null, [Validators.required, Validators.min(0.01)]),
       remark: new FormControl('', [Validators.maxLength(200)])
 
-
     });
   }
 
