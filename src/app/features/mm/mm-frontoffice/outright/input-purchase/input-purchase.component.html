@@ -1,10 +1,10 @@
  <!-- SUKUK PURCHASE INPUT START FROM HERE -->
 <!--Page header-->
 <app-page-header
-  [title]="'Sukuk (Fixed)'"
+  [title]="'Outright Purchase Input'"
   [icon]="'grid'"
   [title1]="'Money Market (MM)'"
-  [activeitem]="'Sukuk-Outright Purchase Input'"
+  [activeitem]="'Outright Purchase Input'"
   [isBtnList]="true"
 ></app-page-header>
 <!--End Page header-->
@@ -56,7 +56,7 @@
           <form class="d-flex flex-wrap">
             <div class="col-lg-6 col-md-12">
               <div class="form-group row">
-                <label class="col-md-4 form-label">Country Party</label>
+                <label class="col-md-4 form-label">Counter Party</label>
                 <div class="col-md-8">
                   <input class="form-control" type="text" name="number" />
                 </div>
@@ -91,6 +91,70 @@
                   <input class="form-control" type="text" name="number" />
                 </div>
               </div>
+              <div class="form-group d-flex justify-content-between">
+                <div class="form-label">Mode Of Deal</div>
+                <div
+                  class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                >
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="deal-mode"
+                      value="option1"
+                      
+                    />
+                    <span class="custom-control-label">Direct</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="deal-mode"
+                      value="option2"
+                    />
+                    <span class="custom-control-label">Broker</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Broker</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Brokerage Amount</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group d-flex justify-content-between">
+                <div class="form-label">Settlement Mode</div>
+                <div
+                  class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                >
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="settlement-mode"
+                      value="option1"
+                     
+                    />
+                    <span class="custom-control-label">SBP</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="settlement-mode"
+                      value="option2"
+                    />
+                    <span class="custom-control-label">Debit A/c</span>
+                  </label>
+                </div>
+              </div>
             </div>
             <!--  -->
             <div class="col-lg-6 col-md-12">
@@ -104,6 +168,21 @@
                 <label class="col-md-4 form-label">Coupon</label>
                 <div class="col-md-8">
                   <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Tenor</label>
+                <div class="col-md-8">
+                  <ng-select placeholder="--SELECT MONTHS OR YEARS--">
+                    <ng-option>3-Months</ng-option>
+                    <ng-option>6-Months</ng-option>
+                    <ng-option>1-Year</ng-option>
+                    <ng-option>3-Years</ng-option>
+                    <ng-option>5-Years</ng-option>
+                    <ng-option>7-Years</ng-option>
+                    <ng-option>10-Years</ng-option>
+                    <ng-option>15-Years</ng-option>
+                  </ng-select>
                 </div>
               </div>
             </div>
