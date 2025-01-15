@@ -37,7 +37,7 @@ import { QuillModule } from 'ngx-quill';
     OutrightDealRoutingModule,
     SharedModule,
      NgSelectModule,
-        NgbModule,
+        NgbModule,  
         // CKEditorModule,
         AngularEditorModule,
         HttpClientModule,

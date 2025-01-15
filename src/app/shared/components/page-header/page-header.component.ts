@@ -12,7 +12,7 @@ export class PageHeaderComponent {
   @Input() title1!: string;
   @Input() title2!: string;
   @Input() activeitem!: string;
-
+  
   @Input() item!: string;
   @Input() icon1!: string;
   @Input() item1!: string;
@@ -20,5 +20,4 @@ export class PageHeaderComponent {
   @Input() activetitle!: string;
 
   @Input() isBtnList!: boolean;
-  @Input() mmDashboardBtnList!:boolean
 }

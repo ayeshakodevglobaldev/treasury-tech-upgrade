@@ -58,10 +58,10 @@ export interface RadialChart {
     // Other properties specific to the chart
   }
   labels:string[]
-
+ 
   responsive:[{
     options:{
-
+        
         legend:{
             show:boolean;
         }
@@ -84,7 +84,7 @@ export interface RadialChart1 {
     // Other properties specific to the chart
   }
   labels:string[]
-
+ 
   plotOptions: {
     radialBar: {
         dataLabels: {
@@ -169,8 +169,8 @@ export interface BarChart1 {
 },
 xaxis:{
     categories:number[]
-    labels:{
-        formatter: (val: string) => string;
+    labels:{ 
+        formatter: (val: string) => string; 
     };
      }
      stroke:{
@@ -183,8 +183,8 @@ xaxis:{
         },
     },
     tooltip: {
-
-        y: { formatter: (val: string) => string; };
+      
+        y: { formatter: (val: string) => string; }; 
     },
 
     fill: {
@@ -234,7 +234,7 @@ export interface Randomchart{
         type:ChartType,
         id:string,
         zoom:{autoScaleYaxis: boolean}
-
+    
     },
     dataLabels:{
         enabled:boolean
@@ -740,7 +740,7 @@ export const DonutChartData:ApexChart = {
     },
     legend: {
         show: false,
-
+        
     },
     responsive: [{
         breakpoint: 380,
@@ -759,7 +759,7 @@ export const PieChartData:PieChart = {
     pieseries: [44, 55, 13, 43, 22],
     colors: ['#705ec8', '#fa057a', '#2dce89', '#ff5b51', '#fcbf09'],
     chart: {
-        height: 300,
+        height: 280,
         type: 'pie',
     },
     labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
@@ -770,7 +770,7 @@ export const PieChartData:PieChart = {
         breakpoint: 480,
         options: {
             chart: {
-                width: 200
+                width: 240
             },
             legend: {
                 show: false,
@@ -792,7 +792,7 @@ export const RadialBarCircleData:RadialChart = {
             }
         },
     },
-    labels: ['Repos'],
+    labels: ['Sales'],
     colors: ['#4454c3'],
     responsive: [{
         options: {
@@ -801,7 +801,7 @@ export const RadialBarCircleData:RadialChart = {
             }
         }
     }],
-
+   
 };
 export const RadialBarCircleMultipleData:RadialChart1 = {
     pieseries: [44, 55, 67, 83],
@@ -830,5 +830,5 @@ export const RadialBarCircleMultipleData:RadialChart1 = {
         }
     },
     labels: ['data1', 'data2', 'data3', 'data4'],
-
+   
 };
