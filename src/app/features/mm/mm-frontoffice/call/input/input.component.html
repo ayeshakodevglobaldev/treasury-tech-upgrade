@@ -1,0 +1,222 @@
+<app-page-header
+  [title]="'CALL/C.O.I'"
+  [icon]="'grid'"
+  [title1]="'Money Market (MM)'"
+  [activeitem]="'CALL/C.O.I Deal Input'"
+  [isBtnList]="true"
+></app-page-header>
+
+<div class="row">
+ <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+   <div class="card">
+     <div class="card-header">
+       <h4 class="card-title">CALL/C.O.I Deal Input</h4>
+     </div>
+     <div class="card-body">
+       <div class="row">
+         <form class="d-flex flex-wrap">
+           <div class="col-lg-6 col-md-12">
+             <div class="form-group row">
+               <label class="col-md-4 form-label">Transaction Type</label>
+               <div class="col-md-8">
+                 <ng-select placeholder="-- CALL --">
+                   <ng-option>Call</ng-option>
+                   <ng-option>C.O.I</ng-option>
+
+                 </ng-select>
+               </div>
+             </div>
+             <div class="form-group row">
+               <label class="col-md-4 form-label">Transaction No</label>
+               <div class="col-md-8">
+                 <input class="form-control" type="text" name="number" />
+               </div>
+             </div>
+             <div class="form-group d-flex justify-content-between">
+               <div class="form-label"></div>
+               <div
+                 class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+               >
+                 <label class="custom-control custom-radio">
+                   <input
+                     type="radio"
+                     class="custom-control-input"
+                     name="example-radios"
+                     value="option1"
+                     checked
+                   />
+                   <span class="custom-control-label">Borrowing</span>
+                 </label>
+                 <label class="custom-control custom-radio">
+                   <input
+                     type="radio"
+                     class="custom-control-input"
+                     name="example-radios"
+                     value="option2"
+                   />
+                   <span class="custom-control-label">Landing</span>
+                 </label>
+               </div>
+             </div>
+             <div class="form-group row">
+               <label class="col-md-4 form-label">Country Party</label>
+               <div class="col-md-8">
+                 <input class="form-control" type="text" name="number" />
+               </div>
+             </div>
+             <div class="form-group row">
+               <label class="col-md-4 form-label">Amount in PKR</label>
+               <div class="col-md-8">
+                 <input class="form-control" type="text" name="number" />
+               </div>
+             </div>
+             <div class="form-group row">
+               <label class="col-md-4 form-label">Rate</label>
+               <div class="col-md-8">
+                 <input class="form-control" type="text" name="number" />
+               </div>
+             </div>
+             <div class="form-group row">
+               <label class="col-md-4 form-label">Start Date</label>
+               <div class="col-md-8">
+                 <input class="form-control" type="date" name="number" />
+               </div>
+             </div>
+             <div class="form-group row">
+               <label class="col-md-4 form-label">No Of Days</label>
+               <div class="col-md-8">
+                 <input class="form-control" type="text" name="number" />
+               </div>
+             </div>
+             <div class="form-group d-flex justify-content-between">
+               <div class="form-label">Mode Of Deal</div>
+               <div
+                 class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+               >
+                 <label class="custom-control custom-radio">
+                   <input
+                     type="radio"
+                     class="custom-control-input"
+                     name="example-radios"
+                     value="option1"
+                     checked
+                   />
+                   <span class="custom-control-label">Direct</span>
+                 </label>
+                 <label class="custom-control custom-radio">
+                   <input
+                     type="radio"
+                     class="custom-control-input"
+                     name="example-radios"
+                     value="option2"
+                   />
+                   <span class="custom-control-label">Broker</span>
+                 </label>
+               </div>
+             </div>
+             <div class="form-group row">
+               <label class="col-md-4 form-label">Broker</label>
+               <div class="col-md-8">
+                 <input class="form-control" type="text" name="number" />
+               </div>
+             </div>
+             <div class="form-group row">
+               <label class="col-md-4 form-label">Brokerage Amount</label>
+               <div class="col-md-8">
+                 <input class="form-control" type="text" name="number" />
+               </div>
+             </div>
+          </div>
+           <div class="col-lg-6 col-md-12">
+             <div class="form-group row invisible">
+               <label class="col-md-4 form-label">Transaction Type</label>
+               <div class="col-md-8">
+                 <ng-select placeholder="-- CALL --">
+                   <ng-option>Call</ng-option>
+                   <ng-option>C.O.I</ng-option>
+
+                 </ng-select>
+               </div>
+             </div>
+             <div class="form-group row">
+               <label class="col-md-4 form-label">Transaction Date</label>
+               <div class="col-md-8">
+                 <input class="form-control" type="date" name="number" />
+               </div>
+             </div>
+             <div class="form-group d-flex justify-content-between invisible">
+               <div class="form-label"></div>
+               <div
+                 class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+               >
+                 <label class="custom-control custom-radio">
+                   <input
+                     type="radio"
+                     class="custom-control-input"
+                     name="example-radios"
+                     value="option1"
+                     checked
+                   />
+                   <span class="custom-control-label">Borrowing</span>
+                 </label>
+                 <label class="custom-control custom-radio">
+                   <input
+                     type="radio"
+                     class="custom-control-input"
+                     name="example-radios"
+                     value="option2"
+                   />
+                   <span class="custom-control-label">Landing</span>
+                 </label>
+               </div>
+             </div>
+             <div class="form-group row">
+               <label class="col-md-4 form-label"></label>
+               <div class="col-md-8">
+                 <input class="form-control" type="text" name="number" />
+               </div>
+             </div>
+             <div class="form-group row invisible">
+               <label class="col-md-4 form-label">Start Date</label>
+               <div class="col-md-8">
+                 <input class="form-control" type="text" name="number" />
+               </div>
+             </div>
+            <div class="form-group row">
+               <label class="col-md-4 form-label">End Date</label>
+               <div class="col-md-8">
+                 <input class="form-control" type="date" name="number" />
+               </div>
+             </div>
+             <div class="form-group row">
+               <label class="col-md-4 form-label">Direct Option</label>
+               <div class="col-md-8">
+                 <ng-select placeholder="-- CALL --">
+                   <ng-option>BLOOMBERG</ng-option>
+                   <ng-option>BROKER</ng-option>
+                   <ng-option>FAX</ng-option>
+                   <ng-option>MOBIT</ng-option>
+                   <ng-option>REUTERS</ng-option>
+                   <ng-option>TELEPHONE</ng-option>
+                 </ng-select>
+               </div>
+             </div>
+             <div class="form-group row">
+               <label class="col-md-4 form-label"></label>
+               <div class="col-md-8">
+                 <input class="form-control" type="text" name="number" />
+               </div>
+             </div>
+           </div>
+           <div class="col-12">
+             <div class="form-group">
+               <label class="form-label">Remarks</label>
+               <textarea class="form-control" rows="6">Remarks</textarea>
+             </div>
+           </div>
+         </form>
+       </div>
+     </div>
+   </div>
+ </div>
+ </div>
