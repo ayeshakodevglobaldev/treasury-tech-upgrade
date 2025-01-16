@@ -37,5 +37,9 @@ export const content: Routes = [
         path:'features/mm/mm-frontoffice/call',
         loadChildren:()=>import('../../features/mm/mm-frontoffice/call/call.module').then(m=>m.CallModule)
     },
+    {
+        path:'features/mm/mm-frontoffice/short-sales',
+        loadChildren:()=>import('../../features/mm/mm-frontoffice/short-sales/short-sales.module').then(m=>m.ShortSalesModule)
+    },
 
 ]
