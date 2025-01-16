@@ -5,4 +5,249 @@
   [activeitem]="'SHORT SALE INPUT (TB/PIB)'"
   [isBtnList]="true"
 ></app-page-header>
-<!--End Page header-->
+
+
+<!-- Row -->
+<div class="row">
+<div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+  <div class="card">
+    <div class="card-header">
+      <h4 class="card-title">Short Sale Input</h4>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <form>
+          <form class="d-flex flex-wrap">
+            <div class="col-lg-6 col-md-12">
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Transaction Type</label>
+                <div class="col-md-8">
+                  <ng-select placeholder="--TREASURY BILLS--">
+                    <ng-option>Treasury Bills</ng-option>
+                    <ng-option>Pakistan Investment Bonds</ng-option>
+                  </ng-select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Transaction No</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-6 col-md-12">
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Transaction Date</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="datetime-local" name="number" />
+                </div>
+              </div>
+            </div>
+          </form>
+          <form class="d-flex flex-wrap">
+            <div class="col-lg-6 col-md-12">
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Counter Party</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Amount in PKR</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Yield</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Start Date</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="date" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Issue Date</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="date" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Price</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group d-flex justify-content-between">
+                <div class="form-label">Mode Of Deal</div>
+                <div
+                  class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                >
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="deal-mode"
+                      value="option1"
+                      
+                    />
+                    <span class="custom-control-label">Direct</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="deal-mode"
+                      value="option2"
+                    />
+                    <span class="custom-control-label">Broker</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Broker</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Brokerage Amount</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group d-flex justify-content-between">
+                <div class="form-label">Settlement Mode</div>
+                <div
+                  class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                >
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="settlement-mode"
+                      value="option1"
+                     
+                    />
+                    <span class="custom-control-label">SBP</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      class="custom-control-input"
+                      name="settlement-mode"
+                      value="option2"
+                    />
+                    <span class="custom-control-label">Debit A/c</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-6 col-md-12">
+              <div class="form-group row">
+                <label class="col-md-4 form-label"></label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Coupon</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Tenor</label>
+                <div class="col-md-8">
+                  <ng-select placeholder="--SELECT MONTHS OR YEARS--">
+                    <ng-option>3-Months</ng-option>
+                    <ng-option>6-Months</ng-option>
+                    <ng-option>1-Year</ng-option>
+                    <ng-option>3-Years</ng-option>
+                    <ng-option>5-Years</ng-option>
+                    <ng-option>7-Years</ng-option>
+                    <ng-option>10-Years</ng-option>
+                    <ng-option>15-Years</ng-option>
+                  </ng-select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Remaining Days</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Issue Maturity</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">IPS Branch</label>
+                <div class="col-md-2">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Direct Option</label>
+                <div class="col-md-8">
+                  <ng-select  placeholder="--SELECT OPTION--">
+                    <ng-option>BLOOMBERG</ng-option>
+                    <ng-option>BROKER</ng-option>
+                    <ng-option>FAX</ng-option>
+                    <ng-option>MOBIT</ng-option>
+                    <ng-option>REUTERS</ng-option>
+                    <ng-option>TELEPHONE</ng-option>
+                  </ng-select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label"></label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Accrued Int. Calc</label>
+                <div class="col-md-8">
+                  <ng-select  placeholder="--MARKET BASE--">
+                    <ng-option>SPB Calc (365)</ng-option>
+                    <ng-option>SPB Calc (365)</ng-option>
+                    <ng-option>Market Base</ng-option>
+                  </ng-select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Accrued Amount</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+              </div>
+            </div>
+          </form>
+          <form class="d-flex flex-wrap">
+          <div class="col-12">
+              <div class="form-group">
+                <label class="form-label">Remarks</label>
+                <textarea class="form-control" rows="6">Remarks</textarea>
+              </div>
+            </div>
+          </form>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Row -->
+
