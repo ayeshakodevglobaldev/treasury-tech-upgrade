@@ -301,6 +301,19 @@ export class NavService implements OnDestroy {
                 },
               ],
             },
+            {
+              title: 'Call C.O.I',
+              type: 'sub',
+              active: false,
+              // Menusub: true,
+              children: [
+                {
+                  path: '/features/mm/mm-frontoffice/desk-tmu/rates-input',
+                  title: 'Input',
+                  type: 'link',
+                },
+              ],
+            },
           ],
         },
       ],
