@@ -312,6 +312,11 @@ export class NavService implements OnDestroy {
                   title: 'Input',
                   type: 'link',
                 },
+                {
+                  path: '/features/mm/mm-frontoffice/short-sales/input-issue',
+                  title: 'Input When Issue',
+                  type: 'link',
+                },
               ],
             },
           ],
