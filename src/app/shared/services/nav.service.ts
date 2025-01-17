@@ -302,6 +302,19 @@ export class NavService implements OnDestroy {
               ],
             },
             {
+              title: 'Desk TMU',
+              type: 'sub',
+              active: false,
+              // Menusub: true,
+              children: [
+                {
+                  path: '/features/mm/mm-frontoffice/desk-tmu/rates-input',
+                  title: 'Input',
+                  type: 'link',
+                },
+              ],
+            },
+            {
               title: 'Short Sales',
               type: 'sub',
               active: false,
@@ -315,11 +328,6 @@ export class NavService implements OnDestroy {
                 {
                   path: '/features/mm/mm-frontoffice/short-sales/input-issue',
                   title: 'Input When Issue',
-                  type: 'link',
-                },
-                {
-                  path: '/features/mm/mm-frontoffice/desk-tmu/rates-input',
-                  title: 'Input',
                   type: 'link',
                 },
               ],
