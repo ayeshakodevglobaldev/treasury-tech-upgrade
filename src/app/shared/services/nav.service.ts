@@ -317,6 +317,11 @@ export class NavService implements OnDestroy {
                   title: 'Input When Issue',
                   type: 'link',
                 },
+                {
+                  path: '/features/mm/mm-frontoffice/desk-tmu/rates-input',
+                  title: 'Input',
+                  type: 'link',
+                },
               ],
             },
           ],
