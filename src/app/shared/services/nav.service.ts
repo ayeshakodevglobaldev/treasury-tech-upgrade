@@ -302,7 +302,7 @@ export class NavService implements OnDestroy {
               ],
             },
             {
-              title: 'Call C.O.I',
+              title: 'Desk TMU',
               type: 'sub',
               active: false,
               // Menusub: true,

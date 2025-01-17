@@ -7,7 +7,7 @@ const routes: Routes = [
           path:'',
           children:[
             {
-              path:' rates-input',
+              path:'rates-input',
               component:RatesInputComponent
             },
           
