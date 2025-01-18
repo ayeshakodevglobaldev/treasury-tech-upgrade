@@ -315,7 +315,22 @@ export class NavService implements OnDestroy {
               ],
             },
             {
+              title: 'SBP AUCTION (TB/PIB)',
+
+              type: 'sub',
+              active: false,
+              // Menusub: true,
+              children: [
+              {
+                  path: '/features/mm/mm-frontoffice/sbp-auction/auction',
+                  title: 'Input',
+                  type: 'link',
+                },
+              ],
+            },
+            {
               title: 'Short Sales',
+
               type: 'sub',
               active: false,
               // Menusub: true,

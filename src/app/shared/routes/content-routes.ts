@@ -45,4 +45,8 @@ export const content: Routes = [
         path:'features/mm/mm-frontoffice/desk-tmu',
         loadChildren:()=>import('../../features/mm/mm-frontoffice/desk-tmu/desk-tmu.module').then(m=>m.DeskTmuModule)
     },
+    {
+        path:'features/mm/mm-frontoffice/sbp-auction',
+        loadChildren:()=>import('../../features/mm/mm-frontoffice/sbp-auction/sbp-auction.module').then(m=>m.SbpAuctionModule)
+    },
 ]
