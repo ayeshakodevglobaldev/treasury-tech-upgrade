@@ -6,6 +6,8 @@ import { InputPurchaseComponent } from './input-purchase/input-purchase.componen
 import { SukukVariableComponent } from './sukuk-variable/sukuk-variable.component';
 import { SukukFixedComponent } from './sukuk-fixed/sukuk-fixed.component';
 import { PibFloaterComponent } from './pib-floater/pib-floater.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { PibFloaterComponent } from './pib-floater/pib-floater.component';
   ],
   imports: [
     CommonModule,
-    OutrightRoutingModule
+    OutrightRoutingModule,
+    NgSelectModule,
+    SharedModule
   ]
 })
 export class OutrightModule { }
