@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./input.component.scss']
 })
 export class InputComponent {
+  activeSection: string = 'input'; // Default section to show
 
+  setActiveSection(section: string) {
+    this.activeSection = section;
+  }
 }
