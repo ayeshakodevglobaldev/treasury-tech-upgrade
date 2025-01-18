@@ -1,1 +1,1255 @@
-<p>mm-dashboard works!</p>
+<app-page-header
+  [title]="'Hi! Welcome Back'"
+  [icon]="'home'"
+  [title1]="'Home'"
+  [activeitem]="'Money Market Dashboard'"
+></app-page-header>
+
+<!-- Row -->
+<div class="row">
+  <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Money Market Dashboard</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <form class="d-flex flex-wrap">
+            <div class="col-lg-4 col-md-12">
+              <div class="form-group row">
+                <label class="col-md-3 form-label">DTL Amount</label>
+                <div class="col-md-9">
+                  <input class="form-control" type="number" name="number" />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-3 form-label">Week end</label>
+                <div class="col-md-9">
+                  <input class="form-control" type="number" name="number" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="form-group row">
+                <label class="col-md-3 form-label">CRR</label>
+                <div class="col-md-9">
+                  <input class="form-control" type="date" name="date" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 form-label">Difference</label>
+                <div class="col-md-9">
+                  <input class="form-control" type="date" name="date" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="form-group row">
+                <label class="col-md-3 form-label">AVG Week Long/Short</label>
+                <div class="col-md-9">
+                  <input class="form-control" type="date" name="date" />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-7 m-0">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table
+                          class="table table-vcenter text-nowrap mb-0 table-bordered border-top"
+                        >
+                          <thead class="">
+                            <tr>
+                              <th>HFT</th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Face Value (Tdy)</span>
+                                  <span>MTM</span>
+                                </span>
+                              </th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Face Value (Pre)</span>
+                                  <span>MTM</span>
+                                </span>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                TBills
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                PIBS
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Sukuk
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                ToTal
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table
+                          class="table table-vcenter text-nowrap mb-0 table-bordered border-top"
+                        >
+                          <thead class="">
+                            <tr>
+                              <th>AFS</th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Face Value (Tdy)</span>
+                                  <span>MTM</span>
+                                </span>
+                              </th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Face Value (Pre)</span>
+                                  <span>MTM</span>
+                                </span>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                TBills
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                PIBS
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Sukuk
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                ToTal
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table
+                          class="table table-vcenter text-nowrap mb-0 table-bordered border-top"
+                        >
+                          <thead class="">
+                            <tr>
+                              <th>G-Total</th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Face Value (Tdy)</span>
+                                  <span>MTM</span>
+                                </span>
+                              </th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Face Value (Pre)</span>
+                                  <span>MTM</span>
+                                </span>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                TBills
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                PIBS
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Sukuk
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                ToTal
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table
+                          class="table table-vcenter text-nowrap mb-0 table-bordered border-top"
+                        >
+                          <thead class="">
+                            <tr>
+                              <th></th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Face Value (Tdy)</span>
+                                  <span>MTM</span>
+                                </span>
+                              </th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Face Value (Pre)</span>
+                                  <span>MTM</span>
+                                </span>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                R-Repo
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Call L
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Total
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table
+                          class="table table-vcenter text-nowrap mb-0 table-bordered border-top"
+                        >
+                          <thead class="">
+                            <tr>
+                              <th></th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Face Value (Tdy)</span>
+                                  <span>MTM</span>
+                                </span>
+                              </th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Face Value (Pre)</span>
+                                  <span>MTM</span>
+                                </span>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Repo
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Call B
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Total
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 m-0">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table
+                          class="table table-vcenter text-nowrap mb-0 table-bordered border-top"
+                        >
+                          <thead class="">
+                            <tr>
+                              <th>Today Deals</th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Purchase</span>
+                                  <span>Avg Rate</span>
+                                </span>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                TBills - Rdy
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                PIBS - Rdy
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Sukuk - Rdy
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table
+                          class="table table-vcenter text-nowrap mb-0 table-bordered border-top"
+                        >
+                          <thead class="">
+                            <tr>
+                              <th>Today Deals</th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Sale</span>
+                                  <span>Avg Rate</span>
+                                </span>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                TBills - Rdy
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                PIBS - Rdy
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Sukuk - Rdy
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table
+                          class="table table-vcenter text-nowrap mb-0 table-bordered border-top"
+                        >
+                          <thead class="">
+                            <tr>
+                              <th>Forward Deals</th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Purchase</span>
+                                  <span>Avg Rate</span>
+                                </span>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                TBills - Fwd
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                PIBS - Fwd
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Sukuk - Fwd
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table
+                          class="table table-vcenter text-nowrap mb-0 table-bordered border-top"
+                        >
+                          <thead class="">
+                            <tr>
+                              <th>Forward Deals</th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Sale</span>
+                                  <span>Avg Rate</span>
+                                </span>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                TBills - Fwd
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                PIBS - Fwd
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Sukuk - Fwd
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table
+                          class="table table-vcenter text-nowrap mb-0 table-bordered border-top"
+                        >
+                          <thead class="">
+                            <tr>
+                              <th></th>
+                              <th>
+                                <span class="d-flex justify-content-around">
+                                  <span>Face Value</span>
+                                  <span>Avg Rate</span>
+                                </span>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Repo - Rdy
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                RR - Rdy
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="font-weight-bold text-truncate">
+                                Call B - Rdy
+                              </td>
+                              <td class="font-weight-bold text-truncate">
+                                <div class="d-flex gap-2">
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                  <input
+                                    class="form-control"
+                                    type="number"
+                                    name="number"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                                <td class="font-weight-bold text-truncate">
+                                  Call L - Rdy
+                                </td>
+                                <td class="font-weight-bold text-truncate">
+                                  <div class="d-flex gap-2">
+                                    <input
+                                      class="form-control"
+                                      type="number"
+                                      name="number"
+                                    />
+                                    <input
+                                      class="form-control"
+                                      type="number"
+                                      name="number"
+                                    />
+                                  </div>
+                                </td>
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-12">
+              <div class="form-group">
+                <label class="form-label">Remarks</label>
+                <textarea class="form-control" rows="6">Remarks</textarea>
+              </div>
+            </div> -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Row -->
