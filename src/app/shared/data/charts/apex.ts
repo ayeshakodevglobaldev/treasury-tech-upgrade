@@ -759,7 +759,7 @@ export const PieChartData:PieChart = {
     pieseries: [44, 55, 13, 43, 22],
     colors: ['#705ec8', '#fa057a', '#2dce89', '#ff5b51', '#fcbf09'],
     chart: {
-        height: 280,
+        height: 200,
         type: 'pie',
     },
     labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
@@ -770,7 +770,7 @@ export const PieChartData:PieChart = {
         breakpoint: 480,
         options: {
             chart: {
-                width: 240
+                width: 180
             },
             legend: {
                 show: false,
@@ -792,7 +792,7 @@ export const RadialBarCircleData:RadialChart = {
             }
         },
     },
-    labels: ['Sales'],
+    labels: ['Repos'],
     colors: ['#4454c3'],
     responsive: [{
         options: {
