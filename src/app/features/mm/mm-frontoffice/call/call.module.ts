@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CallRoutingModule } from './call-routing.module';
 import { InputComponent } from './input/input.component';
 import { NgSelectModule } from '@ng-select/ng-select';
-
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +14,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
     CommonModule,
     CallRoutingModule,
     NgSelectModule,
+    SharedModule,
   ]
 })
 export class CallModule { }
