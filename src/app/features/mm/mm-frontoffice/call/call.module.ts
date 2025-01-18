@@ -6,7 +6,6 @@ import { InputComponent } from './input/input.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { SharedModule } from 'src/app/shared/shared.module';
 
-
 @NgModule({
   declarations: [
     InputComponent
