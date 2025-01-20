@@ -21,7 +21,7 @@
                 <div class="form-group row">
                   <label class="col-md-4 form-label">Type</label>
                   <div class="col-md-8">
-                    <ng-select placeholder="--PIBS--">
+                    <ng-select placeholder="PIBS">
                       <ng-option>Treasury Bills</ng-option>
                       <ng-option>PIBS</ng-option>
                     </ng-select>
@@ -39,7 +39,7 @@
                 <div class="form-group row invisible">
                   <label class="col-md-4 form-label">Type</label>
                   <div class="col-md-8">
-                    <ng-select placeholder="--PIBS--">
+                    <ng-select placeholder="PIBS">
                       <ng-option>Treasury Bills</ng-option>
                       <ng-option>PIBS</ng-option>
                     </ng-select>
@@ -53,7 +53,7 @@
                 </div>
               </div>
             </form>
-            <form class="d-flex flex-wrap">
+            <form class="d-flex flex-wrap mt-3">
               <div class="col-lg-6 col-md-12">
                 <div class="form-group d-flex justify-content-between">
                   <div class="form-label">IPS Account</div>
@@ -64,20 +64,20 @@
                       <input
                         type="radio"
                         class="custom-control-input"
-                        name="example-radios"
+                        name="ips-amount"
                         value="option1"
-                        checked
+                        
                       />
-                      <span class="custom-control-label">Yes</span>
+                      <span class="custom-control-label">No</span>
                     </label>
                     <label class="custom-control custom-radio">
                       <input
                         type="radio"
                         class="custom-control-input"
-                        name="example-radios"
+                        name="ips-amount"
                         value="option2"
                       />
-                      <span class="custom-control-label">No</span>
+                      <span class="custom-control-label">Yes</span>
                     </label>
                   </div>
                 </div>
@@ -90,9 +90,9 @@
                       <input
                         type="radio"
                         class="custom-control-input"
-                        name="example-radios"
+                        name="settlement-mode"
                         value="option1"
-                        checked
+                       
                       />
                       <span class="custom-control-label">SBP</span>
                     </label>
@@ -100,7 +100,7 @@
                       <input
                         type="radio"
                         class="custom-control-input"
-                        name="example-radios"
+                        name="settlement-mode"
                         value="option2"
                       />
                       <span class="custom-control-label">Debit A/C</span>
@@ -121,7 +121,7 @@
                 </div>
                </div>
             </form>
-            <form class="d-flex flex-wrap">
+            <form class="d-flex flex-wrap mt-3">
               <div class="col-lg-4 col-md-12">
                 <div class="form-group row">
                   <label class="col-md-5 form-label">Auction No</label>
@@ -153,7 +153,7 @@
                 <div class="form-group row">
                   <label class="col-md-5 form-label">Tenor</label>
                   <div class="col-md-7">
-                    <ng-select placeholder="--SELECT MONTHS OR YEARS--">
+                    <ng-select placeholder="SELECT MONTHS OR YEARS">
                       <ng-option>3-Months</ng-option>
                       <ng-option>6-Months</ng-option>
                       <ng-option>1-Years</ng-option>
@@ -189,6 +189,100 @@
                 <div class="form-group row">
                   <label class="col-md-5 form-label">Selling Price</label>
                   <div class="col-md-7">
+                    <input class="form-control" type="text" name="number" />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <form class="d-flex flex-wrap mt-3">
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group row">
+                  <label class="col-md-4 form-label">Accrued Int. Calc</label>
+                  <div class="col-md-8">
+                    <ng-select placeholder="MARKETBASE">
+                      <ng-option>SBP Calc (365)</ng-option>
+                      <ng-option>SBP Calc (365)</ng-option>
+                      <ng-option>Market Base</ng-option>
+                    </ng-select>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group row">
+                  <label class="col-md-4 form-label">Accrued Amount</label>
+                  <div class="col-md-8">
+                    <input class="form-control" type="text" name="number" />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <form class="d-flex flex-wrap mt-3">
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group d-flex justify-content-between">
+                  <div class="form-label">Mode Of Deal</div>
+                  <div
+                    class="custom-controls-stacked d-flex w-75 justify-content-evenly"
+                  >
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        name="deal-mode"
+                        value="option1"
+                       
+                      />
+                      <span class="custom-control-label">Direct</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        name="deal-mode"
+                        value="option2"
+                      />
+                      <span class="custom-control-label">Broker</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group row">
+                  <label class="col-md-4 form-label">Direct Option</label>
+                  <div class="col-md-8">
+                    <ng-select placeholder="SELECT OPTION">
+                      <ng-option>BLOOMBERG</ng-option>
+                      <ng-option>BROKER</ng-option>
+                      <ng-option>FAX</ng-option>
+                      <ng-option>MOBIT</ng-option>
+                      <ng-option>REUTERS</ng-option>
+                      <ng-option>TELEPHONE</ng-option>
+                    </ng-select>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <form class="d-flex flex-wrap mt-3">
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group row">
+                  <label class="col-md-4 form-label">Broker</label>
+                  <div class="col-md-8">
+                    <input class="form-control" type="text" name="number" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-md-4 form-label">Brokerage Amt</label>
+                  <div class="col-md-8">
+                    <input class="form-control" type="text" name="number" />
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="col-lg-6 col-md-12">
+                <div class="form-group row">
+                  <label class="col-md-4 form-label"></label>
+                  <div class="col-md-8">
                     <input class="form-control" type="text" name="number" />
                   </div>
                 </div>
