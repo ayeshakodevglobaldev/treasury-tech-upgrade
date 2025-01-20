@@ -1,5 +1,5 @@
 <app-page-header
-  [title]="'Short Sales'"
+  [title]="'PIB Floater - Outright Purchase Input'"
   [icon]="'grid'"
   [title1]="'Money Market (MM)'"
   [activeitem]="'PIB Floater - Outright Purchase Input (TB/PIB)'"
@@ -151,19 +151,30 @@
                   <input class="form-control" type="text" name="number" />
                 </div>
               </div>
-              <div class="form-group row">
-                <label class="col-md-4 form-label">IPS Branch</label>
-                <div class="col-md-2">
-                  <input class="form-control" type="text" name="number" />
+             <div class="form-group row">
+                <label class="col-md-4 form-label">Classification</label>
+                <div class="col-md-8">
+                  <ng-select  placeholder="AVAILABLE FOR SALE">
+                    <ng-option>Held To Maturity</ng-option>
+                    <ng-option>Available For Sale</ng-option>
+                    <ng-option>Held For Trading</ng-option>
+                  </ng-select>
                 </div>
-                <div class="col-md-6">
-                  <input class="form-control" type="text" name="number" />
+              </div>
+              <div class="form-group row">
+                <label class="col-md-4 form-label">Accrued Profit Calc</label>
+                <div class="col-md-8">
+                  <ng-select  placeholder="MARKET BASE">
+                    <ng-option>SPB Calc (365)</ng-option>
+                    <ng-option>SPB Calc (365)</ng-option>
+                    <ng-option>Market Base</ng-option>
+                  </ng-select>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-md-4 form-label">Direct Option</label>
                 <div class="col-md-8">
-                  <ng-select  placeholder="--SELECT OPTION--">
+                  <ng-select placeholder="SELECT OPTION">
                     <ng-option>BLOOMBERG</ng-option>
                     <ng-option>BROKER</ng-option>
                     <ng-option>FAX</ng-option>
@@ -177,16 +188,6 @@
                 <label class="col-md-4 form-label"></label>
                 <div class="col-md-8">
                   <input class="form-control" type="text" name="number" />
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-md-4 form-label">Accrued Int. Calc</label>
-                <div class="col-md-8">
-                  <ng-select  placeholder="--MARKET BASE--">
-                    <ng-option>SPB Calc (365)</ng-option>
-                    <ng-option>SPB Calc (365)</ng-option>
-                    <ng-option>Market Base</ng-option>
-                  </ng-select>
                 </div>
               </div>
               <div class="form-group row">
