@@ -38,6 +38,10 @@ export const content: Routes = [
         loadChildren:()=>import('../../features/mm/mm-frontoffice/call/call.module').then(m=>m.CallModule)
     },
     {
+        path:'features/mm/mm-frontoffice/short-sales',
+        loadChildren:()=>import('../../features/mm/mm-frontoffice/short-sales/short-sales.module').then(m=>m.ShortSalesModule)
+    },
+{
         path:'features/mm/mm-frontoffice/desk-tmu',
         loadChildren:()=>import('../../features/mm/mm-frontoffice/desk-tmu/desk-tmu.module').then(m=>m.DeskTmuModule)
     },

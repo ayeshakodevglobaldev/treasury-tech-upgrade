@@ -1,20 +1,18 @@
- <!-- SUKUK PURCHASE INPUT START FROM HERE -->
-<!--Page header-->
 <app-page-header
-  [title]="'Outright Purchase Input'"
+  [title]="'Short Sales'"
   [icon]="'grid'"
   [title1]="'Money Market (MM)'"
-  [activeitem]="'Outright Purchase Input'"
+  [activeitem]="'SHORT SALE INPUT (TB/PIB)'"
   [isBtnList]="true"
 ></app-page-header>
-<!--End Page header-->
+
 
 <!-- Row -->
 <div class="row">
 <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
   <div class="card">
     <div class="card-header">
-      <h4 class="card-title">Outright Purchase Input</h4>
+      <h4 class="card-title">Short Sale Input</h4>
     </div>
     <div class="card-body">
       <div class="row">
@@ -39,12 +37,6 @@
             </div>
             <!--  -->
             <div class="col-lg-6 col-md-12">
-              <div class="form-group row">
-                <label class="col-md-4 form-label">Auction No</label>
-                <div class="col-md-8">
-                  <input class="form-control" type="text" name="number" />
-                </div>
-              </div>
               <div class="form-group row">
                 <label class="col-md-4 form-label">Transaction Date</label>
                 <div class="col-md-8">
@@ -102,7 +94,7 @@
                       class="custom-control-input"
                       name="deal-mode"
                       value="option1"
-
+                      
                     />
                     <span class="custom-control-label">Direct</span>
                   </label>
@@ -140,6 +132,7 @@
                       class="custom-control-input"
                       name="settlement-mode"
                       value="option1"
+                     
                     />
                     <span class="custom-control-label">SBP</span>
                   </label>
@@ -197,13 +190,12 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-md-4 form-label">Classification</label>
-                <div class="col-md-8">
-                  <ng-select placeholder="--AVAILABLE FOR SALE--">
-                    <ng-option>Held To Maturity</ng-option>
-                    <ng-option>Available For Sale</ng-option>
-                    <ng-option>Held For Trading</ng-option>
-                  </ng-select>
+                <label class="col-md-4 form-label">IPS Branch</label>
+                <div class="col-md-2">
+                  <input class="form-control" type="text" name="number" />
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" type="text" name="number" />
                 </div>
               </div>
               <div class="form-group row">
@@ -258,3 +250,4 @@
 </div>
 </div>
 <!-- Row -->
+

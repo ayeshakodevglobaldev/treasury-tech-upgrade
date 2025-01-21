@@ -320,9 +320,28 @@ export class NavService implements OnDestroy {
               active: false,
               // Menusub: true,
               children: [
-                {
+              {
                   path: '/features/mm/mm-frontoffice/sbp-auction/auction',
                   title: 'Input',
+                  type: 'link',
+                },
+              ],
+            },
+            {
+              title: 'Short Sales',
+
+              type: 'sub',
+              active: false,
+              // Menusub: true,
+              children: [
+                {
+                  path: '/features/mm/mm-frontoffice/short-sales/input',
+                  title: 'Input',
+                  type: 'link',
+                },
+                {
+                  path: '/features/mm/mm-frontoffice/short-sales/input-issue',
+                  title: 'Input When Issue',
                   type: 'link',
                 },
               ],
