@@ -8,6 +8,7 @@ import { SukukFixedComponent } from './sukuk-fixed/sukuk-fixed.component';
 import { PibFloaterComponent } from './pib-floater/pib-floater.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { SukukTfcComponent } from './sukuk-tfc/sukuk-tfc.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     InputPurchaseComponent,
     SukukVariableComponent,
     SukukFixedComponent,
-    PibFloaterComponent
+    PibFloaterComponent,
+    SukukTfcComponent
   ],
   imports: [
     CommonModule,

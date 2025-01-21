@@ -282,6 +282,11 @@ export class NavService implements OnDestroy {
                   type: 'link',
                 },
                 {
+                  path: '/features/mm/mm-frontoffice/outright/sukuk-tfc',
+                  title: 'TFC/Sukuk',
+                  type: 'link',
+                },
+                {
                   path: '/features/mm/mm-frontoffice/outright/pib-floater',
                   title: 'PIB Floater',
                   type: 'link',

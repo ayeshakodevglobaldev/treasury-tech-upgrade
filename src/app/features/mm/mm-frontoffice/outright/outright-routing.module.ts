@@ -4,6 +4,7 @@ import { InputPurchaseComponent } from './input-purchase/input-purchase.componen
 import { PibFloaterComponent } from './pib-floater/pib-floater.component';
 import { SukukFixedComponent } from './sukuk-fixed/sukuk-fixed.component';
 import { SukukVariableComponent } from './sukuk-variable/sukuk-variable.component';
+import { SukukTfcComponent } from './sukuk-tfc/sukuk-tfc.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
         {
           path:'sukuk-variable',
           component:SukukVariableComponent
+        },
+        {
+          path:'sukuk-tfc',
+          component:SukukTfcComponent
         }
       ]
     }
