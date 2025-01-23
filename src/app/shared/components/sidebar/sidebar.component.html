@@ -50,7 +50,7 @@
             <ul class="side-menu">
                 <!-- 1st Level Menu -->
                 <li *ngFor="let menuItem of menuItems" [ngClass]="{'side-item side-item-category':menuItem.headTitle,'slide':menuItem.title, 'active': menuItem.active, 'is-expanded': menuItem.active}">
-                  {{menuItem.headTitle}}
+                  <!-- {{menuItem.headTitle}} -->
           
                   <!-- has-Link -->
                   <a class="side-menu__item has__link" [routerLink]="!menuItem.type ? null : [menuItem.path]"
@@ -86,7 +86,7 @@
                     <span class="{{menuItem.badgeClass}}"*ngIf="menuItem.badgeClass && menuItem.badgeValue">{{menuItem.badgeValue}}</span>
                   </a>
                   <!-- has-Sub -->
-                  <a class="side-menu__item" [routerLink]="menuItem.type ? null: [menuItem.path]"
+                  <a class="side-menu__item" [routerLink]="!menuItem.type ? null: [menuItem.path]"
                     *ngIf="menuItem.type === 'sub'" (click)="toggleNavActive(menuItem)" [ngClass]="{'active': menuItem.active}">
                     <span class="shape1"></span>
                     <span class="shape2"></span>
@@ -100,8 +100,11 @@
                     <i class="angle fe fe-chevron-down" [ngClass]="{ 'd-none': menuItem.badgeClass}"></i>
           
                   </a>
+
+                  
+
                   <!-- 2nd Level menu -->
-                  <ul class="slide-menu "  *ngIf="menuItem.children && menuItem.type === 'sub'"  [ngClass]="{ open: menuItem.active }" >
+                  <ul class="slide-menu "  *ngIf="menuItem.children && (menuItem.type === 'sub' || menuItem.type === 'sub-link')"  [ngClass]="{ open: menuItem.active }" >
                     <li *ngFor="let childrenItem of menuItem.children"
                       [ngClass]="{'is-expanded active': childrenItem.active, 'sub-slide': childrenItem.Menusub}">
           

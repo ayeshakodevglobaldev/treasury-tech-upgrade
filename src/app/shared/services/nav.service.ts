@@ -65,7 +65,7 @@ export class NavService implements OnDestroy {
 
   MENUITEMS: Menu[] = [
     //Title
-    { headTitle: 'MAIN' },
+    // { headTitle: 'MAIN' },
     // {
     //   path: '/dashboards',
     //   title: 'Dashboard',
@@ -75,22 +75,22 @@ export class NavService implements OnDestroy {
     //   icon: '<svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"/></svg>',
     //   active: false,
     // },
-    {
-      path: '/dashboard',
-      title: 'FX Dashboard',
-      badgeClass: 'badge bg-sucess text-light bg-side-text',
-      type: 'link',
-      icon: '<svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"/></svg>',
-      active: true,
-    },
-    {
-      path: '/dashboard/mm-dashboard',
-      title: 'MM Dashboard',
-      badgeClass: 'badge bg-sucess text-light bg-side-text',
-      type: 'link',
-      icon: '<svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"/></svg>',
-      active: true,
-    },
+    // {
+    //   path: '/dashboard',
+    //   title: 'FX Dashboard',
+    //   badgeClass: 'badge bg-sucess text-light bg-side-text',
+    //   type: 'link',
+    //   icon: '<svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"/></svg>',
+    //   active: true,
+    // },
+    // {
+    //   path: '/dashboard/mm-dashboard',
+    //   title: 'MM Dashboard',
+    //   badgeClass: 'badge bg-sucess text-light bg-side-text',
+    //   type: 'link',
+    //   icon: '<svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z"/></svg>',
+    //   active: true,
+    // },
     // Title
 
     // Title
@@ -116,148 +116,150 @@ export class NavService implements OnDestroy {
     //     },
     //   ],
     // },
-    { headTitle: 'Foreign Exchange (FX)' },
-    {
-      title: 'Foreign Exchange (FX)',
-      icon: '<svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>',
-      type: 'sub',
-      active: false,
 
-      children: [
-        {
-          title: 'Front Office (InterBank)',
-          type: 'sub',
-          active: false,
-          Menusub: true,
-          children: [
-            {
-              title: 'Deals for outright',
-              type: 'sub',
-              active: false,
-              // Menusub: true,
-              children: [
-                {
-                  path: '/features/fx/fx-frontoffice/outright-deal/outright-input',
-                  title: 'Input',
-                  type: 'link',
-                },
-                {
-                  path: '/features/fx/fx-frontoffice/outright-deal/outright-authorize',
-                  title: 'Authorize',
-                  type: 'link',
-                },
-                {
-                  path: '/features/fx/fx-frontoffice/outright-deal/outright-editing',
-                  title: 'Editing',
-                  type: 'link',
-                },
-                {
-                  path: '/features/fx/fx-frontoffice/outright-deal/outright-amendment',
-                  title: 'Amendment',
-                  type: 'link',
-                },
-                {
-                  path: '/features/fx/fx-frontoffice/outright-deal/outright-cancellation',
-                  title: 'Cancellation',
-                  type: 'link',
-                },
-              ],
-            },
-            // {
-            //   title: 'Fx Rates',
-            //   type: 'sub',
-            //   active: false,
-            //   // Menusub: true,
-            //   children: [
-            //     // {path:'/apps/fx/front-office/fx-rates',title:'Fx Rates',type:'link'}
-            //   ],
-            // },
-            {
-              title: 'Swap Deals',
-              type: 'sub',
-              active: false,
-              // Menusub: true,
-              children: [
-                {
-                  path: '/features/fx/fx-frontoffice/swap-deal/swap-input',
-                  title: 'Input',
-                  type: 'link',
-                },
-                {
-                  path: '/features/fx/fx-frontoffice/swap-deal/swap-editing',
-                  title: 'Editing',
-                  type: 'link',
-                },
-                {
-                  path: '/features/fx/fx-frontoffice/swap-deal/swap-cancellation',
-                  title: 'Cancellation',
-                  type: 'link',
-                },
-                {
-                  path: '/features/fx/fx-frontoffice/swap-deal/swap-authorize',
-                  title: 'Authorize',
-                  type: 'link',
-                },
-                {
-                  path: '/features/fx/fx-frontoffice/swap-deal/swap-amendment',
-                  title: 'Amendment',
-                  type: 'link',
-                },
-              ],
-            },
-            {
-              title: 'Nostro transfer',
-              type: 'sub',
-              active: false,
-              // Menusub: true,
-              children: [
-                {
-                  path: '/features/fx/fx-frontoffice/transfer-deal/transfer-input',
-                  title: 'Input',
-                  type: 'link',
-                },
-                {
-                  path: '/features/fx/fx-frontoffice/transfer-deal/transfer-editing',
-                  title: 'Editing',
-                  type: 'link',
-                },
-                {
-                  path: '/features/fx/fx-frontoffice/transfer-deal/transfer-cancellation',
-                  title: 'Cancellation',
-                  type: 'link',
-                },
-              ],
-            },
-            {
-              title: 'FC Placement Borrow',
-              type: 'sub',
-              active: false,
-              // Menusub: true,
-              children: [
-                {
-                  path: '/features/fx/fx-frontoffice/placement-deal/placement-input',
-                  title: 'Input',
-                  type: 'link',
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
+    // { headTitle: 'Foreign Exchange (FX)' },
+    // {
+    //   title: 'Foreign Exchange (FX)',
+    //   icon: '<svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>',
+    //   type: 'sub',
+    //   active: false,
+
+    //   children: [
+    //     {
+    //       title: 'Front Office (InterBank)',
+    //       type: 'sub',
+    //       active: false,
+    //       Menusub: true,
+    //       children: [
+    //         {
+    //           title: 'Deals for outright',
+    //           type: 'sub',
+    //           active: false,
+    //           // Menusub: true,
+    //           children: [
+    //             {
+    //               path: '/features/fx/fx-frontoffice/outright-deal/outright-input',
+    //               title: 'Input',
+    //               type: 'link',
+    //             },
+    //             {
+    //               path: '/features/fx/fx-frontoffice/outright-deal/outright-authorize',
+    //               title: 'Authorize',
+    //               type: 'link',
+    //             },
+    //             {
+    //               path: '/features/fx/fx-frontoffice/outright-deal/outright-editing',
+    //               title: 'Editing',
+    //               type: 'link',
+    //             },
+    //             {
+    //               path: '/features/fx/fx-frontoffice/outright-deal/outright-amendment',
+    //               title: 'Amendment',
+    //               type: 'link',
+    //             },
+    //             {
+    //               path: '/features/fx/fx-frontoffice/outright-deal/outright-cancellation',
+    //               title: 'Cancellation',
+    //               type: 'link',
+    //             },
+    //           ],
+    //         },
+    //         // {
+    //         //   title: 'Fx Rates',
+    //         //   type: 'sub',
+    //         //   active: false,
+    //         //   // Menusub: true,
+    //         //   children: [
+    //         //     // {path:'/apps/fx/front-office/fx-rates',title:'Fx Rates',type:'link'}
+    //         //   ],
+    //         // },
+    //         {
+    //           title: 'Swap Deals',
+    //           type: 'sub',
+    //           active: false,
+    //           // Menusub: true,
+    //           children: [
+    //             {
+    //               path: '/features/fx/fx-frontoffice/swap-deal/swap-input',
+    //               title: 'Input',
+    //               type: 'link',
+    //             },
+    //             {
+    //               path: '/features/fx/fx-frontoffice/swap-deal/swap-editing',
+    //               title: 'Editing',
+    //               type: 'link',
+    //             },
+    //             {
+    //               path: '/features/fx/fx-frontoffice/swap-deal/swap-cancellation',
+    //               title: 'Cancellation',
+    //               type: 'link',
+    //             },
+    //             {
+    //               path: '/features/fx/fx-frontoffice/swap-deal/swap-authorize',
+    //               title: 'Authorize',
+    //               type: 'link',
+    //             },
+    //             {
+    //               path: '/features/fx/fx-frontoffice/swap-deal/swap-amendment',
+    //               title: 'Amendment',
+    //               type: 'link',
+    //             },
+    //           ],
+    //         },
+    //         {
+    //           title: 'Nostro transfer',
+    //           type: 'sub',
+    //           active: false,
+    //           // Menusub: true,
+    //           children: [
+    //             {
+    //               path: '/features/fx/fx-frontoffice/transfer-deal/transfer-input',
+    //               title: 'Input',
+    //               type: 'link',
+    //             },
+    //             {
+    //               path: '/features/fx/fx-frontoffice/transfer-deal/transfer-editing',
+    //               title: 'Editing',
+    //               type: 'link',
+    //             },
+    //             {
+    //               path: '/features/fx/fx-frontoffice/transfer-deal/transfer-cancellation',
+    //               title: 'Cancellation',
+    //               type: 'link',
+    //             },
+    //           ],
+    //         },
+    //         {
+    //           title: 'FC Placement Borrow',
+    //           type: 'sub',
+    //           active: false,
+    //           // Menusub: true,
+    //           children: [
+    //             {
+    //               path: '/features/fx/fx-frontoffice/placement-deal/placement-input',
+    //               title: 'Input',
+    //               type: 'link',
+    //             },
+    //           ],
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
 
     { headTitle: 'Money Market (MM)' },
     {
       title: 'Money Market (MM)',
       icon: '<svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>',
       type: 'sub',
-      active: false,
-
+      active: true,
+      path: '/dashboard/mm-dashboard',
+      Menusub: false,
       children: [
         {
           title: 'Front Office (InterBank)',
           type: 'sub',
-          active: false,
+          active: true,
           Menusub: true,
           children: [
             {
