@@ -296,6 +296,11 @@ export class NavService implements OnDestroy {
                   title: 'SHORT SALE/BUY INPUT - WHEN ISSUE (PIB FLOATER)',
                   type: 'link',
                 },
+                {
+                  path: '/features/mm/mm-frontoffice/outright/repo-borrowing-input',
+                  title: 'Repo - Borrowing Input',
+                  type: 'link',
+                }
               ],
             },
             {
