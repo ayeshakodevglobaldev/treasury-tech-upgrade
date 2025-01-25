@@ -291,6 +291,11 @@ export class NavService implements OnDestroy {
                   title: 'PIB Floater',
                   type: 'link',
                 },
+                {
+                  path: '/features/mm/mm-frontoffice/outright/pib-issue-input',
+                  title: 'SHORT SALE/BUY INPUT - WHEN ISSUE (PIB FLOATER)',
+                  type: 'link',
+                },
               ],
             },
             {

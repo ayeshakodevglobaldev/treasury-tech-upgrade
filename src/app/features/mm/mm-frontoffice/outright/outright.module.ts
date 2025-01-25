@@ -9,6 +9,7 @@ import { PibFloaterComponent } from './pib-floater/pib-floater.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { SukukTfcComponent } from './sukuk-tfc/sukuk-tfc.component';
+import { PibIssueInputComponent } from './pib-issue-input/pib-issue-input.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SukukTfcComponent } from './sukuk-tfc/sukuk-tfc.component';
     SukukVariableComponent,
     SukukFixedComponent,
     PibFloaterComponent,
-    SukukTfcComponent
+    SukukTfcComponent,
+    PibIssueInputComponent
   ],
   imports: [
     CommonModule,
