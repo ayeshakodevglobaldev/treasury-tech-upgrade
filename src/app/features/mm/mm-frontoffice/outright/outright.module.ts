@@ -10,6 +10,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { SukukTfcComponent } from './sukuk-tfc/sukuk-tfc.component';
 import { PibIssueInputComponent } from './pib-issue-input/pib-issue-input.component';
+import { RepoBorrowingInputComponent } from './repo-borrowing-input/repo-borrowing-input.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { PibIssueInputComponent } from './pib-issue-input/pib-issue-input.compon
     SukukFixedComponent,
     PibFloaterComponent,
     SukukTfcComponent,
-    PibIssueInputComponent
+    PibIssueInputComponent,
+    RepoBorrowingInputComponent
   ],
   imports: [
     CommonModule,
