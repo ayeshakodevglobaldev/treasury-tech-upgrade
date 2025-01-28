@@ -300,6 +300,11 @@ export class NavService implements OnDestroy {
                   path: '/features/mm/mm-frontoffice/outright/repo-borrowing-input',
                   title: 'Repo - Borrowing Input',
                   type: 'link',
+                },
+                {
+                  path: '/features/mm/mm-frontoffice/outright/pib-editing',
+                  title: 'PIB-Short-Sale-Buy-Editing',
+                  type: 'link',
                 }
               ],
             },

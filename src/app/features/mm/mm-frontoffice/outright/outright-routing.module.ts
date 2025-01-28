@@ -7,6 +7,7 @@ import { SukukVariableComponent } from './sukuk-variable/sukuk-variable.componen
 import { SukukTfcComponent } from './sukuk-tfc/sukuk-tfc.component';
 import { PibIssueInputComponent } from './pib-issue-input/pib-issue-input.component';
 import { RepoBorrowingInputComponent } from './repo-borrowing-input/repo-borrowing-input.component';
+import { PibEditingComponent } from './pib-editing/pib-editing.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
         {
           path:'repo-borrowing-input',
           component:RepoBorrowingInputComponent
+        },
+        {
+          path:'pib-editing',
+          component:PibEditingComponent
         }
       ]
     }

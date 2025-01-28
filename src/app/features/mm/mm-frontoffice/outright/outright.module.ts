@@ -11,6 +11,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { SukukTfcComponent } from './sukuk-tfc/sukuk-tfc.component';
 import { PibIssueInputComponent } from './pib-issue-input/pib-issue-input.component';
 import { RepoBorrowingInputComponent } from './repo-borrowing-input/repo-borrowing-input.component';
+import { PibEditingComponent } from './pib-editing/pib-editing.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { RepoBorrowingInputComponent } from './repo-borrowing-input/repo-borrowi
     PibFloaterComponent,
     SukukTfcComponent,
     PibIssueInputComponent,
-    RepoBorrowingInputComponent
+    RepoBorrowingInputComponent,
+    PibEditingComponent
   ],
   imports: [
     CommonModule,
