@@ -305,6 +305,11 @@ export class NavService implements OnDestroy {
                   path: '/features/mm/mm-frontoffice/outright/pib-editing',
                   title: 'PIB-Short-Sale-Buy-Editing',
                   type: 'link',
+                },
+                {
+                  path: '/features/mm/mm-frontoffice/outright/pib-non-competitive',
+                  title: 'TB/PIB Non-Competitive Purchase',
+                  type: 'link',
                 }
               ],
             },

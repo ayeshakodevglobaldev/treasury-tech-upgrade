@@ -12,6 +12,7 @@ import { SukukTfcComponent } from './sukuk-tfc/sukuk-tfc.component';
 import { PibIssueInputComponent } from './pib-issue-input/pib-issue-input.component';
 import { RepoBorrowingInputComponent } from './repo-borrowing-input/repo-borrowing-input.component';
 import { PibEditingComponent } from './pib-editing/pib-editing.component';
+import { PibNonCompetitiveComponent } from './pib-non-competitive/pib-non-competitive.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { PibEditingComponent } from './pib-editing/pib-editing.component';
     SukukTfcComponent,
     PibIssueInputComponent,
     RepoBorrowingInputComponent,
-    PibEditingComponent
+    PibEditingComponent,
+    PibNonCompetitiveComponent
   ],
   imports: [
     CommonModule,

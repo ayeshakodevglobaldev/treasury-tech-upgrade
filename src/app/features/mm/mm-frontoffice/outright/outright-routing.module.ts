@@ -8,6 +8,7 @@ import { SukukTfcComponent } from './sukuk-tfc/sukuk-tfc.component';
 import { PibIssueInputComponent } from './pib-issue-input/pib-issue-input.component';
 import { RepoBorrowingInputComponent } from './repo-borrowing-input/repo-borrowing-input.component';
 import { PibEditingComponent } from './pib-editing/pib-editing.component';
+import { PibNonCompetitiveComponent } from './pib-non-competitive/pib-non-competitive.component';
 
 const routes: Routes = [
   {
@@ -44,6 +45,10 @@ const routes: Routes = [
         {
           path:'pib-editing',
           component:PibEditingComponent
+        },
+        {
+          path:'pib-non-competitive',
+          component:PibNonCompetitiveComponent
         }
       ]
     }
