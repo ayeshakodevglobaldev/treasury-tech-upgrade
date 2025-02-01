@@ -10,7 +10,7 @@ const routes: Routes = [
         children: [
             {
                 path: '',
-                component: DashboardComponent
+                component: MmDashboardComponent
             },
             {
                 path: 'mm-dashboard',

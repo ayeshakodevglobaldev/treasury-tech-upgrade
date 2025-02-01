@@ -65,4 +65,153 @@ export const recentCustomersData: RecentCustomers[] = [
     },
 ]
 
+/**
+* MM dashboard Data
+*/
+
+export class HFTData {
+    tdyFaceValueTBills?: number;
+    tdyFaceValuePIBs?: number;
+    tdyFaceValueSukuk?: number;
+    tdyFaceValueTotal?: number;
+    tdyMTMTBills?: number;
+    tdyMTMPIBs?: number;
+    tdyMTMSukuk?: number;
+    tdyMTMTotal?: number;
+}
+export class AFS{
+    tdyFaceValueTBills?: number;
+    tdyFaceValuePIBs?: number;
+    tdyFaceValueSukuk?: number;
+    tdyFaceValueTotal?: number;
+    tdyMTMTBills?: number;
+    tdyMTMPIBs?: number;
+    tdyMTMSukuk?: number;
+    tdyMTMTotal?: number;
+}
+
+export class GTotal{
+    tdyFaceValueTBills?: number;
+    tdyFaceValuePIBs?: number;
+    tdyFaceValueSukuk?: number;
+    tdyFaceValueTotal?: number;
+    tdyMTMTBills?: number;
+    tdyMTMPIBs?: number;
+    tdyMTMSukuk?: number;
+    tdyMTMTotal?: number;
+}
+export class rdyTdyDeals{
+    tbillsPurchase?: number;
+    pibsPurchase?: number;
+    sukukPurchase?: number;
+    tbillsPurchaseAvgRate?: number;
+    pibsPurchaseAvgRate?: number;
+    sukukPurchaseAvgRate?: number;
+    tbillsSale?: number;
+    pibsSale?: number;
+    sukukSale?: number;
+    tbillsSaleAvgRate?: number;
+    pibsSaleAvgRate?: number;
+    sukukSaleAvgRate?: number;
+}
+export class fwdForwardDeals{
+    tbillsPurchase?: number;
+    pibsPurchase?: number;
+    sukukPurchase?: number;
+    tbillsPurchaseAvgRate?: number;
+    pibsPurchaseAvgRate?: number;
+    sukukPurchaseAvgRate?: number;
+    tbillsSale?: number;
+    pibsSale?: number;
+    sukukSale?: number;
+    tbillsSaleAvgRate?: number;
+    pibsSaleAvgRate?: number;
+    sukukSaleAvgRate?: number;
+}
+
+export class MMDashboard {
+    title?: string;
+    // value?: number;
+    color?: string;
+    // desc?: string;
+    dilAmount?: number;
+    weekendDate?: string;
+    crr?: number;
+    difference?: number;
+    avgLongShort?: number;
+    //create array of objects
+    HFTData?: HFTData;   
+    AFS?: AFS;
+    GTotal?: GTotal;
+    rdyTdyDeals?: rdyTdyDeals;
+    fwdForwardDeals?: fwdForwardDeals;
+
+}
+export const MMDashboardData: MMDashboard={
+    title: 'MM Dashboard',
+    dilAmount: 1000000,
+    weekendDate: '2020-06-30',
+    crr: 13,
+    difference: 0,
+    avgLongShort: 0,
+    //add dummy data
+    HFTData: {
+        tdyFaceValueTBills: 100000,
+        tdyFaceValuePIBs: 200000,
+        tdyFaceValueSukuk: 300000,
+        tdyFaceValueTotal: 600000,
+        tdyMTMTBills: 100000,
+        tdyMTMPIBs: 200000,
+        tdyMTMSukuk: 300000,
+        tdyMTMTotal: 600000
+    },
+    AFS: {
+        tdyFaceValueTBills: 100000,
+        tdyFaceValuePIBs: 200000,
+        tdyFaceValueSukuk: 300000,
+        tdyFaceValueTotal: 600000,
+        tdyMTMTBills: 100000,
+        tdyMTMPIBs: 200000,
+        tdyMTMSukuk: 300000,
+        tdyMTMTotal: 600000
+    },
+    GTotal: {
+        tdyFaceValueTBills: 100000,
+        tdyFaceValuePIBs: 200000,
+        tdyFaceValueSukuk: 300000,
+        tdyFaceValueTotal: 600000,
+        tdyMTMTBills: 100000,
+        tdyMTMPIBs: 200000,
+        tdyMTMSukuk: 300000,
+        tdyMTMTotal: 600000
+    },
+    rdyTdyDeals: {
+        tbillsPurchase: 100000,
+        pibsPurchase: 200000,
+        sukukPurchase: 300000,
+        tbillsPurchaseAvgRate: 100000,
+        pibsPurchaseAvgRate: 200000,
+        sukukPurchaseAvgRate: 300000,
+        tbillsSale: 100000,
+        pibsSale: 200000,
+        sukukSale: 300000,
+        tbillsSaleAvgRate: 100000,
+        pibsSaleAvgRate: 200000,
+        sukukSaleAvgRate: 300000
+    },
+    fwdForwardDeals: {
+        tbillsPurchase: 100000,
+        pibsPurchase: 200000,
+        sukukPurchase: 300000,
+        tbillsPurchaseAvgRate: 100000,
+        pibsPurchaseAvgRate: 200000,
+        sukukPurchaseAvgRate: 300000,
+        tbillsSale: 100000,
+        pibsSale: 200000,
+        sukukSale: 300000,
+        tbillsSaleAvgRate: 100000,
+        pibsSaleAvgRate: 200000,
+        sukukSaleAvgRate: 300000
+    }
+}
 
